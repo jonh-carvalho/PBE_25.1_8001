@@ -1,9 +1,10 @@
 # Aulas
 
-| Aula                         | Conteúdo                                                                                                                                                                                                       |
-| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| __01__ - 08/08/24    | :material-check: Apresentação da Disciplina - Processo de Desenvolvimento                                                                                                                                     |
-| __02__ - 09/08/24     | :material-check: Processo de Desenvolvimento -[Do Cascata ao Ágil](../assets/Aulas/CascataAoAgil.docx)                                                                                                           |
+| Aula                 | Conteúdo         |
+| -------------------- | ---------------- |
+| __01__ - 12/02/25    | :material-check: Apresentação da Disciplina <br> :material-check: Processo de Desenvolvimento - [Do Cascata ao Ágil](../assets/Aulas/CascataAoAgil.docx)                           |
+| __02__ - 19/02/25     | :material-check:  |
+<!--    
 | __03__ - 15/08/24     | :material-check:[Configuração de Ambiente de Desenvolvimento](https://liveestacio-my.sharepoint.com/:w:/g/personal/00661711722_professores_ibmec_edu_br/EU2fCcJwgTFLvWNyOSUtNWABAykAdvtuiY2eOTitau10zA?e=NyuXZm) |
 | __04__ - 16/08/24     | :material-check: Configuração repositório                                                                                                                                                                    |
 | __05__ - 22/03/24     | :material-check: Apresentação de Tema do Projeto                                                                                                                                                              |
@@ -24,3 +25,4 @@
 | __20__ - 11/10/24     | :material-check: Reunião Iquirium - Django OO                                                                                                                                                                  |
 | __21__ - 18/10/24     | :material-check: Introdução SQL - Sqlite OO                                                                                                                                                                   |
 | __22__ - 19/10/24     | :material-check: [Funcionalidade](../assets/Aulas/Iquirium.pdf)                                                                                                                                                                                 |
+-->

@@ -1,6 +1,10 @@
 site_name: Projeto Back-End
 repo_url: https://github.com/jonh-carvalho/PBE_24.2_8001
 
+exclude_docs: |
+  docs/modelagem/poo/ 
+  docs/_Disciplina/Roteiros/
+
 theme:
   name: material
   palette:
