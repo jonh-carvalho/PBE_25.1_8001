@@ -1,9 +1,5 @@
 site_name: Projeto Back-End
-repo_url: https://github.com/jonh-carvalho/PBE_24.2_8001
-
-exclude_docs: |
-  docs/modelagem/poo/ 
-  docs/_Disciplina/Roteiros/
+repo_url: https://github.com/jonh-carvalho/PBE_25.1_8001
 
 theme:
   name: material
