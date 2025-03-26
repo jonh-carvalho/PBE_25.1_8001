@@ -19,12 +19,7 @@ Foi levantado um ponto importante sobre o app e, assim, foi produzido o mapa men
  
 ## Versão 1.0
  
-### Mapa mental 1
- 
-[![Mapa mental Entrevista](../assets/Mapas_mentais/....png)](../assets/Mapas_mentais/...png)
- 
- 
-### Mapa mental 2
+### Mapa mental
  
 [![Mapa mental Brainstorm](../assets/Mapas_mentais/...png)](assets/Mapas_mentais/....png)
  
