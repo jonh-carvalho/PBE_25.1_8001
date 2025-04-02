@@ -106,14 +106,9 @@ Este cenário fornece uma base para o desenvolvimento de um sistema de censo, al
 2. **Confiabilidade** dos dados coletados.  
 3. **Escalabilidade** para grandes volumes.  
 
-Próximos passos:  
-
-- Detalhar diagramas UML (casos de uso, fluxos).  
-- Validar protótipos com usuários reais.  
-
 --
 
-Aqui está o diagrama de **Casos de Uso (Use Case)** em **PlantUML** para o sistema de Censo Demográfico, baseado no cenário descrito:
+### **Casos de Uso (Use Case)** 
 
 ```plantuml
 @startuml CensoDemografico_CasosDeUso
@@ -160,7 +155,7 @@ sistema --> UC03 : "Valida automaticamente"
 3. **Relacionamentos:**  
    - `<<include>>` indica dependência obrigatória entre casos de uso.  
 
-Aqui está um **protótipo de interface (wireframe)** usando o **plugin Salt** do PlantUML, representando a tela de coleta de dados do Censo Demográfico conforme os casos de uso anteriores:
+### **Protótipo de interface (wireframe)** usando o **plugin Salt** do PlantUML, representando a tela de coleta de dados do Censo Demográfico conforme os casos de uso anteriores:
 
 ```plantuml
 @startsalt
@@ -203,9 +198,6 @@ Aqui está um **protótipo de interface (wireframe)** usando o **plugin Salt** d
 }
 @endsalt
 ```
-
---
-
 ### **Explicação do Protótipo (Salt UML):**
 
 1. **Cabeçalho:**  
@@ -228,13 +220,6 @@ Aqui está um **protótipo de interface (wireframe)** usando o **plugin Salt** d
 
 --
 
-### **Visualização do Wireframe:**
-
-O Salt gera um layout semelhante a este:  
-![Protótipo Salt](https://via.placeholder.com/600x400/FFFFFF/000000?text=Wireframe+Censo+Demográfico)
-
---
-
 ### **Como Melhorar?**  
 
 - **Adicionar Validação em Tempo Real** (ex.: idade não pode ser > 120).  
@@ -243,7 +228,7 @@ O Salt gera um layout semelhante a este:
 
 --
 
-Aqui está o **diagrama de classes conceitual** em **PlantUML** para o sistema de Censo Demográfico, alinhado com os requisitos e casos de uso anteriores:
+### **Diagrama de classes conceitual** em **PlantUML** para o sistema de Censo Demográfico, alinhado com os requisitos e casos de uso anteriores:
 
 ```plantuml
 @startuml DiagramaDeClasses_CensoDemografico
@@ -320,7 +305,7 @@ enum RacaCor {
 @enduml
 ```
 
---
+-- 
 
 ### **Explicação do Diagrama:**
 
@@ -353,4 +338,4 @@ enum RacaCor {
 
 #### **Enums:**  
 
-- Definem opções padronizadas para campos como `sexo`, `racaCor` e `tipoEsgoto`.  
+- Definem opções padronizadas para campos como `sexo`, `racaCor` e `tipoEsgoto`.
