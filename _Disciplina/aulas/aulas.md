@@ -8,7 +8,7 @@
 | __04__ - 12/03/25     | :material-check:[RUP](../assets/Aulas/RUP.pdf)  |
 | __05__ - 19/03/25     | :material-check: Apresentação de Tema do Projeto |
 | __06__ - 26/03/25     | :material-check: :material-check: Elaboração 5w2h <br> - [Brainstorm](../assets/Aulas/O%20processo%20de brainstorm.pdf) <br> - [Mapa Mental](../assets/Aulas/Mapa%20Mental.pdf) <br> - [Engenharia de Requisitos](..//assets/Aulas/Engenharia%20de%20Requisitos_Cap05.pdf)  |
-| __06__ - 28/03/24     | :material-check: [Engenharia de Requisitos](..//assets/Aulas/Engenharia%20de%20Requisitos_Cap05.pdf)  <br> - [Análise OO e UML](../assets/Aulas/AnaliseOO&UML.pdf) <br> - - Diagrama de Casos de Uso <br> - [Classes](../assets/Aulas/Classes_Pacotes.pdf) <br> - Levantamento de Requisitos |
+| __07__ - 28/03/24     | :material-check: [Análise OO e UML](../assets/Aulas/AnaliseOO&UML.pdf) <br> - Diagrama de Casos de Uso <br> - [Classes](../assets/Aulas/Classes_Pacotes.pdf) <br> - Roteiro Levantamento de Requisitos |
 <!--    
 | __03__ - 15/08/24     | :material-check:[Configuração de Ambiente de Desenvolvimento](https://liveestacio-my.sharepoint.com/:w:/g/personal/00661711722_professores_ibmec_edu_br/EU2fCcJwgTFLvWNyOSUtNWABAykAdvtuiY2eOTitau10zA?e=NyuXZm) |
 | __04__ - 16/08/24     | :material-check: Configuração repositório  |
