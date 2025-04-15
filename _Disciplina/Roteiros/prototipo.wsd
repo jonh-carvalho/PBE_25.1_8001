@@ -1,0 +1,20 @@
+@startsalt
+{
+  {#
+   **Condições do Domicílio** (RF02)
+  }
+
+  {FORM
+    Água encanada?:  | (X) Sim  ( ) Não         
+    Esgoto:          | ( ) Rede  (X) Fossa  ( ) Nenhum 
+    Energia elétrica:| (X) Sim  ( ) Não         
+  }
+
+  {#
+   [Salvar Local (RF07)]  | [Enviar para Nuvem]  | [Cancelar]
+  }
+
+
+
+}
+@endsalt
