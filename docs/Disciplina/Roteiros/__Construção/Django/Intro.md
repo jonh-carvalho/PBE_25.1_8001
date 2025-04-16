@@ -14,53 +14,54 @@ Roteiro para Desenvolvimento de Aplicação Web Django com SQLite no VS Code
 2. Navegue até a pasta onde deseja criar o projeto
 3. Crie o ambiente virtual:
 
-   ```
-   ctrl +shift + P
-   Python Create Enviroment
-   ```
+```bash
+ctrl +shift + P
+Python Create Enviroment
+```
 
-ou 
+ou
 
    ```bash
    python -m venv venv
    ```
 
-4. Ative o ambiente virtual:
-   - Windows:
+4./ Ative o ambiente virtual:
 
-     ```bash
-     .\venv\Scripts\activate
-     ```
+- Windows:
 
-   - Linux/MacOS:
+```bash
+   .\venv\Scripts\activate
+```
 
-     ```bash
-     source venv/bin/activate
-     ```
+- Linux/MacOS:
 
-5. Verifique que o ambiente está ativo (deve aparecer `(venv)` no início da linha do terminal)
+```bash
+   source venv/bin/activate
+```
+
+5./ Verifique que o ambiente está ativo (deve aparecer `(venv)` no início da linha do terminal)
 
 ## Passo 2: Instalar Django e Dependências
 
 1. Com o ambiente virtual ativo, instale o Django:
 
-   ```bash
+```bash
    pip install django
-   ```
+```
 
 ## Passo 3: Criar Projeto Django
 
 1. Crie o projeto Django:
 
-   ```bash
+```bash
    django-admin startproject myproject .
-   ```
+```
 
    (O ponto no final cria o projeto no diretório atual)
 
-2. Verifique a estrutura criada:
+2./ Verifique a estrutura criada:
 
-   ```
+   ```bash
    myproject/
      __init__.py
      settings.py
@@ -93,7 +94,7 @@ ou
 1. Crie uma nova aplicação:
 
    ```bash
-   python manage.py startapp minhaapp
+   python manage.py startapp myapp
    ```
 
 2. Adicione a aplicação ao `INSTALLED_APPS` em `myproject/settings.py`:
@@ -101,13 +102,13 @@ ou
    ```python
    INSTALLED_APPS = [
        ...
-       'minhaapp',
+       'myapp',
    ]
    ```
 
 ## Passo 6: Configurar URLs e Views Básicas
 
-1. Crie um arquivo `urls.py` na pasta `minhaapp`:
+1. Crie um arquivo `urls.py` na pasta `myapp`:
 
    ```python
    from django.urls import path
@@ -126,11 +127,11 @@ ou
 
    urlpatterns = [
        path('admin/', admin.site.urls),
-       path('', include('minhaapp.urls')),
+       path('', include('myapp.urls')),
    ]
    ```
 
-3. Crie uma view básica em `minhaapp/views.py`:
+3. Crie uma view básica em `myapp/views.py`:
 
    ```python
    from django.shortcuts import render
@@ -142,7 +143,7 @@ ou
 
 ## Passo 7: Criar Modelos e Migrações
 
-1. Defina um modelo em `minhaapp/models.py`:
+1. Defina um modelo em `myapp/models.py`:
 
    ```python
    from django.db import models
@@ -172,7 +173,7 @@ ou
    python manage.py createsuperuser
    ```
 
-2. Registre o modelo no admin (`minhaapp/admin.py`):
+2. Registre o modelo no admin (`myapp/admin.py`):
 
    ```python
    from django.contrib import admin
@@ -191,5 +192,5 @@ ou
 
 2. Acesse no navegador:
 
-   - http://localhost:8000/ (página inicial)
-   - http://localhost:8000/admin/ (painel admin)
+- http://localhost:8000/ (página inicial)
+- http://localhost:8000/admin/ (painel admin)
