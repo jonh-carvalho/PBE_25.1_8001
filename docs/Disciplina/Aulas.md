@@ -9,7 +9,17 @@
 | __05__ - 19/03/25     | :material-check: Apresentação de Tema do Projeto |
 | __06__ - 26/03/25     | :material-check: :material-check: Elaboração 5w2h <br> - [Brainstorm](../assets/Aulas/O%20processo%20de brainstorm.pdf) <br> - [Mapa Mental](../assets/Aulas/Mapa%20Mental.pdf) <br> - [Engenharia de Requisitos](..//assets/Aulas/Engenharia%20de%20Requisitos_Cap05.pdf)  |
 | __07__ - 02/04/25     | :material-check: [Análise OO e UML](../assets/Aulas/AnaliseOO&UML.pdf) <br> - Diagrama de Casos de Uso <br> - [Classes](../assets/Aulas/Classes_Pacotes.pdf) <br> - Protótipo de Baixa Fidelidade <br> - Roteiro [Levantamento de Requisitos](https://jonh-carvalho.github.io/PBE_25.1_8001/_Disciplina/Roteiros/06_LevantamentoRequisitos/) |
-| __08__ - 26/09/24     |  |
+| __08__ - 09/04/25     |  |
+| __09__ - 16/04/25     | :material-check: Feriado  |
+| __10__ - 23/04/25     | :material-check: Introdução SQL - Sqlite  |
+| __11__ - 30/04/25     | :material-check: Feriado |
+| __12__ - 07/05/25     | :material-check: App |
+| __13__ - 14/05/25     | :material-check: App |
+| __14__ - 21/05/25     | :material-check: App |
+| __15__ - 08/06/25     | :material-check: App |
+| __16__ - 15/06/25     | :material-check: AP2 - Apresentação Projeto |
+| __17__ - 22/06/25     | ----- |
+| __18__ - 29/06/25     | :material-check: AS |
 
 <div class="grid cards" markdown>
 
