@@ -9,6 +9,19 @@
 | __05__ - 19/03/25     | :material-check: Apresentação de Tema do Projeto |
 | __06__ - 26/03/25     | :material-check: :material-check: Elaboração 5w2h <br> - [Brainstorm](../assets/Aulas/O%20processo%20de brainstorm.pdf) <br> - [Mapa Mental](../assets/Aulas/Mapa%20Mental.pdf) <br> - [Engenharia de Requisitos](..//assets/Aulas/Engenharia%20de%20Requisitos_Cap05.pdf)  |
 | __07__ - 02/04/25     | :material-check: [Análise OO e UML](../assets/Aulas/AnaliseOO&UML.pdf) <br> - Diagrama de Casos de Uso <br> - [Classes](../assets/Aulas/Classes_Pacotes.pdf) <br> - Protótipo de Baixa Fidelidade <br> - Roteiro [Levantamento de Requisitos](https://jonh-carvalho.github.io/PBE_25.1_8001/_Disciplina/Roteiros/06_LevantamentoRequisitos/) |
+| __08__ - 26/09/24     |  |
+
+<div class="grid cards" markdown>
+
+- :fontawesome-brands-html5: __HTML__ for content and structure
+
+</div>
+
+<div class="grid cards" markdown>
+
+- :fontawesome-brands-html5: __HTML__ for content and structure
+
+</div>
 <!--    
 | __03__ - 15/08/24     | :material-check:[Configuração de Ambiente de Desenvolvimento](https://liveestacio-my.sharepoint.com/:w:/g/personal/00661711722_professores_ibmec_edu_br/EU2fCcJwgTFLvWNyOSUtNWABAykAdvtuiY2eOTitau10zA?e=NyuXZm) |
 | __04__ - 16/08/24     | :material-check: Configuração repositório  |

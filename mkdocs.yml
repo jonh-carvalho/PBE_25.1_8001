@@ -4,7 +4,7 @@ repo_url: https://github.com/jonh-carvalho/PBE_25.1_8001
 theme:
   name: material
   palette:
-    primary: cyan
+    primary: default
   color_mode: dark
   locale: pt_BR
   language: pt-BR
