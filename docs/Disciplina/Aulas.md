@@ -9,7 +9,7 @@
 | __05__ - 19/03/25     | :material-check: Apresentação de Tema do Projeto |
 | __06__ - 26/03/25     | :material-check: :material-check: Elaboração 5w2h <br> - [Brainstorm](../assets/Aulas/O%20processo%20de brainstorm.pdf) <br> - [Mapa Mental](../assets/Aulas/Mapa%20Mental.pdf) <br> - [Engenharia de Requisitos](..//assets/Aulas/Engenharia%20de%20Requisitos_Cap05.pdf)  |
 | __07__ - 02/04/25     | :material-check: [Análise OO e UML](../assets/Aulas/AnaliseOO&UML.pdf) <br> - Diagrama de Casos de Uso <br> - [Classes](../assets/Aulas/Classes_Pacotes.pdf) <br> - Protótipo de Baixa Fidelidade <br> - Roteiro [Levantamento de Requisitos](https://jonh-carvalho.github.io/PBE_25.1_8001/_Disciplina/Roteiros/06_LevantamentoRequisitos/) |
-| __08__ - 09/04/25     | :material-check: Python OO <br> - [Notebook](../Disciplina/Roteiros/__Construção/Poo/Poo.ipynb) <br> - [Conceito de OO](../Disciplina/Roteiros/__Construção/Poo/Conceitos-basicos-de-OO.pdf) <br> - [Python OO](../Disciplina/Roteiros/__Construção/Poo/Python-OO.pdf) <br> - Introdução ao Django  |
+| __08__ - 09/04/25     | :material-check: Python OO <br> - [Notebook](../Disciplina/Roteiros/__Construção/Poo/Poo.ipynb) <br> - [Conceito de OO](../Disciplina/Roteiros/__Construção/Poo/Conceitos-basicos-de-OO.pdf) <br> - [Python OO](../Disciplina/Roteiros/__Construção/Poo/Python-OO.pdf) <br> - [Introdução ao Django](https://jonh-carvalho.github.io/PBE_25.1_8001/Disciplina/Roteiros/__Constru%C3%A7%C3%A3o/Django/Intro/)  |
 | __09__ - 16/04/25     | :material-check: Feriado  |
 | __10__ - 23/04/25     | :material-check: Introdução SQL - Sqlite  |
 | __11__ - 30/04/25     | :material-check: Feriado |
