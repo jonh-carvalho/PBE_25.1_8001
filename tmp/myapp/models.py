@@ -6,6 +6,7 @@ class Produto(models.Model):
     descricao = models.TextField()
     disponivel = models.BooleanField(default=True)
 
+
     def __str__(self):
         return self.nome
     
