@@ -2,9 +2,9 @@
 id: iteração1
 title: Iteração 1
 ---
-# Iteração 1 (15/08/24 à 28/08/2024)
+## Iteração 1 (15/08/24 à 28/08/2024)
 
-## Planejamento de Iteração
+### Planejamento de Iteração
 
 #### Presentes na reunião: XXXXX
 
@@ -26,7 +26,7 @@ title: Iteração 1
 
 ## Sprint Retrospective/Review Meeting
 
-#### Presentes na reunião: XXXX
+### Presentes na reunião: XXXX
 
 ### Dividas da Iteração
 
@@ -36,11 +36,11 @@ title: Iteração 1
 
 ### Pontos Positivos
 
-![pontos positivos](../assets/Sprints/S1-positivos.png)
+![pontos positivos](../assets/Iterações/S1-positivos.png)
 
 ### Pontos Negativos
 
-![pontos negativos](../assets/Sprints/S1-negativos.png)
+![pontos negativos](../assets/Iterações/S1-negativos.png)
 
 ### O que podemos melhorar?
 

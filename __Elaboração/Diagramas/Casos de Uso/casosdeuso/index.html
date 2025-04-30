@@ -2185,49 +2185,45 @@
 <h2 id="casos-de-uso">Casos de Uso</h2>
 <h3 id="descricao">Descrição:</h3>
 <ul>
-<li>
-<p>Contas</p>
-<ul>
+<li>Contas</li>
 <li>Criação</li>
 <li>Entrada</li>
 <li>Alteração</li>
 <li>Recuperar Senha</li>
 <li>Exclusão Lógica</li>
-<li>Visualização</li>
-</ul>
+<li>
+<p>Visualização</p>
 </li>
 <li>
 <p>Perfis</p>
-<ul>
+</li>
 <li>Edição</li>
 <li>Pesquisar</li>
 <li>Visualização</li>
-<li>Seguir/Deixar de Seguir</li>
-</ul>
+<li>
+<p>Seguir/Deixar de Seguir</p>
 </li>
 <li>
-<p>Postagens (Público)       </p>
-<ul>
+<p>Postagens (Público)</p>
+</li>
 <li>Criação</li>
 <li>Exclusão</li>
 <li>Interação</li>
-<li>Visualização</li>
-</ul>
+<li>
+<p>Visualização</p>
 </li>
 <li>
 <p>Mensagens (Privado)</p>
-<ul>
+</li>
 <li>Criação</li>
 <li>Exclusão</li>
-<li>Visualização</li>
-</ul>
+<li>
+<p>Visualização</p>
 </li>
 <li>
 <p>Galerias</p>
-<ul>
-<li>Albuns</li>
-</ul>
 </li>
+<li>Albuns</li>
 <li>Blogs</li>
 <li>Grupos</li>
 </ul>
@@ -2235,16 +2231,18 @@
 <ul>
 <li>
 <p>Atores:</p>
-<ul>
-<li>Usuário</li>
-<li>Sistema</li>
-</ul>
+</li>
+<li>
+<p>Usuário</p>
+</li>
+<li>
+<p>Sistema</p>
 </li>
 <li>
 <p>Pré-Condições:</p>
-<ul>
-<li>Nenhuma</li>
-</ul>
+</li>
+<li>
+<p>Nenhuma</p>
 </li>
 <li>
 <p>Fluxo Básico:</p>
@@ -2262,9 +2260,11 @@
 </li>
 <li>
 <p>Fluxos Alternativos:</p>
-<ul>
-<li>2a. E-mail do Usuário é inválido
-    2a1. Sistema exibe mensagem de erro</li>
+</li>
+<li>2a. E-mail do Usuário é inválido<ul>
+<li>2a1. Sistema exibe mensagem de erro</li>
+</ul>
+</li>
 <li>2b. Senha do Usuário não respeita regras de segurança<ul>
 <li>2b1. Sistema exibe mensagem de erro</li>
 </ul>
@@ -2274,54 +2274,36 @@
 </ul>
 </li>
 </ul>
-</li>
-</ul>
 <h3 id="entrada-do-usuario-no-sistema">Entrada do usuário no sistema</h3>
 <ul>
-<li>
-<p>Atores:</p>
-<ul>
+<li>Atores:</li>
 <li>Usuário</li>
-<li>Sistema</li>
-</ul>
+<li>
+<p>Sistema</p>
 </li>
 <li>
-<p>Pré-Condições:
-    Usuário deve estar cadastrado</p>
+<p>Pré-Condições:</p>
+</li>
+<li>
+<p>Usuário deve estar cadastrado</p>
 </li>
 <li>
 <p>Fluxo Básico:</p>
-<ul>
-<li>
-<ol>
-<li>Usuário fornece e-mail e senha</li>
-</ol>
 </li>
+<li>1.Usuário fornece e-mail e senha</li>
+<li>2.Sistema autentica o Usuário</li>
 <li>
-<ol>
-<li>Sistema autentica o Usuário</li>
-</ol>
-</li>
-<li>
-<ol>
-<li>Sistema redireciona o Usuário para a página inicial</li>
-</ol>
-</li>
-</ul>
+<p>3.Sistema redireciona o Usuário para a página inicial</p>
 </li>
 <li>
 <p>Fluxos Alternativos:</p>
-<ul>
+</li>
 <li>2a. Dados do Usuário Inválidos<ul>
 <li>2a1. Sistema exibe mensagem de erro</li>
 </ul>
 </li>
-<li>3a. Primeio acesso do Usuário<ul>
+<li>3a. Primeio acesso do Usuário</li>
 <li>3a1. Sistema redireciona o Usuário para a página de edição de perfil</li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 
 
