@@ -22,10 +22,10 @@ INSTALLED_APPS = [
 
 ## 2. Criação dos Serializers
 
-Crie um arquivo `serializers.py` na aplicação `minhaapp`:
+Crie um arquivo `serializers.py` na aplicação `myapp`:
 
 ```python
-# minhaapp/serializers.py
+# myapp/serializers.py
 from rest_framework import serializers
 from myapp.models import Produto
 
@@ -41,7 +41,7 @@ class ProdutoSerializer(serializers.ModelSerializer):
 Atualize ou crie um arquivo `api.py` na aplicação:
 
 ```python
-# minhaapp/api.py
+# myapp/api.py
 from rest_framework import viewsets, generics
 from rest_framework.response import Response
 from rest_framework.decorators import action
@@ -73,7 +73,7 @@ Crie um arquivo `api_urls.py` na aplicação:
 # myapp/api_urls.py
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from minhaapp.api import ProdutoViewSet, ProdutosBaratosAPIView
+from myapp.api import ProdutoViewSet, ProdutosBaratosAPIView
 
 router = DefaultRouter()
 router.register(r'produtos', ProdutoViewSet, basename='produto')
@@ -94,7 +94,7 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('myapp.urls')),  # URLs tradicionais
-    path('api/', include('minhaapp.api_urls')),  # URLs da API
+    path('api/', include('myapp.api_urls')),  # URLs da API
     path('api-auth/', include('rest_framework.urls')),  # Login para a API
 ]
 ```
