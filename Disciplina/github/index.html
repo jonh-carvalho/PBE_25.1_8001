@@ -2260,9 +2260,9 @@ gitconfig --global user.email &quot;SEU_E-MAIL&quot;**.
 <h3 id="como-criar-e-inicializar-um-projeto-no-git">Como criar e inicializar um projeto no <strong>Git</strong></h3>
 <p>Após terminarmos de instalar e configurar o Git, agora é hora de criar nosso projeto.</p>
 <p>Criamos uma pasta, no desktop, chamada Git and GitHub tutorial. Usando a linha de comando, navegue até o local do seu novo projeto. Para execute os seguintes comandos:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>cd desktop
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>cd git and github tutorial
-</span></code></pre></div>
+<pre><code class="language-cd">cd desktop
+cd git and github tutorial
+</code></pre>
 <p>Se você conhece a linha de comando há pouco e ainda está aprendendo a usá-la para navegar pelo seu PC, sugiro usar o Visual Studio Code da Microsoft. É um editor de código que possui um terminal embutido para executar comandos. Você pode baixá-lo <a href="https://code.visualstudio.com/download">aqui</a>.</p>
 <p>Depois de instalar o VS Code, abra seu projeto no editor e abra um novo terminal para seu projeto. Isso apontará automaticamente o terminal/linha de comando para o caminho do seu projeto.</p>
 <p>Agora, para inicializar um repositório do seu projeto, basta executar gitinit. Isso dirá ao Git para começar a observar seus arquivos a cada alteração que ocorrer. Esta é a aparência na linha de comando/terminal:** **</p>
@@ -2321,12 +2321,12 @@ gitconfig --global user.email &quot;SEU_E-MAIL&quot;**.
 <p>Passo 4 – Envie o repositório para o GitHub** **</p>
 <p>Depois de criar o repositório, você deve ser redirecionado para uma página que informa como criar um repositório localmente ou enviar um já existente.</p>
 <p>No nosso caso, o projeto já existe localmente, então usaremos comandos na seção "… ou enviar um repositório existente a partir da linha de comando". Estes são os comandos:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>gitremoteaddorigin** https://github.com/ihechikara/git-and-github-tutorial.git**
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>gitbranch** -M main**
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>git push -u origin main** **
-</span></code></pre></div>
+<pre><code>gitremoteaddorigin** https://github.com/ihechikara/git-and-github-tutorial.git**
+
+gitbranch** -M main**
+
+git push -u origin main** **
+</code></pre>
 <p>O primeiro comando, gitremoteaddorigin<a href="https://github.com/ihechikara/git-and-github-tutorial.git">https://github.com/ihechikara/git-and-github-tutorial.git</a>, cria uma conexão entre seu repositório local e o repositório remoto no GitHub.** **</p>
 <p>O URL do seu projeto remoto deve ser totalmente diferente do anterior. Portanto, para acompanhar, certifique-se de seguir as etapas e trabalhar com seu próprio repositório remoto. Normalmente, você não receberá uma resposta após executar este comando, mas certifique-se de ter uma conexão com a internet.</p>
 <p>O segundo comando, gitbranch -M main, altera o nome do seu branch principal para "main". O branch padrão pode ser criada como "master", mas "main" é o nome padrão para este repositório agora. Geralmente, não há resposta aqui.** **</p>

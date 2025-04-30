@@ -2483,7 +2483,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-1">
@@ -2557,29 +2557,9 @@ print("A área do retângulo é:", resultado)</div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">StdinNotImplementedError</span>                  Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In[1], line 18</span>
-<span class="ansi-green-fg">     15</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> area
-<span class="ansi-green-fg">     17</span> <span style="color: rgb(95,135,135)"># Obtendo os dados do usuário</span>
-<span class="ansi-green-intense-fg ansi-bold">---&gt; 18</span> base <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">float</span>(<span class="ansi-yellow-bg" style="color: rgb(0,135,0)">input</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">Digite a base do retângulo: </span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg">)</span>)
-<span class="ansi-green-fg">     19</span> altura <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">float</span>(<span style="color: rgb(0,135,0)">input</span>(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Digite a altura do retângulo: </span><span style="color: rgb(175,0,0)">"</span>))
-<span class="ansi-green-fg">     21</span> <span style="color: rgb(95,135,135)"># Calculando a área</span>
-
-File <span class="ansi-green-intense-fg ansi-bold">C:\Python310\lib\site-packages\ipykernel\kernelbase.py:1281</span>, in <span class="ansi-cyan-fg">Kernel.raw_input</span><span class="ansi-blue-intense-fg ansi-bold">(self, prompt)</span>
-<span class="ansi-green-fg">   1279</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_allow_stdin:
-<span class="ansi-green-fg">   1280</span>     msg <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">raw_input was called, but this frontend does not support input requests.</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1281</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> StdinNotImplementedError(msg)
-<span class="ansi-green-fg">   1282</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_input_request(
-<span class="ansi-green-fg">   1283</span>     <span style="color: rgb(0,135,0)">str</span>(prompt),
-<span class="ansi-green-fg">   1284</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_parent_ident[<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">shell</span><span style="color: rgb(175,0,0)">"</span>],
-<span class="ansi-green-fg">   1285</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>get_parent(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">shell</span><span style="color: rgb(175,0,0)">"</span>),
-<span class="ansi-green-fg">   1286</span>     password<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>,
-<span class="ansi-green-fg">   1287</span> )
-
-<span class="ansi-red-intense-fg ansi-bold">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>A área do retângulo é: 4.0
+</pre>
 </div>
 </div>
 </div>
@@ -2591,7 +2571,7 @@ File <span class="ansi-green-intense-fg ansi-bold">C:\Python310\lib\site-package
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-2">
@@ -2659,29 +2639,9 @@ print("A área do retângulo é:", resultado)</div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">StdinNotImplementedError</span>                  Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In[2], line 12</span>
-<span class="ansi-green-fg">      9</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>base <span style="color: rgb(98,98,98)">*</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>altura
-<span class="ansi-green-fg">     11</span> <span style="color: rgb(95,135,135)"># Obtendo os dados do usuário</span>
-<span class="ansi-green-intense-fg ansi-bold">---&gt; 12</span> base <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">float</span>(<span class="ansi-yellow-bg" style="color: rgb(0,135,0)">input</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">Digite a base do retângulo: </span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg">)</span>)
-<span class="ansi-green-fg">     13</span> altura <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">float</span>(<span style="color: rgb(0,135,0)">input</span>(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Digite a altura do retângulo: </span><span style="color: rgb(175,0,0)">"</span>))
-<span class="ansi-green-fg">     15</span> <span style="color: rgb(95,135,135)"># Criando um objeto Retangulo</span>
-
-File <span class="ansi-green-intense-fg ansi-bold">C:\Python310\lib\site-packages\ipykernel\kernelbase.py:1281</span>, in <span class="ansi-cyan-fg">Kernel.raw_input</span><span class="ansi-blue-intense-fg ansi-bold">(self, prompt)</span>
-<span class="ansi-green-fg">   1279</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_allow_stdin:
-<span class="ansi-green-fg">   1280</span>     msg <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">raw_input was called, but this frontend does not support input requests.</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1281</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> StdinNotImplementedError(msg)
-<span class="ansi-green-fg">   1282</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_input_request(
-<span class="ansi-green-fg">   1283</span>     <span style="color: rgb(0,135,0)">str</span>(prompt),
-<span class="ansi-green-fg">   1284</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_parent_ident[<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">shell</span><span style="color: rgb(175,0,0)">"</span>],
-<span class="ansi-green-fg">   1285</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>get_parent(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">shell</span><span style="color: rgb(175,0,0)">"</span>),
-<span class="ansi-green-fg">   1286</span>     password<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>,
-<span class="ansi-green-fg">   1287</span> )
-
-<span class="ansi-red-intense-fg ansi-bold">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>A área do retângulo é: 4.0
+</pre>
 </div>
 </div>
 </div>
@@ -2736,7 +2696,7 @@ File <span class="ansi-green-intense-fg ansi-bold">C:\Python310\lib\site-package
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-3">
@@ -2765,36 +2725,65 @@ File <span class="ansi-green-intense-fg ansi-bold">C:\Python310\lib\site-package
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Requirement already satisfied: kivy_examples in c:\python310\lib\site-packages (2.3.1)
-Requirement already satisfied: kivy[base] in c:\python310\lib\site-packages (2.3.1)
-Requirement already satisfied: Kivy-Garden&gt;=0.1.4 in c:\python310\lib\site-packages (from kivy[base]) (0.1.5)
-Requirement already satisfied: docutils in c:\python310\lib\site-packages (from kivy[base]) (0.21.2)
-Requirement already satisfied: pygments in c:\python310\lib\site-packages (from kivy[base]) (2.18.0)
-Requirement already satisfied: requests in c:\python310\lib\site-packages (from kivy[base]) (2.32.2)
-Requirement already satisfied: filetype in c:\python310\lib\site-packages (from kivy[base]) (1.2.0)
-Requirement already satisfied: kivy-deps.angle~=0.4.0 in c:\python310\lib\site-packages (from kivy[base]) (0.4.0)
-Requirement already satisfied: kivy-deps.sdl2~=0.8.0 in c:\python310\lib\site-packages (from kivy[base]) (0.8.0)
-Requirement already satisfied: kivy-deps.glew~=0.3.1 in c:\python310\lib\site-packages (from kivy[base]) (0.3.1)
-Requirement already satisfied: pypiwin32 in c:\python310\lib\site-packages (from kivy[base]) (223)
-Requirement already satisfied: pillow&lt;11,&gt;=9.5.0 in c:\python310\lib\site-packages (from kivy[base]) (10.2.0)
-Requirement already satisfied: pywin32&gt;=223 in c:\python310\lib\site-packages (from pypiwin32-&gt;kivy[base]) (306)
-Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in c:\python310\lib\site-packages (from requests-&gt;kivy[base]) (3.3.2)
-Requirement already satisfied: idna&lt;4,&gt;=2.5 in c:\python310\lib\site-packages (from requests-&gt;kivy[base]) (3.7)
-Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in c:\python310\lib\site-packages (from requests-&gt;kivy[base]) (2.2.1)
-Requirement already satisfied: certifi&gt;=2017.4.17 in c:\python310\lib\site-packages (from requests-&gt;kivy[base]) (2024.2.2)
+<pre>Collecting kivy_examples
+  Using cached Kivy_examples-2.3.0-py2.py3-none-any.whl.metadata (13 kB)
+Collecting kivy[base]
+  Using cached Kivy-2.3.0-cp310-cp310-win_amd64.whl.metadata (16 kB)
+Collecting Kivy-Garden&gt;=0.1.4 (from kivy[base])
+  Using cached Kivy_Garden-0.1.5-py3-none-any.whl.metadata (159 bytes)
+Collecting docutils (from kivy[base])
+  Using cached docutils-0.21.2-py3-none-any.whl.metadata (2.8 kB)
+Requirement already satisfied: pygments in f:\apps\source\repos\24.2\pbe_24.2_8001\.venv\lib\site-packages (from kivy[base]) (2.18.0)
+Collecting kivy-deps.angle~=0.4.0 (from kivy[base])
+  Using cached kivy_deps.angle-0.4.0-cp310-cp310-win_amd64.whl.metadata (206 bytes)
+Collecting kivy-deps.sdl2~=0.7.0 (from kivy[base])
+  Using cached kivy_deps.sdl2-0.7.0-cp310-cp310-win_amd64.whl.metadata (206 bytes)
+Collecting kivy-deps.glew~=0.3.1 (from kivy[base])
+  Using cached kivy_deps.glew-0.3.1-cp310-cp310-win_amd64.whl.metadata (232 bytes)
+Collecting pypiwin32 (from kivy[base])
+  Using cached pypiwin32-223-py3-none-any.whl.metadata (236 bytes)
+Collecting pillow&lt;11,&gt;=9.5.0 (from kivy[base])
+  Using cached pillow-10.4.0-cp310-cp310-win_amd64.whl.metadata (9.3 kB)
+Collecting requests (from kivy[base])
+  Using cached requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+Requirement already satisfied: pywin32&gt;=223 in f:\apps\source\repos\24.2\pbe_24.2_8001\.venv\lib\site-packages (from pypiwin32-&gt;kivy[base]) (306)
+Collecting charset-normalizer&lt;4,&gt;=2 (from requests-&gt;kivy[base])
+  Using cached charset_normalizer-3.3.2-cp310-cp310-win_amd64.whl.metadata (34 kB)
+Collecting idna&lt;4,&gt;=2.5 (from requests-&gt;kivy[base])
+  Using cached idna-3.10-py3-none-any.whl.metadata (10 kB)
+Collecting urllib3&lt;3,&gt;=1.21.1 (from requests-&gt;kivy[base])
+  Using cached urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting certifi&gt;=2017.4.17 (from requests-&gt;kivy[base])
+  Using cached certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Using cached Kivy_examples-2.3.0-py2.py3-none-any.whl (10.1 MB)
+Using cached kivy_deps.angle-0.4.0-cp310-cp310-win_amd64.whl (5.1 MB)
+Using cached kivy_deps.glew-0.3.1-cp310-cp310-win_amd64.whl (123 kB)
+Using cached kivy_deps.sdl2-0.7.0-cp310-cp310-win_amd64.whl (3.5 MB)
+Using cached Kivy_Garden-0.1.5-py3-none-any.whl (4.6 kB)
+Using cached pillow-10.4.0-cp310-cp310-win_amd64.whl (2.6 MB)
+Using cached docutils-0.21.2-py3-none-any.whl (587 kB)
+Using cached Kivy-2.3.0-cp310-cp310-win_amd64.whl (4.6 MB)
+Using cached pypiwin32-223-py3-none-any.whl (1.7 kB)
+Using cached requests-2.32.3-py3-none-any.whl (64 kB)
+Using cached certifi-2024.8.30-py3-none-any.whl (167 kB)
+Using cached charset_normalizer-3.3.2-cp310-cp310-win_amd64.whl (100 kB)
+Using cached idna-3.10-py3-none-any.whl (70 kB)
+Using cached urllib3-2.2.3-py3-none-any.whl (126 kB)
+Installing collected packages: kivy-deps.sdl2, kivy-deps.glew, kivy-deps.angle, urllib3, pypiwin32, pillow, idna, docutils, charset-normalizer, certifi, requests, Kivy-Garden, kivy_examples, kivy
+Successfully installed Kivy-Garden-0.1.5 certifi-2024.8.30 charset-normalizer-3.3.2 docutils-0.21.2 idna-3.10 kivy-2.3.0 kivy-deps.angle-0.4.0 kivy-deps.glew-0.3.1 kivy-deps.sdl2-0.7.0 kivy_examples-2.3.0 pillow-10.4.0 pypiwin32-223 requests-2.32.3 urllib3-2.2.3
 </pre>
 </div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-4">
@@ -2892,237 +2881,6 @@ if __name__ == '__main__':
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [Logger      ] Record log in C:\Users\JonhEdsonRibeirodeCa\.kivy\logs\kivy_25-04-29_0.txt
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [deps        ] Successfully imported "kivy_deps.angle" 0.4.0
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [deps        ] Successfully imported "kivy_deps.glew" 0.3.1
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [deps        ] Successfully imported "kivy_deps.sdl2" 0.8.0
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [Kivy        ] v2.3.1
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [Kivy        ] Installed at "C:\Python310\lib\site-packages\kivy\__init__.py"
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [Python      ] v3.10.7 (tags/v3.10.7:6cc6b13, Sep  5 2022, 14:08:36) [MSC v.1933 64 bit (AMD64)]
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [Python      ] Interpreter at "C:\Python310\python.exe"
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [Logger      ] Purge log fired. Processing...
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [Logger      ] Purge finished!
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [Factory     ] 195 symbols loaded
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [Image       ] Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [Text        ] Provider: sdl2
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [Window      ] Provider: sdl2
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [GL          ] Using the "OpenGL" graphics system
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [GL          ] GLEW initialization succeeded
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [GL          ] Backend used &lt;glew&gt;
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [GL          ] OpenGL version &lt;b'4.6.0 Compatibility Profile Context 24.9.1.240813'&gt;
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [GL          ] OpenGL vendor &lt;b'ATI Technologies Inc.'&gt;
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [GL          ] OpenGL renderer &lt;b'AMD Radeon(TM) Graphics'&gt;
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [GL          ] OpenGL parsed version: 4, 6
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [GL          ] Shading version &lt;b'4.60'&gt;
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [GL          ] Texture max size &lt;16384&gt;
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [GL          ] Texture max units &lt;32&gt;
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [Window      ] auto add sdl2 input provider
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>[<span class="ansi-green-intense-fg ansi-bold">INFO</span>   ] [Window      ] virtual keyboard not allowed, single mode, not docked
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">OSError</span>                                   Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In[4], line 40</span>
-<span class="ansi-green-fg">     37</span>             <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>resultado_label<span style="color: rgb(98,98,98)">.</span>text <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">Digite valores numéricos.</span><span style="color: rgb(175,0,0)">'</span>
-<span class="ansi-green-fg">     39</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,0,135)">__name__</span> <span style="color: rgb(98,98,98)">==</span> <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">__main__</span><span style="color: rgb(175,0,0)">'</span>:
-<span class="ansi-green-intense-fg ansi-bold">---&gt; 40</span>     <span class="ansi-yellow-bg">CalculadoraAreaApp</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">run</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span>
-
-File <span class="ansi-green-intense-fg ansi-bold">C:\Python310\lib\site-packages\kivy\app.py:955</span>, in <span class="ansi-cyan-fg">App.run</span><span class="ansi-blue-intense-fg ansi-bold">(self)</span>
-<span class="ansi-green-fg">    952</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">run</span>(<span style="color: rgb(0,135,0)">self</span>):
-<span class="ansi-green-fg">    953</span> <span style="color: rgb(188,188,188)">    </span><span style="color: rgb(175,0,0)">'''Launches the app in standalone mode.</span>
-<span class="ansi-green-fg">    954</span> <span style="color: rgb(175,0,0)">    '''</span>
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 955</span>     <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_run_prepare</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">    956</span>     runTouchApp()
-<span class="ansi-green-fg">    957</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_stop()
-
-File <span class="ansi-green-intense-fg ansi-bold">C:\Python310\lib\site-packages\kivy\app.py:924</span>, in <span class="ansi-cyan-fg">App._run_prepare</span><span class="ansi-blue-intense-fg ansi-bold">(self)</span>
-<span class="ansi-green-fg">    922</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>built:
-<span class="ansi-green-fg">    923</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>load_config()
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 924</span>     <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">load_kv</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">filename</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">kv_file</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">    925</span>     root <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>build()
-<span class="ansi-green-fg">    926</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> root:
-
-File <span class="ansi-green-intense-fg ansi-bold">C:\Python310\lib\site-packages\kivy\app.py:677</span>, in <span class="ansi-cyan-fg">App.load_kv</span><span class="ansi-blue-intense-fg ansi-bold">(self, filename)</span>
-<span class="ansi-green-fg">    675</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-<span class="ansi-green-fg">    676</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">try</span>:
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 677</span>         default_kv_directory <span style="color: rgb(98,98,98)">=</span> dirname(<span class="ansi-yellow-bg">getfile</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg" style="color: rgb(0,0,135)">__class__</span><span class="ansi-yellow-bg">)</span>)
-<span class="ansi-green-fg">    678</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> default_kv_directory <span style="color: rgb(98,98,98)">==</span> <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">'</span>:
-<span class="ansi-green-fg">    679</span>             default_kv_directory <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">.</span><span style="color: rgb(175,0,0)">'</span>
-
-File <span class="ansi-green-intense-fg ansi-bold">C:\Python310\lib\inspect.py:785</span>, in <span class="ansi-cyan-fg">getfile</span><span class="ansi-blue-intense-fg ansi-bold">(object)</span>
-<span class="ansi-green-fg">    783</span>             <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> module<span style="color: rgb(98,98,98)">.</span><span style="color: rgb(0,0,135)">__file__</span>
-<span class="ansi-green-fg">    784</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">object</span><span style="color: rgb(98,98,98)">.</span><span style="color: rgb(0,0,135)">__module__</span> <span style="color: rgb(98,98,98)">==</span> <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">__main__</span><span style="color: rgb(175,0,0)">'</span>:
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 785</span>             <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">OSError</span>(<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">source code not available</span><span style="color: rgb(175,0,0)">'</span>)
-<span class="ansi-green-fg">    786</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">TypeError</span>(<span style="color: rgb(175,0,0)">'</span><span class="ansi-bold" style="color: rgb(175,95,135)">{!r}</span><span style="color: rgb(175,0,0)"> is a built-in class</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(98,98,98)">.</span>format(<span style="color: rgb(0,135,0)">object</span>))
-<span class="ansi-green-fg">    787</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> ismethod(<span style="color: rgb(0,135,0)">object</span>):
-
-<span class="ansi-red-intense-fg ansi-bold">OSError</span>: source code not available</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
@@ -3136,13 +2894,13 @@ File <span class="ansi-green-intense-fg ansi-bold">C:\Python310\lib\inspect.py:7
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-5">
@@ -3212,53 +2970,14 @@ print("Fim do jogo!")</div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">StdinNotImplementedError</span>                  Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In[5], line 16</span>
-<span class="ansi-green-fg">     13</span>     <span style="color: rgb(0,135,0)">print</span>(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Você causou 10 de dano ao inimigo!</span><span style="color: rgb(175,0,0)">"</span>)
-<span class="ansi-green-fg">     15</span> <span style="color: rgb(95,135,135)"># Criar o personagem</span>
-<span class="ansi-green-intense-fg ansi-bold">---&gt; 16</span> nome, classe, vida, mana <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">criar_personagem</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">     18</span> <span style="color: rgb(95,135,135)"># Combate</span>
-<span class="ansi-green-fg">     19</span> vida_inimigo <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(98,98,98)">100</span>
-
-Cell <span class="ansi-green-intense-fg ansi-bold">In[5], line 4</span>, in <span class="ansi-cyan-fg">criar_personagem</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
-<span class="ansi-green-fg">      3</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">criar_personagem</span>():
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 4</span>     nome <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">input</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">Digite o nome do seu personagem: </span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">      5</span>     classe <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">input</span>(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Digite a classe do seu personagem: </span><span style="color: rgb(175,0,0)">"</span>)
-<span class="ansi-green-fg">      6</span>     vida <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(98,98,98)">100</span>
-
-File <span class="ansi-green-intense-fg ansi-bold">C:\Python310\lib\site-packages\ipykernel\kernelbase.py:1281</span>, in <span class="ansi-cyan-fg">Kernel.raw_input</span><span class="ansi-blue-intense-fg ansi-bold">(self, prompt)</span>
-<span class="ansi-green-fg">   1279</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_allow_stdin:
-<span class="ansi-green-fg">   1280</span>     msg <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">raw_input was called, but this frontend does not support input requests.</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1281</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> StdinNotImplementedError(msg)
-<span class="ansi-green-fg">   1282</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_input_request(
-<span class="ansi-green-fg">   1283</span>     <span style="color: rgb(0,135,0)">str</span>(prompt),
-<span class="ansi-green-fg">   1284</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_parent_ident[<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">shell</span><span style="color: rgb(175,0,0)">"</span>],
-<span class="ansi-green-fg">   1285</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>get_parent(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">shell</span><span style="color: rgb(175,0,0)">"</span>),
-<span class="ansi-green-fg">   1286</span>     password<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>,
-<span class="ansi-green-fg">   1287</span> )
-
-<span class="ansi-red-intense-fg ansi-bold">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-6">
@@ -3324,39 +3043,6 @@ while jogador.vida &gt; 0 and inimigo.vida &gt; 0:
     # ... outras ações
 
 print("Fim do jogo!")</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">StdinNotImplementedError</span>                  Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In[6], line 21</span>
-<span class="ansi-green-fg">     19</span> <span style="color: rgb(95,135,135)"># Combate</span>
-<span class="ansi-green-fg">     20</span> <span class="ansi-bold" style="color: rgb(0,135,0)">while</span> jogador<span style="color: rgb(98,98,98)">.</span>vida <span style="color: rgb(98,98,98)">&gt;</span> <span style="color: rgb(98,98,98)">0</span> <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> inimigo<span style="color: rgb(98,98,98)">.</span>vida <span style="color: rgb(98,98,98)">&gt;</span> <span style="color: rgb(98,98,98)">0</span>:
-<span class="ansi-green-intense-fg ansi-bold">---&gt; 21</span>     acao <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">input</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">O que você deseja fazer? (atacar/defender): </span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">     22</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> acao <span style="color: rgb(98,98,98)">==</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">atacar</span><span style="color: rgb(175,0,0)">"</span>:
-<span class="ansi-green-fg">     23</span>         jogador<span style="color: rgb(98,98,98)">.</span>atacar(inimigo)
-
-File <span class="ansi-green-intense-fg ansi-bold">C:\Python310\lib\site-packages\ipykernel\kernelbase.py:1281</span>, in <span class="ansi-cyan-fg">Kernel.raw_input</span><span class="ansi-blue-intense-fg ansi-bold">(self, prompt)</span>
-<span class="ansi-green-fg">   1279</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_allow_stdin:
-<span class="ansi-green-fg">   1280</span>     msg <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">raw_input was called, but this frontend does not support input requests.</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1281</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> StdinNotImplementedError(msg)
-<span class="ansi-green-fg">   1282</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_input_request(
-<span class="ansi-green-fg">   1283</span>     <span style="color: rgb(0,135,0)">str</span>(prompt),
-<span class="ansi-green-fg">   1284</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_parent_ident[<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">shell</span><span style="color: rgb(175,0,0)">"</span>],
-<span class="ansi-green-fg">   1285</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>get_parent(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">shell</span><span style="color: rgb(175,0,0)">"</span>),
-<span class="ansi-green-fg">   1286</span>     password<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>,
-<span class="ansi-green-fg">   1287</span> )
-
-<span class="ansi-red-intense-fg ansi-bold">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.</pre>
 </div>
 </div>
 </div>
@@ -3497,7 +3183,7 @@ class Arqueiro(Personagem):
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-8">
@@ -3535,10 +3221,15 @@ arqueiro.atirar(inimigo)</div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Gandalf lançou uma magia, causando 15 de dano a Minotauro!
-Legolas atirou uma flecha, causando 12 de dano a Minotauro!
-</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">The Kernel crashed while executing code in the current cell or a previous cell. 
+</span>
+<span class="ansi-red-intense-fg ansi-bold">Please review the code in the cell(s) to identify a possible cause of the failure. 
+</span>
+<span class="ansi-red-intense-fg ansi-bold">Click &lt;a href='https://aka.ms/vscodeJupyterKernelCrash'&gt;here&lt;/a&gt; for more info. 
+</span>
+<span class="ansi-red-intense-fg ansi-bold">View Jupyter &lt;a href='command:jupyter.viewOutput'&gt;log&lt;/a&gt; for further details.</span></pre>
 </div>
 </div>
 </div>
@@ -3563,7 +3254,7 @@ Legolas atirou uma flecha, causando 12 de dano a Minotauro!
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-9">
@@ -3691,7 +3382,7 @@ Legolas atirou uma flecha, causando 12 de dano a Minotauro!
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-10">
