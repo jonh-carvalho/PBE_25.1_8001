@@ -2,9 +2,9 @@
 id: iteração1
 title: Iteração 1
 ---
-# Iteração 1 (15/08/24 à 28/08/2024)
+## Iteração 1 (15/08/24 à 28/08/2024)
 
-## Planejamento de Iteração
+### Planejamento de Iteração
 
 #### Presentes na reunião: XXXXX
 
@@ -20,13 +20,13 @@ title: Iteração 1
 | [Documento de visão](https://github.com/xxx/xxx.md)                                            | XXX e XXXXX      |
 | Elaborar[5w2H](https://github.com/xxx/xxx.md)                                                   | XXX e XXXXX      |
 | [Mapas Mentais](https://github.com/xxx/xxx.md)                                                  | XXX e XXXXX      |
-| [Brainstorming](https://github.com/UnBArqDsw/2020.1_G7_TCM/blob/master/docs/base/Brainstorm.md) | Todos            |
+| [Brainstorming](https://github.com/xxx/xxx.md) | Todos            |
 | [Entrevistas](https://github.com/xxx/xxx.md)                                                    | XXX e XXXXX      |
 | [Prototipação.](https://github.com/xxx/xxx.md)                                                | XXX e XXXXX      |
 
 ## Sprint Retrospective/Review Meeting
 
-#### Presentes na reunião: XXXX
+### Presentes na reunião: XXXX
 
 ### Dividas da Iteração
 
@@ -36,17 +36,17 @@ title: Iteração 1
 
 ### Pontos Positivos
 
-![pontos positivos](../assets/Sprints/S1-positivos.png)
+![pontos positivos](../assets/Iterações/S1-positivos.png)
 
 ### Pontos Negativos
 
-![pontos negativos](../assets/Sprints/S1-negativos.png)
+![pontos negativos](../assets/Iterações/S1-negativos.png)
 
 ### O que podemos melhorar?
 
 - Ter mais foco na reuniões para evitar o desperdício de tempo.
 - A equipe deve ter mais autonomia em relação à falta de membros.
-- Podemos utilizar algo ferramenta de timebox para maior efetividade nas reuniões, sugestão: https://timebox.cedrotech.com/
+- Podemos utilizar algo ferramenta de timebox para maior efetividade nas reuniões, sugestão: [Timebox](https://timebox.cedrotech.com/)
 
 ### Ferramentas utilizadas
 

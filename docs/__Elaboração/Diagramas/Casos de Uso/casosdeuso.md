@@ -5,49 +5,49 @@ title: Diagrama de Casos de Uso
 
 ## Casos de Uso
 
-### Descrição:
+### Descrição
 
 - Contas
-	- Criação
-	- Entrada
-	- Alteração
-	- Recuperar Senha
-	- Exclusão Lógica
-	- Visualização
+  - Criação
+  - Entrada
+  - Alteração
+  - Recuperar Senha
+  - Exclusão Lógica
+  - Visualização
 
 - Perfis
-	- Edição
-	- Pesquisar
-	- Visualização
-	- Seguir/Deixar de Seguir
+  - Edição
+  - Pesquisar
+  - Visualização
+  - Seguir/Deixar de Seguir
 
-- Postagens (Público) 	 	
-	- Criação
-	- Exclusão
-	- Interação
-	- Visualização
+- Postagens (Público)
+  - Criação
+  - Exclusão
+  - Interação
+  - Visualização
 
 - Mensagens (Privado)
-	- Criação
-	- Exclusão
-	- Visualização
+  - Criação
+  - Exclusão
+  - Visualização
 
 - Galerias
-	- Albuns
+  - Albuns
 - Blogs
 - Grupos
 
 ### Criação de uma conta no sistema
 
-* Atores:
+- Atores:
 
-	- Usuário
-	- Sistema
+  - Usuário
+  - Sistema
 
 - Pré-Condições:
-	- Nenhuma
+  - Nenhuma
 
-* Fluxo Básico:
+- Fluxo Básico:
     1. Usuário fornece e-mail, senha e confirmações
     2. Dados do Usuário são validados pelo Sistema
     3. Dados do Usuário são encriptados pelo Sistema
@@ -59,29 +59,29 @@ title: Diagrama de Casos de Uso
     9. Sistema redireciona o Usuário para a página de Entrada
 
 - Fluxos Alternativos:
-	- 2a. E-mail do Usuário é inválido
-		2a1. Sistema exibe mensagem de erro
-	- 2b. Senha do Usuário não respeita regras de segurança
-		- 2b1. Sistema exibe mensagem de erro
-	- 3a. Usuário tenta confirmar o e-mail depois de o link expirar
-		- 3a1. Sistema sugere que o Usuário realize um novo Cadastro
+  - 2a. E-mail do Usuário é inválido
+    - 2a1. Sistema exibe mensagem de erro
+  - 2b. Senha do Usuário não respeita regras de segurança
+    - 2b1. Sistema exibe mensagem de erro
+  - 3a. Usuário tenta confirmar o e-mail depois de o link expirar
+    - 3a1. Sistema sugere que o Usuário realize um novo Cadastro
 
 ### Entrada do usuário no sistema
 
 - Atores:
-	- Usuário
-	- Sistema
+  - Usuário
+  - Sistema
 
 - Pré-Condições:
-	Usuário deve estar cadastrado
+  - Usuário deve estar cadastrado
 
 - Fluxo Básico:
-    - 1. Usuário fornece e-mail e senha
-	- 2. Sistema autentica o Usuário
-	- 3. Sistema redireciona o Usuário para a página inicial
+  - 1.Usuário fornece e-mail e senha
+  - 2.Sistema autentica o Usuário
+  - 3.Sistema redireciona o Usuário para a página inicial
 
 - Fluxos Alternativos:
-	- 2a. Dados do Usuário Inválidos
-		- 2a1. Sistema exibe mensagem de erro
-	- 3a. Primeio acesso do Usuário
-		- 3a1. Sistema redireciona o Usuário para a página de edição de perfil
+  - 2a. Dados do Usuário Inválidos
+    - 2a1. Sistema exibe mensagem de erro
+  - 3a. Primeio acesso do Usuário
+  - 3a1. Sistema redireciona o Usuário para a página de edição de perfil

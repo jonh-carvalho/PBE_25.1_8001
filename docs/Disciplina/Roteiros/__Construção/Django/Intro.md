@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Introdução ao Django
 
 Roteiro para Desenvolvimento de Aplicação Web Django com SQLite no VS Code
