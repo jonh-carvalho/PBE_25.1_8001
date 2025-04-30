@@ -111,7 +111,7 @@ O primeiro caso de uso descreve a ação...
 
 ##### Visão Geral I
 
-![Diagrama de Componentes](../assets/Diagrama_componentes/diagrama_de_componentesV2.0.png)
+![Diagrama de Componentes](../assets/Casos_de_Uso/Exemplocaso_de_uso_1.png)
 
 ### Visão de Dados
 
