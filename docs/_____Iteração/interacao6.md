@@ -36,11 +36,13 @@ title: Iteração 6
 
 ### Pontos Positivos
 
-![pontos positivos](../assets/Sprints/S1-positivos.png)
+### Pontos Positivos
+
+![pontos positivos](../assets/Iterações/S1-positivos.png)
 
 ### Pontos Negativos
 
-![pontos negativos](../assets/Sprints/S1-negativos.png)
+![pontos negativos](../assets/Iterações/S1-negativos.png)
 
 ### O que podemos melhorar?
 

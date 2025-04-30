@@ -6,7 +6,6 @@ theme:
   palette:
     primary: default
   color_mode: dark
-  locale: pt_BR
   language: pt-BR
   favicon: images/favicon.png
   user_color_mode_toggle: true
@@ -26,7 +25,7 @@ theme:
 plugins:
   - search
   - mkdocs-jupyter:
-      execute: true
+      execute: false
       include_requirejs: true
       include_source: true
 
@@ -39,11 +38,6 @@ extra:
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
