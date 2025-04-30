@@ -130,9 +130,9 @@ A partir da elaboração do protótipo foi possível ter uma noção inicial da 
 
 ## Referências
 
-> Material Design Color Tool. Disponível em:  https://material.io/resources/color/#!/?view.left=0&view.right=0
+> Material Design Color Tool. [Disponível em:](https://material.io/resources/color/#!/?view.left=0&view.right=0)
 > PMI. Um guia do conhecimento em gerenciamento de projetos. Guia PMBOK® 5a. ed. EUA: Project Management Institute, 2013.
-> Ferramenta Figma. Disponível em https://www.figma.com
+> Ferramenta Figma. [Disponível em](https://www.figma.com)
 
 ## Autor(es)
 

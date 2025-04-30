@@ -2,23 +2,19 @@
 id: documento_de_arquitetura
 title: Documento de Arquitetura
 ---
-# Documento de Arquitetura de Software (DAS)
+## Documento de Arquitetura de Software (DAS)
 
-# "Nome do Projeto"
+### "Nome do Projeto"
 
-# Introdução
+#### Introdução
 
-## Proposta
+##### Proposta
 
-<p align = "justify">
 Este documento apresenta uma visão geral da arquitetura do sistema, utilizando diferentes visões arquiteturais para destacar diferentes aspectos do sistema. É utilizado para capturar as decisões arquiteturais significativas que fizeram parte do sistema.
-</p>
 
 ## Escopo
 
-<p align = "justify">
 A aplicação "XXXX" tem o objetivo fornecer...
-</p>
 
 ## Definições, Acrônimos e Abreviações
 
@@ -28,9 +24,7 @@ A aplicação "XXXX" tem o objetivo fornecer...
 
 ## Visão Geral
 
-<p align = "justify">
 O Documento de Arquitetura de Software (DAS) trata-se de uma visão geral de toda a arquitetura do sistema, observando diferentes aspectos do mesmo. Neste documento serão abordadas as seguintes visões da aplicação TCM:
-</p>
 
 - Caso de Uso;
 - Lógica;
@@ -38,13 +32,11 @@ O Documento de Arquitetura de Software (DAS) trata-se de uma visão geral de tod
 - Implementação;
 - Dados;
 
-# Representação Arquitetural
+### Representação Arquitetural
 
-## Cliente-Servidor
+#### Cliente-Servidor
 
-<p align = "justify">
 Cliente-Servidor é um modelo de arquitetura...
-</p>
 
 Cliente (Frontend):
 
@@ -56,26 +48,29 @@ Servidor (Backend):
 - Service: Responsável pela lógica...
 - Model: Responsável pela persistência...
 
-# Objetivos de Arquitetura e Restrições
+### Objetivos de Arquitetura e Restrições
 
-## Objetivos
+#### Objetivos
 
-<p align = "justify">
 Segurança:
-   -
+
+-
+
 Persistência:
-   - 
+
+-
+
 Privacidade:
-   - Middlewares: Foi usado middlewares...
+
+- Middlewares: Foi usado middlewares...
+
 Desempenho:
    Requisições...
 Reusabilidade:
    Componentes no Frontend...
-</p>
 
 ## Restrições
 
-<p align = "justify">
 Tamanho da tela:...
 
 Portabilidade:...
@@ -87,8 +82,6 @@ Portabilidade:...
 Serviços: Os serviços oferecidos....
 
 Acesso a internet: A aplicação está limitada apenas a conexão com internet
-
-</p>
 
 ## Ferramentas Utilizadas
 
@@ -102,43 +95,39 @@ Acesso a internet: A aplicação está limitada apenas a conexão com internet
 - XXXX: XXXX
 - XXXXX: XXXX.
 
-# Visão de Caso de Uso
+### Visão de Caso de Uso
 
-<p align = "justify">
 O primeiro caso de uso descreve a ação...
-</p>
 
 ![Caso de uso 1](../assets/Casos_de_uso/caso_de_uso_1.png)
 
 ![Caso de uso 2](../assets/Casos_de_uso/caso_de_uso_2.png)
 
-# Visão Lógica
+### Visão Lógica
 
-# Visão de Implantação
+#### Visão de Implantação
 
-# Visão de Implementação
+##### Visão de Implementação
 
-## Visão Geral
+##### Visão Geral I
 
 ![Diagrama de Componentes](../assets/Diagrama_componentes/diagrama_de_componentesV2.0.png)
 
-# Visão de Dados
+### Visão de Dados
 
-## Modelo Entidade Relacionamento (MER)
+#### Modelo Entidade Relacionamento (MER)
 
-#### Entidades e Relacionamentos:
+##### Entidades e Relacionamentos
 
-## Diagrama Entidade Relacionamento (DER)
+### Diagrama Entidade Relacionamento (DER)
 
-# Tamanho e Desempenho
+## Tamanho e Desempenho
 
-# Qualidade
+## Qualidade
 
-</p>
+### Referências Bibliográficas
 
-# Referências Bibliográficas
-
-# Histórico de Versão
+#### Histórico de Versão
 
 | Data       | Versão | Descrição                                                            | Autor(es)                                   |
 | ---------- | ------- | ---------------------------------------------------------------------- | ------------------------------------------- |
