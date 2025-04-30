@@ -99,9 +99,9 @@ Acesso a internet: A aplicação está limitada apenas a conexão com internet
 
 O primeiro caso de uso descreve a ação...
 
-![Caso de uso 1](../assets/Casos_de_uso/caso_de_uso_1.png)
+![Caso de uso 1](../assets/Casos_de_Uso/Exemplocaso_de_uso_1.png)
 
-![Caso de uso 2](../assets/Casos_de_uso/caso_de_uso_2.png)
+![Caso de uso 2](../assets/Casos_de_Uso/Exemplocaso_de_uso_1.png)
 
 ### Visão Lógica
 

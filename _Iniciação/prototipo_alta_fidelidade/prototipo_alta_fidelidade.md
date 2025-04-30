@@ -70,7 +70,7 @@ Iniciamos o projeto através dos levantamentos iniciais da equipe, após discuss
 
 ![Prototipo 13](../assets/Prototipo/prototipo.png)
 
-Na primeira versão do protótipo utilizamos a [ferramenta]("https://material.io/resources/color/#!/?view.left=0&view.right=0) Material Design Color Tool  para auxiliar na criação da paleta de cores do aplicativo, definimos as cores base do aplicativo mas as cores definidas para as telas 12 e 13 ainda não foram decididas.
+Na primeira versão do protótipo utilizamos a [ferramenta](https://material.io/resources/color/#!/?view.left=0&view.right=0) Material Design Color Tool  para auxiliar na criação da paleta de cores do aplicativo, definimos as cores base do aplicativo mas as cores definidas para as telas 12 e 13 ainda não foram decididas.
 
 ### Versão 2.0
 
