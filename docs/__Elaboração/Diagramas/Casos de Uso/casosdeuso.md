@@ -5,7 +5,7 @@ title: Diagrama de Casos de Uso
 
 ## Casos de Uso
 
-### Descrição:
+### Descrição
 
 - Contas
   - Criação
