@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../Poo/">
+        <link rel="prev" href="../introsqlite/">
       
       
-        <link rel="next" href="../kyvi/">
+        <link rel="next" href="../sqlite/">
       
       
       <link rel="icon" href="../../../../../images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Procedural x Poo - Projeto Back-End</title>
+        <title>Pysqlite - Projeto Back-End</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#comparando-aplicativos-procedural-vs-orientado-a-objetos" class="md-skip">
+        <a href="#aprendendo-sql-com-crud-no-sqlite-usando-vs-code-e-jupyter-notebook" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Procedural x Poo
+              Pysqlite
             
           </span>
         </div>
@@ -738,6 +738,8 @@
                 
   
   
+    
+  
   
   
     
@@ -747,11 +749,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_3_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_3_1" checked>
         
           
           <label class="md-nav__link" for="__nav_2_5_3_1" id="__nav_2_5_3_1_label" tabindex="0">
@@ -765,7 +767,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_5_3_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_5_3_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_5_3_1">
             <span class="md-nav__icon md-icon"></span>
             BD
@@ -779,7 +781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../BD/introsqlite/" class="md-nav__link">
+      <a href="../introsqlite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -797,10 +799,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../BD/pysqlite/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Pysqlite
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -809,6 +829,57 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aprendendo-sql-com-crud-no-sqlite-usando-vs-code-e-jupyter-notebook" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aprendendo SQL com CRUD no SQLite usando VS Code e Jupyter Notebook
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Aprendendo SQL com CRUD no SQLite usando VS Code e Jupyter Notebook">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o-que-e-crud" class="md-nav__link">
+    <span class="md-ellipsis">
+      O que é CRUD?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurando-o-ambiente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurando o Ambiente
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -821,7 +892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../BD/sqlite/" class="md-nav__link">
+      <a href="../sqlite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -935,8 +1006,6 @@
                 
   
   
-    
-  
   
   
     
@@ -946,11 +1015,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_3_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_3_3" >
         
           
           <label class="md-nav__link" for="__nav_2_5_3_3" id="__nav_2_5_3_3_label" tabindex="0">
@@ -964,7 +1033,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_5_3_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_5_3_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_5_3_3">
             <span class="md-nav__icon md-icon"></span>
             Poo
@@ -978,7 +1047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Poo/" class="md-nav__link">
+      <a href="../../Poo/Poo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -996,28 +1065,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Procedural x Poo
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Poo/Procedural%20x%20Poo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1026,51 +1077,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Índice">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Índice
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#comparando-aplicativos-procedural-vs-orientado-a-objetos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comparando Aplicativos: Procedural vs. Orientado a Objetos
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vamos-criar-um-exemplo-mais-complexo-simulando-um-jogo-de-rpg-simples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Vamos criar um exemplo mais complexo: Simulando um jogo de RPG simples
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#protegendo-os-atributos-da-classe-personagem" class="md-nav__link">
-    <span class="md-ellipsis">
-      Protegendo os Atributos da Classe Personagem
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1083,7 +1089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../kyvi/" class="md-nav__link">
+      <a href="../../Poo/kyvi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2108,29 +2114,35 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#comparando-aplicativos-procedural-vs-orientado-a-objetos" class="md-nav__link">
+  <a href="#aprendendo-sql-com-crud-no-sqlite-usando-vs-code-e-jupyter-notebook" class="md-nav__link">
     <span class="md-ellipsis">
-      Comparando Aplicativos: Procedural vs. Orientado a Objetos
+      Aprendendo SQL com CRUD no SQLite usando VS Code e Jupyter Notebook
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Aprendendo SQL com CRUD no SQLite usando VS Code e Jupyter Notebook">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o-que-e-crud" class="md-nav__link">
+    <span class="md-ellipsis">
+      O que é CRUD?
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vamos-criar-um-exemplo-mais-complexo-simulando-um-jogo-de-rpg-simples" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#configurando-o-ambiente" class="md-nav__link">
     <span class="md-ellipsis">
-      Vamos criar um exemplo mais complexo: Simulando um jogo de RPG simples
+      Configurando o Ambiente
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#protegendo-os-atributos-da-classe-personagem" class="md-nav__link">
-    <span class="md-ellipsis">
-      Protegendo os Atributos da Classe Personagem
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2152,7 +2164,7 @@
   
 
 
-  <h1>Procedural x Poo</h1>
+  <h1>Pysqlite</h1>
 
 <script>
 (function (global, factory) {
@@ -2596,24 +2608,52 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="comparando-aplicativos-procedural-vs-orientado-a-objetos">Comparando Aplicativos: Procedural vs. Orientado a Objetos<a class="anchor-link" href="#comparando-aplicativos-procedural-vs-orientado-a-objetos">¶</a></h3><p><strong>Entendendo os Paradigmas</strong></p>
-<p>Antes de começarmos a criar os aplicativos, vamos entender brevemente a diferença entre programação procedural e orientada a objetos:</p>
+<h2 id="aprendendo-sql-com-crud-no-sqlite-usando-vs-code-e-jupyter-notebook">Aprendendo SQL com CRUD no SQLite usando VS Code e Jupyter Notebook<a class="anchor-link" href="#aprendendo-sql-com-crud-no-sqlite-usando-vs-code-e-jupyter-notebook">¶</a></h2><h3 id="o-que-e-crud">O que é CRUD?<a class="anchor-link" href="#o-que-e-crud">¶</a></h3><p>CRUD é um acrônimo que significa <strong>Create</strong>, <strong>Read</strong>, <strong>Update</strong> e <strong>Delete</strong>. São as quatro operações básicas que você pode realizar em um banco de dados:</p>
 <ul>
-<li><strong>Programação Procedural:</strong> Foca em uma sequência de passos para realizar uma tarefa. O código é organizado em funções que realizam ações específicas.</li>
-<li><strong>Programação Orientada a Objetos:</strong> Organiza o código em objetos que representam entidades do mundo real. Cada objeto possui atributos (características) e métodos (ações).</li>
+<li><strong>Create:</strong> Criar novos registros.</li>
+<li><strong>Read:</strong> Ler dados existentes.</li>
+<li><strong>Update:</strong> Atualizar dados existentes.</li>
+<li><strong>Delete:</strong> Deletar dados.</li>
 </ul>
-<p><strong>Exemplo: Cálculo de Área de um Retângulo</strong></p>
-<p>Vamos criar um aplicativo simples que calcula a área de um retângulo usando ambos os paradigmas.</p>
+<h3 id="configurando-o-ambiente">Configurando o Ambiente<a class="anchor-link" href="#configurando-o-ambiente">¶</a></h3><p><strong>1. Instalar o VS Code:</strong></p>
+<ul>
+<li>Se você ainda não tiver, baixe e instale o VS Code do site oficial: <a href="https://www.google.com/url?sa=E&amp;source=gmail&amp;q=https://code.visualstudio.com/">https://code.visualstudio.com/</a></li>
+</ul>
+<p><strong>2. Instalar a extensão Python:</strong></p>
+<ul>
+<li>No VS Code, vá em <strong>Extensões</strong> (ícone da engrenagem na barra lateral esquerda) e procure por "Python". Instale a extensão oficial da Microsoft.</li>
+</ul>
+<p><strong>3. Criar um novo notebook Jupyter:</strong></p>
+<ul>
+<li><p>Abra o VS Code e crie um novo arquivo Python (<code>.py</code>).</p>
+</li>
+<li><p>Na primeira linha, adicione:</p>
+</li>
+<li><p>Para criar o arquivo notebook, pressione <strong>Ctrl+Shift+P</strong> (ou <strong>Cmd+Shift+P</strong> no macOS) e digite "Create a New Jupyter Notebook".</p>
+</li>
+</ul>
+<p><strong>4. Instalar a biblioteca <code>sqlite3</code>:</strong></p>
+<ul>
+<li><p>Abra um terminal integrado no VS Code (<strong>Ctrl+`</strong>) e execute o seguinte comando:</p>
+<div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>sqlite3
+</pre></div>
+</li>
+</ul>
+<p><strong>Recursos Úteis:</strong></p>
+<ul>
+<li><strong>Documentação do SQLite:</strong> <a href="https://www.google.com/url?sa=E&amp;source=gmail&amp;q=https://www.sqlite.org/docs.html">https://www.sqlite.org/docs.html</a></li>
+<li><strong>Documentação do Python:</strong> <a href="https://www.google.com/url?sa=E&amp;source=gmail&amp;q=https://docs.python.org/3/">https://docs.python.org/3/</a></li>
+</ul>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-1">
@@ -2626,70 +2666,19 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">### 1. Programação Procedural</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># connect_db.py</span>
+<span class="c1"># 01_create_db.py</span>
+<span class="kn">import</span> <span class="nn">sqlite3</span>
 
-<span class="k">def</span> <span class="nf">calcular_area</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="n">altura</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">"""Calcula a área de um retângulo.</span>
-
-<span class="sd">    Args:</span>
-<span class="sd">        base (float): A base do retângulo.</span>
-<span class="sd">        altura (float): A altura do retângulo.</span>
-
-<span class="sd">    Returns:</span>
-<span class="sd">        float: A área do retângulo.</span>
-<span class="sd">    """</span>
-
-    <span class="n">area</span> <span class="o">=</span> <span class="n">base</span> <span class="o">*</span> <span class="n">altura</span>
-    <span class="k">return</span> <span class="n">area</span>
-
-<span class="c1"># Obtendo os dados do usuário</span>
-<span class="n">base</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Digite a base do retângulo: "</span><span class="p">))</span>
-<span class="n">altura</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Digite a altura do retângulo: "</span><span class="p">))</span>
-
-<span class="c1"># Calculando a área</span>
-<span class="n">resultado</span> <span class="o">=</span> <span class="n">calcular_area</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="n">altura</span><span class="p">)</span>
-
-<span class="c1"># Imprimindo o resultado</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"A área do retângulo é:"</span><span class="p">,</span> <span class="n">resultado</span><span class="p">)</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'clientes.db'</span><span class="p">)</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-1">### 1. Programação Procedural
+<div class="clipboard-copy-txt" id="cell-1"># connect_db.py
+# 01_create_db.py
+import sqlite3
 
-def calcular_area(base, altura):
-    """Calcula a área de um retângulo.
-
-    Args:
-        base (float): A base do retângulo.
-        altura (float): A altura do retângulo.
-
-    Returns:
-        float: A área do retângulo.
-    """
-
-    area = base * altura
-    return area
-
-# Obtendo os dados do usuário
-base = float(input("Digite a base do retângulo: "))
-altura = float(input("Digite a altura do retângulo: "))
-
-# Calculando a área
-resultado = calcular_area(base, altura)
-
-# Imprimindo o resultado
-print("A área do retângulo é:", resultado)</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>A área do retângulo é: 4.0
-</pre>
+conn = sqlite3.connect('clientes.db')
+conn.close()</div>
 </div>
 </div>
 </div>
@@ -2701,7 +2690,7 @@ print("A área do retângulo é:", resultado)</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-2">
@@ -2714,51 +2703,59 @@ print("A área do retângulo é:", resultado)</div>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">### 2. Programação Orientada a Objetos</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># 02_create_schema.py</span>
+<span class="kn">import</span> <span class="nn">sqlite3</span>
 
-<span class="k">class</span> <span class="nc">Retangulo</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">base</span><span class="p">,</span> <span class="n">altura</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">base</span> <span class="o">=</span> <span class="n">base</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">altura</span> <span class="o">=</span> <span class="n">altura</span>
+<span class="c1"># conectando...</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'clientes.db'</span><span class="p">)</span>
+<span class="c1"># definindo um cursor</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 
-    <span class="k">def</span> <span class="nf">calcular_area</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">base</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">altura</span>
+<span class="c1"># criando a tabela (schema)</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"""</span>
+<span class="s2">CREATE TABLE clientesss (</span>
+<span class="s2">        id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,</span>
+<span class="s2">        nome TEXT NOT NULL,</span>
+<span class="s2">        idade INTEGER,</span>
+<span class="s2">        cpf     VARCHAR(11) NOT NULL,</span>
+<span class="s2">        email TEXT NOT NULL,</span>
+<span class="s2">        fone TEXT,</span>
+<span class="s2">        cidade TEXT,</span>
+<span class="s2">        uf VARCHAR(2) NOT NULL,</span>
+<span class="s2">        criado_em DATE NOT NULL</span>
+<span class="s2">);</span>
+<span class="s2">"""</span><span class="p">)</span>
 
-<span class="c1"># Obtendo os dados do usuário</span>
-<span class="n">base</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Digite a base do retângulo: "</span><span class="p">))</span>
-<span class="n">altura</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Digite a altura do retângulo: "</span><span class="p">))</span>
-
-<span class="c1"># Criando um objeto Retangulo</span>
-<span class="n">retangulo</span> <span class="o">=</span> <span class="n">Retangulo</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="n">altura</span><span class="p">)</span>
-
-<span class="c1"># Calculando a área</span>
-<span class="n">resultado</span> <span class="o">=</span> <span class="n">retangulo</span><span class="o">.</span><span class="n">calcular_area</span><span class="p">()</span>
-
-<span class="c1"># Imprimindo o resultado</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"A área do retângulo é:"</span><span class="p">,</span> <span class="n">resultado</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Tabela criada com sucesso.'</span><span class="p">)</span>
+<span class="c1"># desconectando...</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-2">### 2. Programação Orientada a Objetos
+<div class="clipboard-copy-txt" id="cell-2"># 02_create_schema.py
+import sqlite3
 
-class Retangulo:
-    def __init__(self, base, altura):
-        self.base = base
-        self.altura = altura
+# conectando...
+conn = sqlite3.connect('clientes.db')
+# definindo um cursor
+cursor = conn.cursor()
 
-    def calcular_area(self):
-        return self.base * self.altura
+# criando a tabela (schema)
+cursor.execute("""
+CREATE TABLE clientesss (
+        id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+        nome TEXT NOT NULL,
+        idade INTEGER,
+        cpf     VARCHAR(11) NOT NULL,
+        email TEXT NOT NULL,
+        fone TEXT,
+        cidade TEXT,
+        uf VARCHAR(2) NOT NULL,
+        criado_em DATE NOT NULL
+);
+""")
 
-# Obtendo os dados do usuário
-base = float(input("Digite a base do retângulo: "))
-altura = float(input("Digite a altura do retângulo: "))
-
-# Criando um objeto Retangulo
-retangulo = Retangulo(base, altura)
-
-# Calculando a área
-resultado = retangulo.calcular_area()
-
-# Imprimindo o resultado
-print("A área do retângulo é:", resultado)</div>
+print('Tabela criada com sucesso.')
+# desconectando...
+conn.close()</div>
 </div>
 </div>
 </div>
@@ -2770,739 +2767,10 @@ print("A área do retângulo é:", resultado)</div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>A área do retângulo é: 4.0
+<pre>Tabela criada com sucesso.
 </pre>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Analisando os Exemplos</strong></p>
-<ul>
-<li><strong>Procedural:</strong> O código é organizado em uma função <code>calcular_area</code> que realiza o cálculo. Os dados são passados como argumentos para a função.</li>
-<li><strong>Orientado a Objetos:</strong> Criamos uma classe <code>Retangulo</code> que representa um retângulo. A classe possui atributos <code>base</code> e <code>altura</code> e um método <code>calcular_area</code> para calcular a área.</li>
-</ul>
-<p><strong>Quando usar cada paradigma?</strong></p>
-<ul>
-<li><strong>Procedural:</strong> Ideal para tarefas simples e diretas, onde a organização do código em funções é suficiente.</li>
-<li><strong>Orientado a Objetos:</strong> Mais adequado para sistemas complexos, onde a organização do código em objetos facilita a manutenção e reutilização.</li>
-</ul>
-<p><strong>Outras Considerações</strong></p>
-<ul>
-<li><strong>Encapsulamento:</strong> Na POO, os atributos e métodos podem ser públicos ou privados, controlando o acesso aos dados.</li>
-<li><strong>Herança:</strong> Classes podem herdar atributos e métodos de outras classes, promovendo a reutilização de código.</li>
-<li><strong>Polimorfismo:</strong> Objetos de diferentes classes podem responder de forma diferente ao mesmo método.</li>
-</ul>
-<p><strong>Aplicativos Mais Complexos</strong></p>
-<p>Para aplicativos mais complexos, como jogos, interfaces gráficas ou sistemas de gerenciamento de dados, a POO geralmente é a abordagem preferida devido à sua capacidade de modelar o mundo real de forma mais natural.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Exercícios</strong></p>
-<ul>
-<li><strong>Expanda o exemplo:</strong> Crie uma classe <code>Circulo</code> com atributos <code>raio</code> e um método para calcular a área.</li>
-<li><strong>Implemente um jogo simples:</strong> Crie um jogo de adivinhação usando classes para representar o jogador, o computador e o jogo em si.</li>
-</ul>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy for="cell-3">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Crie uma interface gráfica:** Utilize uma biblioteca como Kyvi para criar uma interface gráfica para o cálculo da área do retângulo.</span>
-<span class="err">!</span> <span class="n">pip</span> <span class="n">install</span> <span class="s2">"kivy[base]"</span> <span class="n">kivy_examples</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-3"># Crie uma interface gráfica:** Utilize uma biblioteca como Kyvi para criar uma interface gráfica para o cálculo da área do retângulo.
-! pip install "kivy[base]" kivy_examples</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Collecting kivy_examples
-  Using cached Kivy_examples-2.3.0-py2.py3-none-any.whl.metadata (13 kB)
-Collecting kivy[base]
-  Using cached Kivy-2.3.0-cp310-cp310-win_amd64.whl.metadata (16 kB)
-Collecting Kivy-Garden&gt;=0.1.4 (from kivy[base])
-  Using cached Kivy_Garden-0.1.5-py3-none-any.whl.metadata (159 bytes)
-Collecting docutils (from kivy[base])
-  Using cached docutils-0.21.2-py3-none-any.whl.metadata (2.8 kB)
-Requirement already satisfied: pygments in f:\apps\source\repos\24.2\pbe_24.2_8001\.venv\lib\site-packages (from kivy[base]) (2.18.0)
-Collecting kivy-deps.angle~=0.4.0 (from kivy[base])
-  Using cached kivy_deps.angle-0.4.0-cp310-cp310-win_amd64.whl.metadata (206 bytes)
-Collecting kivy-deps.sdl2~=0.7.0 (from kivy[base])
-  Using cached kivy_deps.sdl2-0.7.0-cp310-cp310-win_amd64.whl.metadata (206 bytes)
-Collecting kivy-deps.glew~=0.3.1 (from kivy[base])
-  Using cached kivy_deps.glew-0.3.1-cp310-cp310-win_amd64.whl.metadata (232 bytes)
-Collecting pypiwin32 (from kivy[base])
-  Using cached pypiwin32-223-py3-none-any.whl.metadata (236 bytes)
-Collecting pillow&lt;11,&gt;=9.5.0 (from kivy[base])
-  Using cached pillow-10.4.0-cp310-cp310-win_amd64.whl.metadata (9.3 kB)
-Collecting requests (from kivy[base])
-  Using cached requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
-Requirement already satisfied: pywin32&gt;=223 in f:\apps\source\repos\24.2\pbe_24.2_8001\.venv\lib\site-packages (from pypiwin32-&gt;kivy[base]) (306)
-Collecting charset-normalizer&lt;4,&gt;=2 (from requests-&gt;kivy[base])
-  Using cached charset_normalizer-3.3.2-cp310-cp310-win_amd64.whl.metadata (34 kB)
-Collecting idna&lt;4,&gt;=2.5 (from requests-&gt;kivy[base])
-  Using cached idna-3.10-py3-none-any.whl.metadata (10 kB)
-Collecting urllib3&lt;3,&gt;=1.21.1 (from requests-&gt;kivy[base])
-  Using cached urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
-Collecting certifi&gt;=2017.4.17 (from requests-&gt;kivy[base])
-  Using cached certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
-Using cached Kivy_examples-2.3.0-py2.py3-none-any.whl (10.1 MB)
-Using cached kivy_deps.angle-0.4.0-cp310-cp310-win_amd64.whl (5.1 MB)
-Using cached kivy_deps.glew-0.3.1-cp310-cp310-win_amd64.whl (123 kB)
-Using cached kivy_deps.sdl2-0.7.0-cp310-cp310-win_amd64.whl (3.5 MB)
-Using cached Kivy_Garden-0.1.5-py3-none-any.whl (4.6 kB)
-Using cached pillow-10.4.0-cp310-cp310-win_amd64.whl (2.6 MB)
-Using cached docutils-0.21.2-py3-none-any.whl (587 kB)
-Using cached Kivy-2.3.0-cp310-cp310-win_amd64.whl (4.6 MB)
-Using cached pypiwin32-223-py3-none-any.whl (1.7 kB)
-Using cached requests-2.32.3-py3-none-any.whl (64 kB)
-Using cached certifi-2024.8.30-py3-none-any.whl (167 kB)
-Using cached charset_normalizer-3.3.2-cp310-cp310-win_amd64.whl (100 kB)
-Using cached idna-3.10-py3-none-any.whl (70 kB)
-Using cached urllib3-2.2.3-py3-none-any.whl (126 kB)
-Installing collected packages: kivy-deps.sdl2, kivy-deps.glew, kivy-deps.angle, urllib3, pypiwin32, pillow, idna, docutils, charset-normalizer, certifi, requests, Kivy-Garden, kivy_examples, kivy
-Successfully installed Kivy-Garden-0.1.5 certifi-2024.8.30 charset-normalizer-3.3.2 docutils-0.21.2 idna-3.10 kivy-2.3.0 kivy-deps.angle-0.4.0 kivy-deps.glew-0.3.1 kivy-deps.sdl2-0.7.0 kivy_examples-2.3.0 pillow-10.4.0 pypiwin32-223 requests-2.32.3 urllib3-2.2.3
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy for="cell-4">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">kivy.app</span> <span class="kn">import</span> <span class="n">App</span>
-<span class="kn">from</span> <span class="nn">kivy.uix.boxlayout</span> <span class="kn">import</span> <span class="n">BoxLayout</span>
-<span class="kn">from</span> <span class="nn">kivy.uix.label</span> <span class="kn">import</span> <span class="n">Label</span>
-<span class="kn">from</span> <span class="nn">kivy.uix.textinput</span> <span class="kn">import</span> <span class="n">TextInput</span>
-<span class="kn">from</span> <span class="nn">kivy.uix.button</span> <span class="kn">import</span> <span class="n">Button</span>
-
-<span class="k">class</span> <span class="nc">Retangulo</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">base</span><span class="p">,</span> <span class="n">altura</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">base</span> <span class="o">=</span> <span class="n">base</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">altura</span> <span class="o">=</span> <span class="n">altura</span>
-
-    <span class="k">def</span> <span class="nf">calcular_area</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">base</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">altura</span>
-
-<span class="k">class</span> <span class="nc">CalculadoraAreaApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">layout</span> <span class="o">=</span> <span class="n">BoxLayout</span><span class="p">(</span><span class="n">orientation</span><span class="o">=</span><span class="s1">'vertical'</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">base_input</span> <span class="o">=</span> <span class="n">TextInput</span><span class="p">(</span><span class="n">multiline</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">altura_input</span> <span class="o">=</span> <span class="n">TextInput</span><span class="p">(</span><span class="n">multiline</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">resultado_label</span> <span class="o">=</span> <span class="n">Label</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s1">'Resultado:'</span><span class="p">)</span>
-        <span class="n">calcular_button</span> <span class="o">=</span> <span class="n">Button</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s1">'Calcular'</span><span class="p">)</span>
-        <span class="n">calcular_button</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="n">on_press</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">calcular_area</span><span class="p">)</span>
-        <span class="n">layout</span><span class="o">.</span><span class="n">add_widget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_input</span><span class="p">)</span>
-        <span class="n">layout</span><span class="o">.</span><span class="n">add_widget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">altura_input</span><span class="p">)</span>
-        <span class="n">layout</span><span class="o">.</span><span class="n">add_widget</span><span class="p">(</span><span class="n">calcular_button</span><span class="p">)</span>
-        <span class="n">layout</span><span class="o">.</span><span class="n">add_widget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">resultado_label</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">layout</span>
-
-    <span class="k">def</span> <span class="nf">calcular_area</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">instance</span><span class="p">):</span>
-        <span class="k">try</span><span class="p">:</span>
-            <span class="n">base</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_input</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
-            <span class="n">altura</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">altura_input</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
-            <span class="n">retangulo</span> <span class="o">=</span> <span class="n">Retangulo</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="n">altura</span><span class="p">)</span>
-            <span class="n">resultado</span> <span class="o">=</span> <span class="n">retangulo</span><span class="o">.</span><span class="n">calcular_area</span><span class="p">()</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">resultado_label</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">'A área é: </span><span class="si">{</span><span class="n">resultado</span><span class="si">}</span><span class="s1">'</span>
-        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">resultado_label</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s1">'Digite valores numéricos.'</span>
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
-    <span class="n">CalculadoraAreaApp</span><span class="p">()</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-4">from kivy.app import App
-from kivy.uix.boxlayout import BoxLayout
-from kivy.uix.label import Label
-from kivy.uix.textinput import TextInput
-from kivy.uix.button import Button
-
-class Retangulo:
-    def __init__(self, base, altura):
-        self.base = base
-        self.altura = altura
-
-    def calcular_area(self):
-        return self.base * self.altura
-
-class CalculadoraAreaApp(App):
-    def build(self):
-        layout = BoxLayout(orientation='vertical')
-        self.base_input = TextInput(multiline=False)
-        self.altura_input = TextInput(multiline=False)
-        self.resultado_label = Label(text='Resultado:')
-        calcular_button = Button(text='Calcular')
-        calcular_button.bind(on_press=self.calcular_area)
-        layout.add_widget(self.base_input)
-        layout.add_widget(self.altura_input)
-        layout.add_widget(calcular_button)
-        layout.add_widget(self.resultado_label)
-        return layout
-
-    def calcular_area(self, instance):
-        try:
-            base = float(self.base_input.text)
-            altura = float(self.altura_input.text)
-            retangulo = Retangulo(base, altura)
-            resultado = retangulo.calcular_area()
-            self.resultado_label.text = f'A área é: {resultado}'
-        except ValueError:
-            self.resultado_label.text = 'Digite valores numéricos.'
-
-if __name__ == '__main__':
-    CalculadoraAreaApp().run()</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="vamos-criar-um-exemplo-mais-complexo-simulando-um-jogo-de-rpg-simples">Vamos criar um exemplo mais complexo: <strong>Simulando um jogo de RPG simples</strong><a class="anchor-link" href="#vamos-criar-um-exemplo-mais-complexo-simulando-um-jogo-de-rpg-simples">¶</a></h3><p><strong>Contexto:</strong></p>
-<p>Imagine que queremos criar um jogo de RPG básico, onde o jogador possui um personagem com atributos como nome, classe, pontos de vida e mana. O personagem pode atacar, defender e usar habilidades.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy for="cell-5">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">### 1. Programação Procedural</span>
-
-<span class="k">def</span> <span class="nf">criar_personagem</span><span class="p">():</span>
-    <span class="n">nome</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Digite o nome do seu personagem: "</span><span class="p">)</span>
-    <span class="n">classe</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Digite a classe do seu personagem: "</span><span class="p">)</span>
-    <span class="n">vida</span> <span class="o">=</span> <span class="mi">100</span>
-    <span class="n">mana</span> <span class="o">=</span> <span class="mi">50</span>
-    <span class="k">return</span> <span class="n">nome</span><span class="p">,</span> <span class="n">classe</span><span class="p">,</span> <span class="n">vida</span><span class="p">,</span> <span class="n">mana</span>
-
-<span class="k">def</span> <span class="nf">atacar</span><span class="p">(</span><span class="n">vida_inimigo</span><span class="p">):</span>
-    <span class="n">dano</span> <span class="o">=</span> <span class="mi">10</span>
-    <span class="n">vida_inimigo</span> <span class="o">-=</span> <span class="n">dano</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Você causou 10 de dano ao inimigo!"</span><span class="p">)</span>
-
-<span class="c1"># Criar o personagem</span>
-<span class="n">nome</span><span class="p">,</span> <span class="n">classe</span><span class="p">,</span> <span class="n">vida</span><span class="p">,</span> <span class="n">mana</span> <span class="o">=</span> <span class="n">criar_personagem</span><span class="p">()</span>
-
-<span class="c1"># Combate</span>
-<span class="n">vida_inimigo</span> <span class="o">=</span> <span class="mi">100</span>
-<span class="k">while</span> <span class="n">vida</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">vida_inimigo</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="n">acao</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"O que você deseja fazer? (atacar/defender): "</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">acao</span> <span class="o">==</span> <span class="s2">"atacar"</span><span class="p">:</span>
-        <span class="n">atacar</span><span class="p">(</span><span class="n">vida_inimigo</span><span class="p">)</span>
-    <span class="c1"># ... outras ações</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Fim do jogo!"</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-5">### 1. Programação Procedural
-
-def criar_personagem():
-    nome = input("Digite o nome do seu personagem: ")
-    classe = input("Digite a classe do seu personagem: ")
-    vida = 100
-    mana = 50
-    return nome, classe, vida, mana
-
-def atacar(vida_inimigo):
-    dano = 10
-    vida_inimigo -= dano
-    print("Você causou 10 de dano ao inimigo!")
-
-# Criar o personagem
-nome, classe, vida, mana = criar_personagem()
-
-# Combate
-vida_inimigo = 100
-while vida &gt; 0 and vida_inimigo &gt; 0:
-    acao = input("O que você deseja fazer? (atacar/defender): ")
-    if acao == "atacar":
-        atacar(vida_inimigo)
-    # ... outras ações
-
-print("Fim do jogo!")</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy for="cell-6">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">### 2. Programação Orientada a Objetos</span>
-
-<span class="k">class</span> <span class="nc">Personagem</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nome</span><span class="p">,</span> <span class="n">classe</span><span class="p">,</span> <span class="n">vida</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">mana</span><span class="o">=</span><span class="mi">50</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">nome</span> <span class="o">=</span> <span class="n">nome</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">classe</span> <span class="o">=</span> <span class="n">classe</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">vida</span> <span class="o">=</span> <span class="n">vida</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">mana</span> <span class="o">=</span> <span class="n">mana</span>
-
-    <span class="k">def</span> <span class="nf">atacar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inimigo</span><span class="p">):</span>
-        <span class="n">dano</span> <span class="o">=</span> <span class="mi">10</span>
-        <span class="n">inimigo</span><span class="o">.</span><span class="n">vida</span> <span class="o">-=</span> <span class="n">dano</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">nome</span><span class="si">}</span><span class="s2"> causou 10 de dano a </span><span class="si">{</span><span class="n">inimigo</span><span class="o">.</span><span class="n">nome</span><span class="si">}</span><span class="s2">!"</span><span class="p">)</span>
-
-<span class="c1"># Criar os personagens</span>
-<span class="n">jogador</span> <span class="o">=</span> <span class="n">Personagem</span><span class="p">(</span><span class="s2">"Herói"</span><span class="p">,</span> <span class="s2">"Guerreiro"</span><span class="p">)</span>
-<span class="n">inimigo</span> <span class="o">=</span> <span class="n">Personagem</span><span class="p">(</span><span class="s2">"Minotauro"</span><span class="p">,</span> <span class="s2">"Bárbaro"</span><span class="p">)</span>
-
-<span class="c1"># Combate</span>
-<span class="k">while</span> <span class="n">jogador</span><span class="o">.</span><span class="n">vida</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">inimigo</span><span class="o">.</span><span class="n">vida</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="n">acao</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"O que você deseja fazer? (atacar/defender): "</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">acao</span> <span class="o">==</span> <span class="s2">"atacar"</span><span class="p">:</span>
-        <span class="n">jogador</span><span class="o">.</span><span class="n">atacar</span><span class="p">(</span><span class="n">inimigo</span><span class="p">)</span>
-    <span class="c1"># ... outras ações</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Fim do jogo!"</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-6">### 2. Programação Orientada a Objetos
-
-class Personagem:
-    def __init__(self, nome, classe, vida=100, mana=50):
-        self.nome = nome
-        self.classe = classe
-        self.vida = vida
-        self.mana = mana
-
-    def atacar(self, inimigo):
-        dano = 10
-        inimigo.vida -= dano
-        print(f"{self.nome} causou 10 de dano a {inimigo.nome}!")
-
-# Criar os personagens
-jogador = Personagem("Herói", "Guerreiro")
-inimigo = Personagem("Minotauro", "Bárbaro")
-
-# Combate
-while jogador.vida &gt; 0 and inimigo.vida &gt; 0:
-    acao = input("O que você deseja fazer? (atacar/defender): ")
-    if acao == "atacar":
-        jogador.atacar(inimigo)
-    # ... outras ações
-
-print("Fim do jogo!")</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Análise:</strong></p>
-<ul>
-<li><strong>Procedural:</strong> O código é dividido em funções que realizam tarefas específicas. Os dados do personagem são armazenados em variáveis globais ou passados como argumentos para as funções.</li>
-<li><strong>Orientado a Objetos:</strong> O personagem é representado por uma classe <code>Personagem</code>, com atributos e métodos. As ações do personagem são realizadas através dos métodos da classe.</li>
-</ul>
-<p><strong>Vantagens da POO neste exemplo:</strong></p>
-<ul>
-<li><strong>Reutilização de código:</strong> A classe <code>Personagem</code> pode ser reutilizada para criar outros personagens com diferentes atributos.</li>
-<li><strong>Organização:</strong> O código fica mais organizado e fácil de entender, pois cada parte do personagem (atributos e ações) está encapsulada na classe.</li>
-<li><strong>Extensibilidade:</strong> É mais fácil adicionar novas funcionalidades ao jogo, como novas classes de personagens ou habilidades.</li>
-</ul>
-<p><strong>Considerações:</strong></p>
-<ul>
-<li><strong>Complexidade:</strong> Para jogos mais complexos, a POO é essencial para gerenciar a quantidade de dados e interações entre os objetos.</li>
-<li><strong>Aprendizado:</strong> A POO pode exigir um pouco mais de tempo para aprender, mas os benefícios a longo prazo são significativos.</li>
-</ul>
-<p><strong>Próximos passos:</strong></p>
-<ul>
-<li><strong>Expansão do jogo:</strong> Adicione mais classes, como itens, magias e inimigos.</li>
-<li><strong>Interface gráfica:</strong> Utilize uma biblioteca como Pygame para criar uma interface gráfica para o jogo.</li>
-<li><strong>Sistema de combate:</strong> Implemente um sistema de combate mais complexo, com diferentes tipos de ataques e defesas.</li>
-</ul>
-<p><strong>Possíveis tópicos:</strong></p>
-<ul>
-<li><strong>Herança:</strong> Crie classes derivadas de <code>Personagem</code> para representar diferentes tipos de personagens (mago, arqueiro, etc.).</li>
-<li><strong>Encapsulamento:</strong> Proteja os atributos da classe para evitar modificações indesejadas.</li>
-</ul>
-<p><strong>Lembre-se:</strong> A escolha entre programação procedural e orientada a objetos depende do contexto e da complexidade do problema. Em muitos casos, a combinação de ambos os paradigmas pode levar a soluções mais elegantes e eficientes.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy for="cell-7">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">class</span> <span class="nc">Personagem</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nome</span><span class="p">,</span> <span class="n">classe</span><span class="p">,</span> <span class="n">vida</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">mana</span><span class="o">=</span><span class="mi">50</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">nome</span> <span class="o">=</span> <span class="n">nome</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">classe</span> <span class="o">=</span> <span class="n">classe</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">vida</span> <span class="o">=</span> <span class="n">vida</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">mana</span> <span class="o">=</span> <span class="n">mana</span>
-
-    <span class="k">def</span> <span class="nf">atacar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inimigo</span><span class="p">):</span>
-        <span class="n">dano</span> <span class="o">=</span> <span class="mi">10</span>
-        <span class="n">inimigo</span><span class="o">.</span><span class="n">vida</span> <span class="o">-=</span> <span class="n">dano</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">nome</span><span class="si">}</span><span class="s2"> causou </span><span class="si">{</span><span class="n">dano</span><span class="si">}</span><span class="s2"> de dano a </span><span class="si">{</span><span class="n">inimigo</span><span class="o">.</span><span class="n">nome</span><span class="si">}</span><span class="s2">!"</span><span class="p">)</span>
-
-<span class="k">class</span> <span class="nc">Mago</span><span class="p">(</span><span class="n">Personagem</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nome</span><span class="p">):</span>
-        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">nome</span><span class="p">,</span> <span class="s2">"Mago"</span><span class="p">,</span> <span class="n">mana</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">lançar_magia</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inimigo</span><span class="p">):</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mana</span> <span class="o">&gt;=</span> <span class="mi">20</span><span class="p">:</span>
-            <span class="n">dano</span> <span class="o">=</span> <span class="mi">15</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">mana</span> <span class="o">-=</span> <span class="mi">20</span>
-            <span class="n">inimigo</span><span class="o">.</span><span class="n">vida</span> <span class="o">-=</span> <span class="n">dano</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">nome</span><span class="si">}</span><span class="s2"> lançou uma magia, causando </span><span class="si">{</span><span class="n">dano</span><span class="si">}</span><span class="s2"> de dano a </span><span class="si">{</span><span class="n">inimigo</span><span class="o">.</span><span class="n">nome</span><span class="si">}</span><span class="s2">!"</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">nome</span><span class="si">}</span><span class="s2"> não tem mana suficiente para lançar uma magia."</span><span class="p">)</span>
-
-<span class="k">class</span> <span class="nc">Arqueiro</span><span class="p">(</span><span class="n">Personagem</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nome</span><span class="p">):</span>
-        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">nome</span><span class="p">,</span> <span class="s2">"Arqueiro"</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">atirar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inimigo</span><span class="p">):</span>
-        <span class="n">dano</span> <span class="o">=</span> <span class="mi">12</span>
-        <span class="n">inimigo</span><span class="o">.</span><span class="n">vida</span> <span class="o">-=</span> <span class="n">dano</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">nome</span><span class="si">}</span><span class="s2"> atirou uma flecha, causando </span><span class="si">{</span><span class="n">dano</span><span class="si">}</span><span class="s2"> de dano a </span><span class="si">{</span><span class="n">inimigo</span><span class="o">.</span><span class="n">nome</span><span class="si">}</span><span class="s2">!"</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-7">class Personagem:
-    def __init__(self, nome, classe, vida=100, mana=50):
-        self.nome = nome
-        self.classe = classe
-        self.vida = vida
-        self.mana = mana
-
-    def atacar(self, inimigo):
-        dano = 10
-        inimigo.vida -= dano
-        print(f"{self.nome} causou {dano} de dano a {inimigo.nome}!")
-
-class Mago(Personagem):
-    def __init__(self, nome):
-        super().__init__(nome, "Mago", mana=100)
-
-    def lançar_magia(self, inimigo):
-        if self.mana &gt;= 20:
-            dano = 15
-            self.mana -= 20
-            inimigo.vida -= dano
-            print(f"{self.nome} lançou uma magia, causando {dano} de dano a {inimigo.nome}!")
-        else:
-            print(f"{self.nome} não tem mana suficiente para lançar uma magia.")
-
-class Arqueiro(Personagem):
-    def __init__(self, nome):
-        super().__init__(nome, "Arqueiro")
-
-    def atirar(self, inimigo):
-        dano = 12
-        inimigo.vida -= dano
-        print(f"{self.nome} atirou uma flecha, causando {dano} de dano a {inimigo.nome}!")</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy for="cell-8">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Como usar</span>
-
-<span class="n">mago</span> <span class="o">=</span> <span class="n">Mago</span><span class="p">(</span><span class="s2">"Gandalf"</span><span class="p">)</span>
-<span class="n">arqueiro</span> <span class="o">=</span> <span class="n">Arqueiro</span><span class="p">(</span><span class="s2">"Legolas"</span><span class="p">)</span>
-
-<span class="n">mago</span><span class="o">.</span><span class="n">lançar_magia</span><span class="p">(</span><span class="n">inimigo</span><span class="p">)</span>
-<span class="n">arqueiro</span><span class="o">.</span><span class="n">atirar</span><span class="p">(</span><span class="n">inimigo</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-8"># Como usar
-
-mago = Mago("Gandalf")
-arqueiro = Arqueiro("Legolas")
-
-mago.lançar_magia(inimigo)
-arqueiro.atirar(inimigo)</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">The Kernel crashed while executing code in the current cell or a previous cell. 
-</span>
-<span class="ansi-red-intense-fg ansi-bold">Please review the code in the cell(s) to identify a possible cause of the failure. 
-</span>
-<span class="ansi-red-intense-fg ansi-bold">Click &lt;a href='https://aka.ms/vscodeJupyterKernelCrash'&gt;here&lt;/a&gt; for more info. 
-</span>
-<span class="ansi-red-intense-fg ansi-bold">View Jupyter &lt;a href='command:jupyter.viewOutput'&gt;log&lt;/a&gt; for further details.</span></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="protegendo-os-atributos-da-classe-personagem">Protegendo os Atributos da Classe Personagem<a class="anchor-link" href="#protegendo-os-atributos-da-classe-personagem">¶</a></h3><p>A proteção dos atributos é fundamental para garantir a integridade dos dados e evitar comportamentos inesperados em nossos programas.</p>
-<p><strong>Como aplicar o encapsulamento na classe Personagem:</strong></p>
-<p>Vamos adaptar o código da classe Personagem para proteger os atributos <code>vida</code> e <code>mana</code>, permitindo apenas modificações através dos métodos <code>set_vida</code> e <code>set_mana</code>. Isso nos dará controle sobre como esses valores são alterados, evitando que sejam atribuídos valores inválidos ou inconsistentes.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy for="cell-9">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">class</span> <span class="nc">Personagem</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nome</span><span class="p">,</span> <span class="n">classe</span><span class="p">,</span> <span class="n">vida</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">mana</span><span class="o">=</span><span class="mi">50</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_nome</span> <span class="o">=</span> <span class="n">nome</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_classe</span> <span class="o">=</span> <span class="n">classe</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_vida</span> <span class="o">=</span> <span class="n">vida</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_mana</span> <span class="o">=</span> <span class="n">mana</span>
-
-    <span class="k">def</span> <span class="nf">get_nome</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_nome</span>
-
-    <span class="k">def</span> <span class="nf">get_classe</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_classe</span>
-
-    <span class="k">def</span> <span class="nf">get_vida</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_vida</span>
-
-    <span class="k">def</span> <span class="nf">set_vida</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nova_vida</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">nova_vida</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_vida</span> <span class="o">=</span> <span class="n">nova_vida</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">"A vida não pode ser negativa."</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">get_mana</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mana</span>
-
-    <span class="k">def</span> <span class="nf">set_mana</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nova_mana</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">nova_mana</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_mana</span> <span class="o">=</span> <span class="n">nova_mana</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">"A mana não pode ser negativa."</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">atacar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inimigo</span><span class="p">):</span>
-        <span class="n">dano</span> <span class="o">=</span> <span class="mi">10</span>
-        <span class="n">inimigo</span><span class="o">.</span><span class="n">set_vida</span><span class="p">(</span><span class="n">inimigo</span><span class="o">.</span><span class="n">get_vida</span><span class="p">()</span> <span class="o">-</span> <span class="n">dano</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">get_nome</span><span class="p">()</span><span class="si">}</span><span class="s2"> causou </span><span class="si">{</span><span class="n">dano</span><span class="si">}</span><span class="s2"> de dano a </span><span class="si">{</span><span class="n">inimigo</span><span class="o">.</span><span class="n">get_nome</span><span class="p">()</span><span class="si">}</span><span class="s2">!"</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">receber_dano</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dano</span><span class="p">):</span>
-        <span class="n">nova_vida</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_vida</span><span class="p">()</span> <span class="o">-</span> <span class="n">dano</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">set_vida</span><span class="p">(</span><span class="n">nova_vida</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-9">class Personagem:
-    def __init__(self, nome, classe, vida=100, mana=50):
-        self._nome = nome
-        self._classe = classe
-        self._vida = vida
-        self._mana = mana
-
-    def get_nome(self):
-        return self._nome
-
-    def get_classe(self):
-        return self._classe
-
-    def get_vida(self):
-        return self._vida
-
-    def set_vida(self, nova_vida):
-        if nova_vida &gt;= 0:
-            self._vida = nova_vida
-        else:
-            print("A vida não pode ser negativa.")
-
-    def get_mana(self):
-        return self._mana
-
-    def set_mana(self, nova_mana):
-        if nova_mana &gt;= 0:
-            self._mana = nova_mana
-        else:
-            print("A mana não pode ser negativa.")
-
-    def atacar(self, inimigo):
-        dano = 10
-        inimigo.set_vida(inimigo.get_vida() - dano)
-        print(f"{self.get_nome()} causou {dano} de dano a {inimigo.get_nome()}!")
-
-    def receber_dano(self, dano):
-        nova_vida = self.get_vida() - dano
-        self.set_vida(nova_vida)</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Analisando as mudanças:</strong></p>
-<ul>
-<li><strong>Atributos privados:</strong> Os atributos <code>_vida</code> e <code>_mana</code> agora são precedidos por um underscore, indicando que são privados e devem ser acessados apenas através dos métodos getters e setters.</li>
-<li><strong>Métodos getters e setters:</strong> Foram adicionados métodos <code>get_vida</code>, <code>set_vida</code>, <code>get_mana</code> e <code>set_mana</code> para controlar o acesso aos atributos.</li>
-<li><strong>Validação:</strong> Os métodos <code>set_vida</code> e <code>set_mana</code> verificam se o novo valor é válido antes de atribuí-lo ao atributo.</li>
-<li><strong>Método receber_dano:</strong> Foi criado um método <code>receber_dano</code> para encapsular a lógica de redução da vida do personagem, utilizando os métodos getters e setters.</li>
-</ul>
-<p><strong>Vantagens do encapsulamento:</strong></p>
-<ul>
-<li><strong>Integridade dos dados:</strong> Evita que a vida ou a mana do personagem sejam definidas como valores negativos.</li>
-<li><strong>Flexibilidade:</strong> Permite adicionar mais validações ou lógica aos métodos getters e setters no futuro, sem afetar o código que utiliza a classe.</li>
-<li><strong>Manutenibilidade:</strong> Facilita a manutenção do código, pois as regras de negócio estão centralizadas nos métodos getters e setters.</li>
-<li><strong>Segurança:</strong> Protege os dados internos da classe de modificações acidentais.</li>
-</ul>
-<p><strong>Exemplo de uso:</strong></p>
 </div>
 </div>
 </div>
@@ -3515,7 +2783,7 @@ arqueiro.atirar(inimigo)</div>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-10">
+<clipboard-copy for="cell-3">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -3525,29 +2793,73 @@ arqueiro.atirar(inimigo)</div>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Como usar</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># 03_create_data_sql.py</span>
+<span class="kn">import</span> <span class="nn">sqlite3</span>
 
-<span class="n">personagem</span> <span class="o">=</span> <span class="n">Personagem</span><span class="p">(</span><span class="s2">"Herói"</span><span class="p">,</span> <span class="s2">"Guerreiro"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">personagem</span><span class="o">.</span><span class="n">get_vida</span><span class="p">())</span>  <span class="c1"># Imprime: 100</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'clientes.db'</span><span class="p">)</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 
-<span class="c1"># Tentativa de modificar a vida diretamente (não recomendado)</span>
-<span class="c1"># personagem._vida = -10  # Isso causaria um erro</span>
+<span class="c1"># inserindo dados na tabela</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"""</span>
+<span class="s2">INSERT INTO clientesss (nome, idade, cpf, email, fone, cidade, uf, criado_em)</span>
+<span class="s2">VALUES ('Regis', 35, '00000000000', 'regis@email.com', '11-98765-4321', 'Sao Paulo', 'SP', '2014-06-08')</span>
+<span class="s2">"""</span><span class="p">)</span>
 
-<span class="c1"># Forma correta de modificar a vida</span>
-<span class="n">personagem</span><span class="o">.</span><span class="n">set_vida</span><span class="p">(</span><span class="mi">80</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">personagem</span><span class="o">.</span><span class="n">get_vida</span><span class="p">())</span>  <span class="c1"># Imprime: 80</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"""</span>
+<span class="s2">INSERT INTO clientesss (nome, idade, cpf, email, fone, cidade, uf, criado_em)</span>
+<span class="s2">VALUES ('Aloisio', 87, '11111111111', 'aloisio@email.com', '98765-4322', 'Porto Alegre', 'RS', '2014-06-09')</span>
+<span class="s2">"""</span><span class="p">)</span>
+
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"""</span>
+<span class="s2">INSERT INTO clientesss (nome, idade, cpf, email, fone, cidade, uf, criado_em)</span>
+<span class="s2">VALUES ('Bruna', 21, '22222222222', 'bruna@email.com', '21-98765-4323', 'Rio de Janeiro', 'RJ', '2014-06-09')</span>
+<span class="s2">"""</span><span class="p">)</span>
+
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"""</span>
+<span class="s2">INSERT INTO clientesss (nome, idade, cpf, email, fone, cidade, uf, criado_em)</span>
+<span class="s2">VALUES ('Matheus', 19, '33333333333', 'matheus@email.com', '11-98765-4324', 'Campinas', 'SP', '2014-06-08')</span>
+<span class="s2">"""</span><span class="p">)</span>
+
+<span class="c1"># gravando no bd</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Dados inseridos com sucesso.'</span><span class="p">)</span>
+
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-10"># Como usar
+<div class="clipboard-copy-txt" id="cell-3"># 03_create_data_sql.py
+import sqlite3
 
-personagem = Personagem("Herói", "Guerreiro")
-print(personagem.get_vida())  # Imprime: 100
+conn = sqlite3.connect('clientes.db')
+cursor = conn.cursor()
 
-# Tentativa de modificar a vida diretamente (não recomendado)
-# personagem._vida = -10  # Isso causaria um erro
+# inserindo dados na tabela
+cursor.execute("""
+INSERT INTO clientesss (nome, idade, cpf, email, fone, cidade, uf, criado_em)
+VALUES ('Regis', 35, '00000000000', 'regis@email.com', '11-98765-4321', 'Sao Paulo', 'SP', '2014-06-08')
+""")
 
-# Forma correta de modificar a vida
-personagem.set_vida(80)
-print(personagem.get_vida())  # Imprime: 80</div>
+cursor.execute("""
+INSERT INTO clientesss (nome, idade, cpf, email, fone, cidade, uf, criado_em)
+VALUES ('Aloisio', 87, '11111111111', 'aloisio@email.com', '98765-4322', 'Porto Alegre', 'RS', '2014-06-09')
+""")
+
+cursor.execute("""
+INSERT INTO clientesss (nome, idade, cpf, email, fone, cidade, uf, criado_em)
+VALUES ('Bruna', 21, '22222222222', 'bruna@email.com', '21-98765-4323', 'Rio de Janeiro', 'RJ', '2014-06-09')
+""")
+
+cursor.execute("""
+INSERT INTO clientesss (nome, idade, cpf, email, fone, cidade, uf, criado_em)
+VALUES ('Matheus', 19, '33333333333', 'matheus@email.com', '11-98765-4324', 'Campinas', 'SP', '2014-06-08')
+""")
+
+# gravando no bd
+conn.commit()
+
+print('Dados inseridos com sucesso.')
+
+conn.close()</div>
 </div>
 </div>
 </div>
@@ -3559,28 +2871,434 @@ print(personagem.get_vida())  # Imprime: 80</div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>100
-80
+<pre>Dados inseridos com sucesso.
 </pre>
 </div>
 </div>
 </div>
 </div>
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Próximos passos:</strong></p>
-<ul>
-<li><strong>Mais validações:</strong> Adicione mais validações aos métodos getters e setters para garantir a consistência dos dados.</li>
-<li><strong>Eventos:</strong> Implemente um sistema de eventos para notificar quando a vida ou a mana de um personagem atingem um determinado valor.</li>
-<li><strong>Propriedades:</strong> Explore o uso de propriedades em Python para tornar o acesso aos atributos mais intuitivo.</li>
-</ul>
-<p>Com o encapsulamento, você terá um código mais robusto, seguro e fácil de manter.</p>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-4">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># 04_read_data.py</span>
+<span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'clientes.db'</span><span class="p">)</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="c1"># lendo os dados</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"""</span>
+<span class="s2">SELECT * FROM clientesss;</span>
+<span class="s2">"""</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">linha</span> <span class="ow">in</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">linha</span><span class="p">)</span>
+
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-4"># 04_read_data.py
+import sqlite3
+
+conn = sqlite3.connect('clientes.db')
+cursor = conn.cursor()
+
+# lendo os dados
+cursor.execute("""
+SELECT * FROM clientesss;
+""")
+
+for linha in cursor.fetchall():
+    print(linha)
+
+conn.close()</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>(1, 'Regis', 35, '00000000000', 'regis@email.com', '11-98765-4321', 'Sao Paulo', 'SP', '2014-06-08')
+(2, 'Aloisio', 87, '11111111111', 'aloisio@email.com', '98765-4322', 'Porto Alegre', 'RS', '2014-06-09')
+(3, 'Bruna', 21, '22222222222', 'bruna@email.com', '21-98765-4323', 'Rio de Janeiro', 'RJ', '2014-06-09')
+(4, 'Matheus', 19, '33333333333', 'matheus@email.com', '11-98765-4324', 'Campinas', 'SP', '2014-06-08')
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-5">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># 05_update_data.py</span>
+<span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'clientes.db'</span><span class="p">)</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="n">id_cliente</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">novo_fone</span> <span class="o">=</span> <span class="s1">'11-1000-2014'</span>
+<span class="n">novo_criado_em</span> <span class="o">=</span> <span class="s1">'2014-06-11'</span>
+
+<span class="c1"># alterando os dados da tabela</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"""</span>
+<span class="s2">UPDATE clientesss</span>
+<span class="s2">SET fone = ?, criado_em = ?</span>
+<span class="s2">WHERE id = ?</span>
+<span class="s2">"""</span><span class="p">,</span> <span class="p">(</span><span class="n">novo_fone</span><span class="p">,</span> <span class="n">novo_criado_em</span><span class="p">,</span> <span class="n">id_cliente</span><span class="p">))</span>
+
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Dados atualizados com sucesso.'</span><span class="p">)</span>
+
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-5"># 05_update_data.py
+import sqlite3
+
+conn = sqlite3.connect('clientes.db')
+cursor = conn.cursor()
+
+id_cliente = 1
+novo_fone = '11-1000-2014'
+novo_criado_em = '2014-06-11'
+
+# alterando os dados da tabela
+cursor.execute("""
+UPDATE clientesss
+SET fone = ?, criado_em = ?
+WHERE id = ?
+""", (novo_fone, novo_criado_em, id_cliente))
+
+conn.commit()
+
+print('Dados atualizados com sucesso.')
+
+conn.close()</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Dados atualizados com sucesso.
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-6">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># 07_delete_data.py</span>
+<span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'clientes.db'</span><span class="p">)</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="n">id_cliente</span> <span class="o">=</span> <span class="mi">3</span>
+
+<span class="c1"># excluindo um registro da tabela</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"""</span>
+<span class="s2">DELETE FROM clientesss</span>
+<span class="s2">WHERE id = ?</span>
+<span class="s2">"""</span><span class="p">,</span> <span class="p">(</span><span class="n">id_cliente</span><span class="p">,))</span>
+
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Registro excluido com sucesso.'</span><span class="p">)</span>
+
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-6"># 07_delete_data.py
+import sqlite3
+
+conn = sqlite3.connect('clientes.db')
+cursor = conn.cursor()
+
+id_cliente = 3
+
+# excluindo um registro da tabela
+cursor.execute("""
+DELETE FROM clientesss
+WHERE id = ?
+""", (id_cliente,))
+
+conn.commit()
+
+print('Registro excluido com sucesso.')
+
+conn.close()</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Registro excluido com sucesso.
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-7">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># 09_alter_table.py</span>
+<span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'clientes.db'</span><span class="p">)</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="c1"># adicionando uma nova coluna na tabela clientes</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"""</span>
+<span class="s2">ALTER TABLE clientesss</span>
+<span class="s2">ADD COLUMN bloqueado BOOLEAN;</span>
+<span class="s2">"""</span><span class="p">)</span>
+
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Novo campo adicionado com sucesso.'</span><span class="p">)</span>
+
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-7"># 09_alter_table.py
+import sqlite3
+
+conn = sqlite3.connect('clientes.db')
+cursor = conn.cursor()
+
+# adicionando uma nova coluna na tabela clientes
+cursor.execute("""
+ALTER TABLE clientesss
+ADD COLUMN bloqueado BOOLEAN;
+""")
+
+conn.commit()
+
+print('Novo campo adicionado com sucesso.')
+
+conn.close()</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Novo campo adicionado com sucesso.
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-8">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># 10_view_table_info.py</span>
+<span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'clientes.db'</span><span class="p">)</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+<span class="n">nome_tabela</span> <span class="o">=</span> <span class="s1">'clientesss'</span>
+
+<span class="c1"># obtendo informações da tabela</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">'PRAGMA table_info(</span><span class="si">{}</span><span class="s1">)'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nome_tabela</span><span class="p">))</span>
+
+<span class="n">colunas</span> <span class="o">=</span> <span class="p">[</span><span class="n">tupla</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">tupla</span> <span class="ow">in</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Colunas:'</span><span class="p">,</span> <span class="n">colunas</span><span class="p">)</span>
+<span class="c1"># ou</span>
+<span class="c1"># for coluna in colunas:</span>
+<span class="c1">#    print(coluna)</span>
+
+<span class="c1"># listando as tabelas do bd</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"""</span>
+<span class="s2">SELECT name FROM sqlite_master WHERE type='table' ORDER BY name</span>
+<span class="s2">"""</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Tabelas:'</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">tabela</span> <span class="ow">in</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="si">%s</span><span class="s2">"</span> <span class="o">%</span> <span class="p">(</span><span class="n">tabela</span><span class="p">))</span>
+
+<span class="c1"># obtendo o schema da tabela</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"""</span>
+<span class="s2">SELECT sql FROM sqlite_master WHERE type='table' AND name=?</span>
+<span class="s2">"""</span><span class="p">,</span> <span class="p">(</span><span class="n">nome_tabela</span><span class="p">,))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Schema:'</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">schema</span> <span class="ow">in</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="si">%s</span><span class="s2">"</span> <span class="o">%</span> <span class="p">(</span><span class="n">schema</span><span class="p">))</span>
+
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-8"># 10_view_table_info.py
+import sqlite3
+
+conn = sqlite3.connect('clientes.db')
+cursor = conn.cursor()
+nome_tabela = 'clientesss'
+
+# obtendo informações da tabela
+cursor.execute('PRAGMA table_info({})'.format(nome_tabela))
+
+colunas = [tupla[1] for tupla in cursor.fetchall()]
+print('Colunas:', colunas)
+# ou
+# for coluna in colunas:
+#    print(coluna)
+
+# listando as tabelas do bd
+cursor.execute("""
+SELECT name FROM sqlite_master WHERE type='table' ORDER BY name
+""")
+
+print('Tabelas:')
+for tabela in cursor.fetchall():
+    print("%s" % (tabela))
+
+# obtendo o schema da tabela
+cursor.execute("""
+SELECT sql FROM sqlite_master WHERE type='table' AND name=?
+""", (nome_tabela,))
+
+print('Schema:')
+for schema in cursor.fetchall():
+    print("%s" % (schema))
+
+conn.close()</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Colunas: ['id', 'nome', 'idade', 'cpf', 'email', 'fone', 'cidade', 'uf', 'criado_em', 'bloqueado']
+Tabelas:
+clientesss
+sqlite_sequence
+Schema:
+CREATE TABLE clientesss (
+        id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+        nome TEXT NOT NULL,
+        idade INTEGER,
+        cpf     VARCHAR(11) NOT NULL,
+        email TEXT NOT NULL,
+        fone TEXT,
+        cidade TEXT,
+        uf VARCHAR(2) NOT NULL,
+        criado_em DATE NOT NULL
+, bloqueado BOOLEAN)
+</pre>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -3627,7 +3345,7 @@ print(personagem.get_vida())  # Imprime: 80</div>
       <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
         
           
-          <a href="../Poo/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Orientação a Objetos">
+          <a href="../introsqlite/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Sqlite Sql">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -3637,20 +3355,20 @@ print(personagem.get_vida())  # Imprime: 80</div>
                 Anterior
               </span>
               <div class="md-ellipsis">
-                Orientação a Objetos
+                Sqlite Sql
               </div>
             </div>
           </a>
         
         
           
-          <a href="../kyvi/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Kyvi">
+          <a href="../sqlite/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Introdução ao SQLite:">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Próximo
               </span>
               <div class="md-ellipsis">
-                Kyvi
+                Introdução ao SQLite:
               </div>
             </div>
             <div class="md-footer__button md-icon">
