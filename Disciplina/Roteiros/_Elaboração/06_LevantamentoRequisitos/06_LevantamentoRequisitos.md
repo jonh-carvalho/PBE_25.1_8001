@@ -1,471 +1,551 @@
-# **06 - Levantamento de Requisitos e Caso de Uso**
+# 06 - **Levantamento de Requisitos e Casos de Uso**
 
-**Sistema:** Aplicativo de Delivery de Comida (*"FastDelivery"*)
+## **Cenário de Desenvolvimento para um Censo Demográfico**  
 
----
+### **1. Contexto e Objetivo**  
 
-## **1. Identificação dos Stakeholders**
+O **Censo Demográfico** é uma pesquisa ampla que coleta dados sobre a população de um país/região, incluindo informações como:  
 
-- **Clientes:** Pessoas que fazem pedidos.
-- **Restaurantes:** Estabelecimentos parceiros.
-- **Entregadores:** Responsáveis pela logística.
-- **Administrador:** Gerencia o sistema.
+- Dados demográficos (idade, sexo, raça/cor, estado civil).  
+- Condições socioeconômicas (renda, escolaridade, emprego).  
+- Infraestrutura domiciliar (acesso a água, esgoto, energia).  
+- Mobilidade e migração.  
 
----
+**Objetivo do Projeto:**  
+Desenvolver um sistema (digital ou híbrido) para coleta, processamento e análise de dados censitários, garantindo precisão, segurança e eficiência.  
 
-### **2. Requisitos Funcionais (Exemplos)**
+---  
 
-| ID   | Descrição                                                                    | Prioridade |
-| ---- | ------------------------------------------------------------------------------ | ---------- |
-| RF01 | O cliente deve poder buscar restaurantes por nome, categoria ou localização. | Alta       |
-| RF02 | O restaurante deve poder atualizar seu cardápio no sistema.                   | Média     |
-| RF03 | O entregador deve receber notificações de novos pedidos.                     | Alta       |
+### **2. Stakeholders (Partes Interessadas)**  
 
-### **3. Requisitos Não Funcionais**
+- **Governo/IBGE (Instituto Brasileiro de Geografia e Estatística):** Principal responsável pela execução.  
+- **Entrevistadores/Agentes de campo:** Coletam dados diretamente da população.  
+- **População-alvo:** Pessoas entrevistadas.  
+- **Equipe de TI:** Desenvolve e mantém o sistema.  
+- **Analistas de dados:** Processam e interpretam os dados.  
+- **Órgãos públicos:** Utilizam os dados para políticas públicas.  
 
-- **Performance:** O app deve carregar em menos de 3 segundos.
-- **Segurança:** Dados de pagamento criptografados (PCI Compliance).
-- **Usabilidade:** Interface intuitiva (testes com usuários reais).
+---  
 
----
+### **3. Levantamento de Requisitos**  
 
-### **4. Exemplo de Caso de Uso**
+#### **3.1 Requisitos Funcionais (RF)**  
 
-#### **UC01 - Realizar Pedido**
+| ID  | Requisito | Descrição |  
+|-----|-----------|-----------|  
+| RF01 | Cadastro de Entrevistadores | Sistema deve permitir o cadastro e autenticação de agentes censitários. |  
+| RF02 | Coleta de Dados | Interface para inserção de dados demográficos (formulário digital ou offline). |  
+| RF03 | Validação de Dados | Verificação automática de inconsistências (ex.: idade inválida). |  
+| RF04 | Georreferenciamento | Registrar localização exata do domicílio (GPS). |  
+| RF05 | Geração de Relatórios | Exportar dados em formatos como CSV, PDF ou para BI. |  
+| RF06 | Segurança e Confidencialidade | Criptografia de dados e acesso restrito. |  
+| RF07 | Sincronização Offline/Online | Armazenamento local com posterior sincronização. |  
 
-- **Atores:** Cliente, Sistema.
-- **Pré-condição:** Cliente está logado e com localização ativa.
-- **Fluxo Principal:**
-  1. Cliente seleciona um restaurante.
-  2. Cliente adiciona itens ao carrinho.
-  3. Cliente escolhe a forma de pagamento (cartão/PIX).
-  4. Sistema confirma o pedido e notifica o restaurante.
-- **Fluxos Alternativos:**
-  - **FA1:** Pagamento recusado → Sistema sugere nova tentativa ou outro método.
-  - **FA2:** Restaurante indisponível → Sistema recomenda opções similares.
-- **Pós-condição:** Pedido é registrado e entra na fila de preparo.
+#### **3.2 Requisitos Não-Funcionais (RNF)**  
 
----
+| ID  | Requisito | Descrição |  
+|-----|-----------|-----------|  
+| RNF01 | Performance | Sistema deve responder em <2 segundos por formulário. |  
+| RNF02 | Escalabilidade | Suportar milhões de registros simultâneos. |  
+| RNF03 | Usabilidade | Interface intuitiva para entrevistadores com baixa familiaridade tecnológica. |  
+| RNF04 | Conformidade Legal | Adequação à LGPD (proteção de dados pessoais). |  
 
-### **5. Protótipo (Exemplo Simplificado)**
+---  
 
-- **Tela de Busca:** Barra de pesquisa + filtros (vegan, rápido, etc.).
-- **Carrinho:** Resumo dos itens + botão "Finalizar Pedido".
+### **4. Casos de Uso (Exemplos)**  
 
----
+#### **Caso de Uso 1: Realizar Entrevista**  
 
-### **6. Validação**
+- **Ator:** Entrevistador.  
+- **Pré-condição:** Entrevistador autenticado no sistema.  
+- **Fluxo Principal:**  
+  1. Entrevistador seleciona "Nova Entrevista".  
+  2. Sistema exibe formulário com campos obrigatórios (nome, idade, endereço, etc.).  
+  3. Entrevistador preenche os dados e envia.  
+  4. Sistema valida e armazena os dados.  
 
-- **Workshop com Restaurantes:** Confirmar se o fluxo de atualização de cardápio é viável.
-- **Teste A/B com Clientes:** Comparar duas versões do checkout para melhorar conversão.
+- **Fluxos Alternativos:**  
+  - Dados inválidos → Sistema solicita correção.  
+  - Sem conexão → Dados salvos localmente e sincronizados depois.  
 
+#### **Caso de Uso 2: Gerar Relatório Regional**  
 
---
+- **Ator:** Analista de dados.  
+- **Pré-condição:** Dados coletados disponíveis.  
+- **Fluxo Principal:**  
+  1. Analista seleciona região e período.  
+  2. Sistema processa e exibe dados consolidados (ex.: população por faixa etária).  
+  3. Analista exporta para Excel/PDF.  
 
-### Diagrama de Casos de Uso
+---  
 
-Aqui está o diagrama de **Caso de Uso (UML)** para o cenário de **"Realizar Pedido"** no aplicativo de delivery, usando **PlantUML**:
+### **5. Técnicas de Levantamento de Requisitos**  
 
-### **Código PlantUML**:
+- **Workshops com IBGE e entrevistadores** para entender necessidades reais.  
+- **Prototipação** de interfaces para validação com usuários.  
+- **Análise de Censos Anteriores** para identificar pontos de melhoria.  
+- **Questionários** com a população para avaliar aceitação de métodos digitais.  
+
+---  
+
+### **6. Riscos e Mitigações**  
+
+| Risco | Mitigação |  
+|-------|-----------|  
+| Resistência à tecnologia | Treinamento presencial para entrevistadores. |  
+| Falha na coleta offline | Sincronização automática quando houver conexão. |  
+| Vazamento de dados | Criptografia e acesso por autenticação forte. |  
+
+---  
+
+### **7. Conclusão**  
+
+Este cenário fornece uma base para o desenvolvimento de um sistema de censo, alinhando requisitos técnicos, operacionais e legais. A priorização deve considerar:  
+
+1. **Usabilidade** para entrevistadores em campo.  
+2. **Confiabilidade** dos dados coletados.  
+3. **Escalabilidade** para grandes volumes.  
+
+Próximos passos:  
+
+- Detalhar diagramas UML (casos de uso, fluxos).  
+- Validar protótipos com usuários reais.  
+
+---  
+
+Aqui está o diagrama de **Casos de Uso (Use Case)** em **PlantUML** para o sistema de Censo Demográfico, baseado no cenário descrito:
+
 ```plantuml
-@startuml FastDelivery_CasosDeUso
+@startuml CensoDemografico_CasosDeUso
 
 left to right direction
-skinparam actorStyle awesome
+skinparam packageStyle rectangle
+actor "Entrevistador" as entrevistador
+actor "Analista de Dados" as analista
+actor "Sistema" as sistema
 
-actor Cliente
-actor Restaurante as "Restaurante (Sistema)"
-actor Entregador
+rectangle "Censo Demográfico" {
+  usecase "RF01: Cadastrar Entrevistador" as UC01
+  usecase "RF02: Coletar Dados" as UC02
+  usecase "RF03: Validar Dados" as UC03
+  usecase "RF04: Georreferenciar Domicílio" as UC04
+  usecase "RF05: Gerar Relatório" as UC05
+  usecase "RF07: Sincronizar Dados Offline" as UC07
 
-usecase (UC01: Realizar Pedido) as UC01
-usecase (Selecionar Restaurante) as UC01_1
-usecase (Adicionar Itens ao Carrinho) as UC01_2
-usecase (Escolher Pagamento) as UC01_3
-usecase (Confirmar Pedido) as UC01_4
+  UC01 --> UC02 : <<include>>
+  UC02 --> UC03 : <<include>>
+  UC02 --> UC04 : <<include>>
+}
 
-usecase (Notificar Restaurante) as UC02
-usecase (Notificar Entregador) as UC03
-usecase (Pagamento Recusado) as FA1
-usecase (Restaurante Indisponível) as FA2
-
-Cliente --> UC01
-Cliente --> UC01_1
-Cliente --> UC01_2
-Cliente --> UC01_3
-Cliente --> UC01_4
-
-UC01_4 --> UC02 : <<include>>
-UC02 --> Restaurante
-UC02 --> UC03 : <<extend>>
-UC03 --> Entregador
-
-FA1 .> UC01_3 : <<extend>>
-FA2 .> UC01_1 : <<extend>>
-
-note right of UC01
-  **Pré-condição**: Cliente logado.
-  **Pós-condição**: Pedido registrado.
-end note
+entrevistador --> UC02 : "Realiza entrevista"
+entrevistador --> UC07 : "Sincroniza quando online"
+analista --> UC05 : "Gera relatório regional"
+sistema --> UC03 : "Valida automaticamente"
 
 @enduml
 ```
 
-### **Explicação**:
-1. **Atores**:
-   - `Cliente`: Interage com o sistema para fazer pedidos.
-   - `Restaurante` (Sistema): Recebe notificações de pedidos.
-   - `Entregador`: Recebe alertas para coleta/entrega.
+### **Explicação do Diagrama:**
 
-2. **Fluxo Principal** (dentro do caso de uso `UC01`):
-   - Selecionar Restaurante → Adicionar Itens → Escolher Pagamento → Confirmar Pedido.
+1. **Atores Principais:**  
+   - **Entrevistador:** Responsável por coletar dados (RF02) e sincronizá-los (RF07).  
+   - **Analista de Dados:** Gera relatórios (RF05).  
+   - **Sistema:** Executa validações automáticas (RF03).  
 
-3. **Relacionamentos**:
-   - `<<include>>`: "Confirmar Pedido" **requer** "Notificar Restaurante".
-   - `<<extend>>`: Fluxos alternativos (pagamento recusado/restaurante indisponível).
+2. **Casos de Uso:**  
+   - **RF01 → RF02:** O entrevistador deve estar cadastrado (RF01) para coletar dados (RF02).  
+   - **RF02 inclui RF03 e RF04:** Durante a coleta, o sistema valida dados (RF03) e registra a localização (RF04).  
+   - **RF07:** Funcionalidade crítica para áreas sem internet.  
 
-4. **Notas**: Condições do cenário.
+3. **Relacionamentos:**  
+   - `<<include>>` indica dependência obrigatória entre casos de uso.  
 
----
+---  
 
-### **Visualização do Diagrama**:
-(Se estiver usando uma IDE como VS Code com extensão PlantUML, o código acima gerará um diagrama similar a este:)
-
-```
-+-------------+       +---------------------+
-|   Cliente   |       |  Restaurante (Sist) |
-+-------------+       +---------------------+
-      |                         ^
-      v                         |
-+---------------------+         |
-| UC01: Realizar Pedido|         |
-| 1. Selecionar Rest. |         |
-| 2. Adicionar Itens  |         |
-| 3. Escolher Pagamento|        |
-| 4. Confirmar Pedido |----------
-+---------------------+  <<include>> 
-      |                         
-      v                         
-+---------------------+         +---------------+
-|   Pagamento Recusado |<<extend|  Notificar    |
-|   Rest. Indisponível |         | Entregador   |
-+---------------------+         +---------------+
-                                      ^
-                                      |
-                              +---------------+
-                              |   Entregador  |
-                              +---------------+
-```
-
----
-
-### **Dica**:
-- Para ver o diagrama visualmente, cole o código em ferramentas como:
-  - [PlantText](https://www.planttext.com/)
-  - [PlantUML Web Server](http://www.plantuml.com/plantuml/uml/).
-
----
-
-### Protótipo
-
-Aqui está o protótipo de **telas do aplicativo de delivery** usando **Salt (PlantUML)**, alinhado ao caso de uso anterior:
-
----
-
-### **Código PlantUML (Salt)**
-```plantuml
-@startsalt
-{
-  {^
-    <b>FastDelivery - Buscar Restaurantes</b>
-  }
-  {
-    [🔍 Buscar...] | [Filtros ▼]
-  }
-  {
-    (X) Restaurante A      | ⭐ 4.5
-    () Restaurante B      | ⭐ 4.2
-    () Restaurante C      | ⭐ 4.7
-  }
-  {
-    [Ver Cardápio] | [Voltar]
-  }
-}
-
-@startsalt
-{
-  {^
-    <b>Restaurante A - Cardápio</b>
-  }
-  {
-    (X) Pizza Margherita   | R$ 35.00
-    () Hambúrguer Artesanal | R$ 28.00
-    () Salada Caesar       | R$ 22.00
-  }
-  {
-    [Adicionar ao Carrinho] | [Voltar]
-  }
-}
-
-@startsalt
-{
-  {^
-    <b>Carrinho de Compras</b>
-  }
-  {
-    "Pizza Margherita"  | R$ 35.00
-    "Hambúrguer"       | R$ 28.00
-    "Taxa de Entrega"  | R$ 5.00
-    --------------------------
-    "Total"            | R$ 68.00
-  }
-  {
-    [Continuar para Pagamento] | [Editar]
-  }
-}
-
-@startsalt
-{
-  {^
-    <b>Pagamento</b>
-  }
-  {
-    () Cartão Crédito (•••• 1234)
-    () PIX
-    () Dinheiro na Entrega
-  }
-  {
-    [Finalizar Pedido] | [Cancelar]
-  }
-}
-
-@startsalt
-{
-  {^
-    <b>Pedido Confirmado!</b>
-  }
-  {
-    ! Pedido #1234 recebido!
-    "Tempo estimado:" 30-40 min.
-  }
-  {
-    [Acompanhar Pedido] | [Voltar ao Início]
-  }
-}
-```
-
----
-
-### **Telas Prototipadas (Fluxo do Caso de Uso)**  
-1. **Buscar Restaurantes**:  
-   - Barra de busca + filtros.  
-   - Lista de restaurantes com seleção (radio buttons).  
-
-2. **Cardápio do Restaurante**:  
-   - Itens selecionáveis com preços.  
-   - Botão para adicionar ao carrinho.  
-
-3. **Carrinho**:  
-   - Resumo dos itens + valor total.  
-   - Ação para prosseguir ao pagamento.  
-
-4. **Pagamento**:  
-   - Opções de pagamento (cartão, PIX, dinheiro).  
-   - Confirmação do pedido.  
-
-5. **Confirmação**:  
-   - Feedback de sucesso + tempo de entrega.  
-
----
-
-### **Como Visualizar**  
-- Cole o código em ferramentas como:  
-  - [PlantText](https://www.planttext.com/) (suporte a Salt).  
-  - VS Code com extensão **PlantUML**.  
-
----
-
-### **Exemplo de Saída (Estilizada)**  
-```
-+------------------------------+
-| FastDelivery - Buscar Restaur.|
-+------------------------------+
-| [🔍 Buscar...] | [Filtros ▼]  |
-+------------------------------+
-| (X) Restaurante A | ⭐ 4.5    |
-| () Restaurante B  | ⭐ 4.2    |
-+------------------------------+
-| [Ver Cardápio] | [Voltar]    |
-+------------------------------+
-```
-
----
-
-### **Personalização**  
-- Para adicionar **mais telas** (ex.: login, acompanhamento de entrega):  
-  ```plantuml
-  @startsalt
-  {
-    {^ <b>Login</b> }
-    {
-      "E-mail:"   [               ]
-      "Senha:"   [               ]
-    }
-    {
-      [Entrar] | [Criar Conta]
-    }
-  }
-  ```
-
-  ---
-
-  ### Diagrama de Classe
-
-  Aqui está o **diagrama de classes conceitual** para o sistema de delivery, representando os principais conceitos e seus relacionamentos:
-
-### Diagrama de Classes (PlantUML)
+Aqui está um **protótipo de interface (wireframe)** usando o **plugin Salt** do PlantUML, representando a tela de coleta de dados do Censo Demográfico conforme os casos de uso anteriores:
 
 ```plantuml
-@startuml FastDelivery_DiagramaClasses
+@startsalt
+{
+  {# 
+   **Sistema de Censo Demográfico** 
+   [Versão 1.0 | Usuário: Agente_0251 | Local: São Paulo-SP]
+  }
 
-class Cliente {
-  - id: String
-  - nome: String
-  - email: String
-  - localizacao: String
-  + buscarRestaurantes()
-  + fazerPedido()
+  {T
+   | Entrevista | Domicílio | Sincronizar | Sair |
+  }
+
+  {#
+   **Formulário de Coleta de Dados** (RF02)
+  }
+
+  {FORM
+    Nome completo:    | "Maria da Silva"          |
+    Idade:           | "35"                      | [Validar (RF03)]
+    Sexo:            | (X) Feminino  ( ) Masculino  ( ) Outro |
+    Raça/Cor:        | [Branca ▼]                |
+    Endereço:        | "Rua das Flores, 123"     |
+    Georreferenciar: | [Capturar GPS (RF04)]     | *12.3456, -45.6789*
+  }
+
+  {#
+   **Condições do Domicílio** (RF02)
+  }
+
+  {FORM
+    Água encanada?:  | (X) Sim  ( ) Não         |
+    Esgoto:          | ( ) Rede  (X) Fossa  ( ) Nenhum |
+    Energia elétrica:| (X) Sim  ( ) Não         |
+  }
+
+  {#
+   [Salvar Local (RF07)]  | [Enviar para Nuvem]  | [Cancelar]
+  }
+}
+@endsalt
+```
+
+---  
+
+### **Explicação do Protótipo (Salt UML):**
+
+1. **Cabeçalho:**  
+   - Mostra o nome do sistema, versão, usuário logado (entrevistador) e localização.
+
+2. **Abas Principais (RF02):**  
+   - **Entrevista** (ativo), Domicílio, Sincronizar (RF07), Sair.
+
+3. **Formulário de Dados Pessoais:**  
+   - Campos obrigatórios (Nome, Idade, Sexo, Raça/Cor).  
+   - Botão "Validar" (RF03) para checar inconsistências.  
+   - Georreferenciamento (RF04) com coordenadas GPS.  
+
+4. **Condições do Domicílio:**  
+   - Checkboxes para infraestrutura básica (água, esgoto, energia).  
+
+5. **Botões de Ação:**  
+   - **Salvar Local** (RF07): Permite armazenamento offline.  
+   - **Enviar para Nuvem**: Sincroniza quando há conexão.  
+
+---  
+
+### **Visualização do Wireframe:**
+
+O Salt gera um layout semelhante a este:  
+![Protótipo Salt](https://via.placeholder.com/600x400/FFFFFF/000000?text=Wireframe+Censo+Demográfico)
+
+---  
+
+### **Como Melhorar?**  
+
+- **Adicionar Validação em Tempo Real** (ex.: idade não pode ser > 120).  
+- **Ícones** para ações (GPS, sincronização).  
+- **Modo Acessível** (alto contraste, leitor de tela).  
+
+---  
+
+Aqui está o **diagrama de classes conceitual** em **PlantUML** para o sistema de Censo Demográfico, alinhado com os requisitos e casos de uso anteriores:
+
+```plantuml
+@startuml DiagramaDeClasses_CensoDemografico
+
+' --- Classes Principais ---
+class Entrevistador {
+  + matricula: String
+  + nome: String
+  + areaCobertura: String
+  + autenticar(): boolean
 }
 
-class Restaurante {
-  - id: String
-  - nome: String
-  - cardapio: List<Item>
-  - localizacao: String
-  + atualizarCardapio()
-  + confirmarPedido()
+class Domicilio {
+  + id: String
+  + endereco: String
+  + coordenadas: GeoJSON
+  + temAguaEncanada: boolean
+  + temEnergia: boolean
+  + tipoEsgoto: Enum
 }
 
-class Pedido {
-  - id: String
-  - itens: List<Item>
-  - status: String
-  - valorTotal: Double
-  + calcularTotal()
-  + atualizarStatus()
+class Entrevista {
+  + id: String
+  + dataHora: DateTime
+  + sincronizada: boolean
+  + validarDados(): boolean
 }
 
-class Item {
-  - id: String
-  - nome: String
-  - preco: Double
-  - categoria: String
+class Pessoa {
+  + nome: String
+  + idade: Integer
+  + sexo: Enum
+  + racaCor: Enum
+  + escolaridade: String
+  + renda: Decimal
 }
 
-class Entregador {
-  - id: String
-  - nome: String
-  - veiculo: String
-  + aceitarPedido()
-  + atualizarLocalizacao()
+class Relatorio {
+  + id: String
+  + regiao: String
+  + periodo: String
+  + gerarPDF(): byte[]
+  + exportarCSV(): String
 }
 
-class Pagamento {
-  - id: String
-  - metodo: String
-  - valor: Double
-  - status: String
-  + processarPagamento()
+' --- Relacionamentos ---
+Entrevistador "1" -- "0..*" Entrevista : Realiza >
+Domicilio "1" -- "1..*" Pessoa : Abriga >
+Entrevista "1" -- "1" Domicilio : Coleta em >
+Entrevista "1" -- "1..*" Pessoa : Registra >
+Relatorio "1" ..> "1..*" Entrevista : Consolida <
+
+' --- Enums ---
+enum TipoEsgoto {
+  REDE_PUBLICA
+  FOSSA
+  NENHUM
 }
 
-' Relacionamentos
-Cliente "1" --> "0..*" Pedido
-Restaurante "1" --> "0..*" Pedido
-Pedido "1" --> "1..*" Item
-Pedido "1" --> "1" Pagamento
-Pedido "1" --> "0..1" Entregador
-Restaurante "1" --> "0..*" Item
+enum Sexo {
+  FEMININO
+  MASCULINO
+  OUTRO
+}
+
+enum RacaCor {
+  BRANCA
+  PRETA
+  PARDA
+  INDIGENA
+  AMARELA
+}
 
 @enduml
 ```
 
-### Explicação:
-1. **Classes Principais**:
-   - **Cliente**: Realiza pedidos e busca restaurantes.
-   - **Restaurante**: Oferece itens do cardápio e confirma pedidos.
-   - **Pedido**: Agrupa itens, calcula total e rastreia status.
-   - **Item**: Produtos individuais do cardápio.
-   - **Entregador**: Responsável pela entrega.
-   - **Pagamento**: Processa transações.
+---  
 
-2. **Relacionamentos**:
-   - Um cliente faz **0 ou N** pedidos.
-   - Um pedido contém **1 ou N** itens.
-   - Um restaurante tem **0 ou N** itens no cardápio.
-   - Cada pedido tem **exatamente 1** pagamento.
-   - Um pedido pode estar associado a **0 ou 1** entregador.
+### **Explicação do Diagrama Classe:**
 
-3. **Atributos e Métodos**:
-   - Atributos privados (indicados por `-`) e métodos públicos (`+`).
-   - Exemplo: `Pedido.calcularTotal()` soma os preços dos itens.
+#### **Classes Principais:**
 
----
+1. **`Entrevistador`**  
+   - Atributos: `matricula`, `nome`, `areaCobertura`.  
+   - Método: `autenticar()` (para login no sistema).  
 
-### Visualização Esperada:
+2. **`Domicilio`**  
+   - Atributos: `endereco`, `coordenadas` (georreferenciamento – RF04), `temAguaEncanada`, etc.  
+   - Relacionamento com `Pessoa` (um domicílio pode abrigar várias pessoas).  
+
+3. **`Entrevista`**  
+   - Atributos: `dataHora`, `sincronizada` (RF07 – offline/online).  
+   - Método: `validarDados()` (RF03 – checa inconsistências).  
+
+4. **`Pessoa`**  
+   - Atributos demográficos: `idade`, `sexo`, `racaCor`, `escolaridade`, etc.  
+
+5. **`Relatorio`**  
+   - Métodos: `gerarPDF()`, `exportarCSV()` (RF05 – geração de relatórios).  
+
+#### **Relacionamentos:**
+
+- **`Entrevistador → Entrevista`**: Um entrevistador realiza múltiplas entrevistas.  
+- **`Domicilio → Pessoa`**: Composição (um domicílio contém pessoas).  
+- **`Entrevista → Domicilio/Pessoa`**: Agregação (a entrevista registra dados dessas classes).  
+- **`Relatorio → Entrevista`**: Dependência (consolida dados de entrevistas).  
+
+#### **Enums:**  
+
+- Definem opções padronizadas para campos como `sexo`, `racaCor` e `tipoEsgoto`.  
+
+---  
+
+Aqui está a implementação em **Python** das classes do diagrama conceitual do Censo Demográfico, seguindo boas práticas de POO (incluindo type hints e enums):
+
+```python
+from datetime import datetime
+from enum import Enum
+from typing import List, Optional, Dict, Any
+from pydantic import BaseModel  # Para validação de dados (opcional)
+
+# --- Enums ---
+class TipoEsgoto(str, Enum):
+    REDE_PUBLICA = "Rede Pública"
+    FOSSA = "Fossa"
+    NENHUM = "Nenhum"
+
+class Sexo(str, Enum):
+    FEMININO = "Feminino"
+    MASCULINO = "Masculino"
+    OUTRO = "Outro"
+
+class RacaCor(str, Enum):
+    BRANCA = "Branca"
+    PRETA = "Preta"
+    PARDA = "Parda"
+    INDIGENA = "Indígena"
+    AMARELA = "Amarela"
+
+# --- Classes Principais ---
+class Entrevistador:
+    def __init__(self, matricula: str, nome: str, area_cobertura: str):
+        self.matricula = matricula
+        self.nome = nome
+        self.area_cobertura = area_cobertura
+
+    def autenticar(self, senha: str) -> bool:
+        # Lógica fictícia de autenticação
+        return senha == f"{self.matricula}@censo"
+
+class Domicilio:
+    def __init__(
+        self,
+        id: str,
+        endereco: str,
+        coordenadas: Dict[str, float],
+        tem_agua_encanada: bool,
+        tem_energia: bool,
+        tipo_esgoto: TipoEsgoto
+    ):
+        self.id = id
+        self.endereco = endereco
+        self.coordenadas = coordenadas
+        self.tem_agua_encanada = tem_agua_encanada
+        self.tem_energia = tem_energia
+        self.tipo_esgoto = tipo_esgoto
+
+class Pessoa:
+    def __init__(
+        self,
+        nome: str,
+        idade: int,
+        sexo: Sexo,
+        raca_cor: RacaCor,
+        escolaridade: str,
+        renda: float
+    ):
+        self.nome = nome
+        self.idade = idade
+        self.sexo = sexo
+        self.raca_cor = raca_cor
+        self.escolaridade = escolaridade
+        self.renda = renda
+
+class Entrevista:
+    def __init__(self, id: str, entrevistador: Entrevistador, domicilio: Domicilio):
+        self.id = id
+        self.data_hora = datetime.now()
+        self.sincronizada = False
+        self.entrevistador = entrevistador
+        self.domicilio = domicilio
+        self.pessoas: List[Pessoa] = []
+
+    def adicionar_pessoa(self, pessoa: Pessoa):
+        self.pessoas.append(pessoa)
+
+    def validar_dados(self) -> bool:
+        return all([
+            self.domicilio.id,
+            len(self.pessoas) > 0,
+            all(p.idade > 0 for p in self.pessoas)
+        ])
+
+class Relatorio:
+    def __init__(self, id: str, regiao: str, periodo: str):
+        self.id = id
+        self.regiao = regiao
+        self.periodo = periodo
+
+    def gerar_pdf(self, entrevistas: List[Entrevista]) -> bytes:
+        # Simulação: gerar PDF fictício
+        return f"PDF do relatório {self.id}".encode()
+
+    def exportar_csv(self, entrevistas: List[Entrevista]) -> str:
+        # Simulação: gerar CSV fictício
+        return "nome,idade,sexo\n" + "\n".join(
+            f"{p.nome},{p.idade},{p.sexo.value}"
+            for entrevista in entrevistas
+            for p in entrevista.pessoas
+        )
+
+# --- Exemplo de Uso ---
+if __name__ == "__main__":
+    # 1. Criar entrevistador
+    entrevistador = Entrevistador(
+        matricula="12345",
+        nome="Maria Silva",
+        area_cobertura="São Paulo"
+    )
+
+    # 2. Criar domicílio
+    domicilio = Domicilio(
+        id="CASA_001",
+        endereco="Rua das Flores, 123",
+        coordenadas={"lat": -23.5505, "lng": -46.6333},
+        tem_agua_encanada=True,
+        tem_energia=True,
+        tipo_esgoto=TipoEsgoto.REDE_PUBLICA
+    )
+
+    # 3. Criar entrevista e adicionar pessoas
+    entrevista = Entrevista("ENT_001", entrevistador, domicilio)
+    entrevista.adicionar_pessoa(Pessoa(
+        nome="João da Silva",
+        idade=35,
+        sexo=Sexo.MASCULINO,
+        raca_cor=RacaCor.PARDA,
+        escolaridade="Ensino Médio",
+        renda=2500.0
+    ))
+
+    # 4. Validar e gerar relatório
+    if entrevista.validar_dados():
+        relatorio = Relatorio("REL_2023", "Sudeste", "2023")
+        csv = relatorio.exportar_csv([entrevista])
+        print(csv)
 ```
-+-------------+       +-------------+       +-------------+
-|   Cliente   |       | Restaurante |       |  Entregador |
-+-------------+       +-------------+       +-------------+
-| - id        |       | - id        |       | - id        |
-| - nome      |       | - nome      |       | - nome      |
-| - email     |       | - cardapio  |       | - veiculo   |
-| - localizacao|      | - localizacao|      +------------+
-+-------------+       +-------------+             ^
-      |                   |                      |
-      | 1              1  |                      | 0..1
-      v                   v                      |
-+-------------+       +-------------+       +-------------+
-|   Pedido    |       |    Item     |       |  Pagamento  |
-+-------------+       +-------------+       +-------------+
-| - id        |       | - id        |       | - id        |
-| - itens     |       | - nome      |       | - metodo    |
-| - status    |       | - preco     |       | - valor     |
-| - valorTotal|       | - categoria |       | - status    |
-+-------------+       +-------------+       +-------------+
-      | 1..*               ^                      ^ 1
-      |____________________|                      |
+
+---  
+
+### **Principais Características:**
+
+1. **Enums**:  
+   - `TipoEsgoto`, `Sexo`, `RacaCor` garantem valores padronizados.
+
+2. **Classes**:  
+   - **`Entrevistador`**: Gerencia autenticação.  
+   - **`Domicilio`**: Armazena dados georreferenciados.  
+   - **`Pessoa`**: Contém atributos demográficos.  
+   - **`Entrevista`**: Agrega pessoas e valida dados.  
+   - **`Relatorio`**: Gera saídas em PDF/CSV.
+
+3. **Type Hints**:  
+   - Tipos estáticos para melhor legibilidade e autocomplete.
+
+4. **Exemplo Prático**:  
+   - Demonstra como criar objetos e relacioná-los.
+
+---  
+
+### **Como Executar?**
+
+1. Salve como `censo.py`.
+2. Execute com:
+
+```bash
+   python censo.py
 ```
 
----
+   Saída (CSV exemplo):
 
-### Adaptações Possíveis:
-1. **Adicionar Herança**:
-   ```plantuml
-   class Usuario {
-     - id: String
-     - nome: String
-   }
-   class Cliente {
-     - localizacao: String
-   }
-   class Entregador {
-     - veiculo: String
-   }
-   Usuario <|-- Cliente
-   Usuario <|-- Entregador
-   ```
+```bash
+   nome,idade,sexo
+   João da Silva,35,Masculino
+```
 
-2. **Incluir Enums** (ex.: status do pedido):
-   ```plantuml
-   enum StatusPedido {
-     EM_PREPARO
-     EM_TRANSITO
-     ENTREGUE
-   }
-   class Pedido {
-     - status: StatusPedido
-   }
-   ```
+---  
 
---- 
+### **Melhorias Possíveis:**
 
-
+- **Persistência**: Adicionar SQLAlchemy para salvar em banco de dados.
+- **API REST**: Usar FastAPI para expor endpoints.
+- **Validação Avançada**: Integrar `pydantic` para validação de campos.
