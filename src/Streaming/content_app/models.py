@@ -6,7 +6,8 @@ class Content(models.Model):
         ('audio', 'Áudio'),
         ('video', 'Vídeo'),
     ]
-
+    
+    
     title = models.CharField(max_length=255)
     description = models.TextField()
     file_url = models.URLField()
@@ -22,7 +23,7 @@ class Content(models.Model):
     def __str__(self):
         return self.title
     
-    
+
 """ 
 # criar um relacionamento manytomany
 class Playlist(models.Model):
