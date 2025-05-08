@@ -1,6 +1,10 @@
+# 6 - Fetch consume API
+
+## Introdução
+
 Para criar um aplicativo **HTML/JavaScript** que consome o endpoint `contents` da API Django REST, podemos usar **fetch API** para fazer as requisições. Vou fornecer uma estrutura básica com um exemplo funcional que faz as operações de **GET** para listar o conteúdo e **POST** para criar um novo conteúdo.
 
-### Passos:
+### Passos para Implementação
 
 1. **Estrutura HTML**: Vamos criar um formulário para adicionar novo conteúdo e uma tabela para listar os conteúdos.
 2. **JavaScript**: Funções para realizar as requisições HTTP utilizando `fetch`.
@@ -11,6 +15,7 @@ Para criar um aplicativo **HTML/JavaScript** que consome o endpoint `contents` d
 ### 1. **Criação do arquivo HTML/JavaScript**
 
 #### Arquivo: `index.html`
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -198,16 +203,19 @@ document.getElementById("contentForm").addEventListener("submit", addContent);
 ### Explicação do Código
 
 1. **HTML Estrutura:**
+
    - Um formulário na seção `form-section` permite adicionar um novo conteúdo, com campos para **título**, **descrição**, **URL do arquivo**, **URL da miniatura**, **tipo de conteúdo** (vídeo ou áudio), e um checkbox para indicar se é **público**.
    - Uma tabela na seção `content-list` lista os conteúdos que são retornados da API.
 
 2. **JavaScript:**
+
    - A função `fetchContents()` faz uma requisição **GET** para o endpoint `contents` e preenche a tabela com os dados.
    - A função `addContent()` faz uma requisição **POST** para o mesmo endpoint, criando um novo conteúdo com base nos dados fornecidos pelo usuário no formulário.
    - A função `fetchContents()` é chamada no evento `DOMContentLoaded` para listar os conteúdos assim que a página é carregada.
    - O evento de **submit** do formulário é tratado por `addContent()` para enviar o conteúdo à API.
 
-3. **CSS:** 
+3. **CSS:**
+
    - O CSS básico estiliza o layout da página, a tabela e o formulário, mantendo a interface limpa e funcional.
 
 ---

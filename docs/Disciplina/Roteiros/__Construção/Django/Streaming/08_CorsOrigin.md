@@ -1,3 +1,7 @@
+# Cross-Origin
+
+## Introdução
+
 Para habilitar o *Cross-Origin Resource Sharing* (CORS) no Django, você pode utilizar o pacote `django-cors-headers`. Ele permite configurar quais domínios externos têm permissão para acessar sua API, especialmente útil para permitir que um front-end hospedado em um domínio diferente consuma dados da sua aplicação Django. Veja o passo a passo:
 
 ### Passo 1: Instalar o `django-cors-headers`
@@ -37,13 +41,13 @@ MIDDLEWARE = [
 Existem duas opções principais para configurar os domínios que podem acessar sua API:
 
 1. **Permitir todos os domínios** (não recomendado para produção):
-   
+
 ```python
    CORS_ALLOW_ALL_ORIGINS = True
 ```
 
 2. **Permitir domínios específicos**:
-   
+
 ```python
    CORS_ALLOWED_ORIGINS = [
        "https://example.com",

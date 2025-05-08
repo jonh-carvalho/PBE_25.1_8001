@@ -1,3 +1,7 @@
+# 7 - **Django Admin**
+
+## Introdução
+
 O **Django Admin** é uma ferramenta robusta e personalizável, que permite gerenciar os dados do banco e configurar o backend da aplicação através de uma interface administrativa. A seguir, estão algumas das principais características de personalização do Django Admin, que tornam a ferramenta ainda mais poderosa para desenvolvedores e administradores:
 
 ### 1. **ModelAdmin: Customização de Exibição dos Modelos**

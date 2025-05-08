@@ -1,5 +1,7 @@
 # 10 Autenticação
 
+## Introdução
+
 Para autenticar no Django REST Framework (DRF) e consumir a API como um usuário logado, você pode usar várias abordagens de autenticação, como:
 
 1. **Autenticação via Token**.

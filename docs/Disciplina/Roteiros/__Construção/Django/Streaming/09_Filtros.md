@@ -1,4 +1,6 @@
-# 09 Filtros
+# 9 - **Filtros**
+
+## Introdução
 
 Para implementar o filtro você pode definir manualmente o filtro na sua view, utilizando parâmetros de query (`query params`) para filtrar o `content_type` diretamente na sua consulta.
 
