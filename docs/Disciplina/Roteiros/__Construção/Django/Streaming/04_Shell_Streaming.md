@@ -1,3 +1,7 @@
+# 04 - **Django Shell**
+
+## Introdução
+
 O **Django Shell** é uma ferramenta interativa extremamente útil para trabalhar diretamente com os dados da sua aplicação, testar funcionalidades, e manipular modelos de forma rápida. No caso do app de streaming de áudio e vídeo que criamos, o Django Shell pode ser usado para executar várias operações no banco de dados sem precisar criar views ou usar a interface do admin.
 
 ### Acessando o Django Shell
