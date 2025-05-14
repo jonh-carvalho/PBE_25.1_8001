@@ -1,3 +1,7 @@
+# 06 - Relacionamento NxN
+
+## Playlist
+
 Para criar o modelo `Playlist` conforme a modelagem mencionada, ele deve ter relacionamentos com as classes `Content` e `User`. A `Playlist` representará uma coleção de conteúdos (áudios ou vídeos) que pertence a um usuário específico.
 
 Abaixo está o código para definir o modelo `Playlist` no Django, assumindo que você já possui as classes `Content` e `User` configuradas.
