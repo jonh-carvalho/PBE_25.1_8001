@@ -1,0 +1,16 @@
+{
+  "name": "js-web-app",
+  "version": "1.0.0",
+  "description": "A web application that consumes a Django REST API using Fetch API.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
