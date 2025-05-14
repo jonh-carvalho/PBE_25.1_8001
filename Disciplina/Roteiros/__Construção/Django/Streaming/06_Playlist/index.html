@@ -20,7 +20,7 @@
     
     
       
-        <title>06 Playlist - Projeto Back-End</title>
+        <title>06 - Relacionamento NxN - Projeto Back-End</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modelo-playlist" class="md-skip">
+        <a href="#06-relacionamento-nxn" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              06 Playlist
+              06 - Relacionamento NxN
             
           </span>
         </div>
@@ -1229,13 +1229,15 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   
   <span class="md-ellipsis">
-    06 Playlist
+    06 - Relacionamento NxN
     
   </span>
   
@@ -1248,7 +1250,7 @@
   
   
   <span class="md-ellipsis">
-    06 Playlist
+    06 - Relacionamento NxN
     
   </span>
   
@@ -1261,6 +1263,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1269,6 +1273,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#playlist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Playlist
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Playlist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#modelo-playlist" class="md-nav__link">
     <span class="md-ellipsis">
       Modelo Playlist
@@ -1276,8 +1290,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#explicacao-dos-campos" class="md-nav__link">
     <span class="md-ellipsis">
       Explicação dos Campos
@@ -1285,13 +1299,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#exemplo-de-uso-no-django-shell" class="md-nav__link">
     <span class="md-ellipsis">
       Exemplo de Uso no Django Shell
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2604,6 +2623,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2612,6 +2633,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#playlist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Playlist
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Playlist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#modelo-playlist" class="md-nav__link">
     <span class="md-ellipsis">
       Modelo Playlist
@@ -2619,8 +2650,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#explicacao-dos-campos" class="md-nav__link">
     <span class="md-ellipsis">
       Explicação dos Campos
@@ -2628,13 +2659,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#exemplo-de-uso-no-django-shell" class="md-nav__link">
     <span class="md-ellipsis">
       Exemplo de Uso no Django Shell
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2657,8 +2693,8 @@
   
 
 
-  <h1>06 Playlist</h1>
-
+<h1 id="06-relacionamento-nxn">06 - Relacionamento NxN</h1>
+<h2 id="playlist">Playlist</h2>
 <p>Para criar o modelo <code>Playlist</code> conforme a modelagem mencionada, ele deve ter relacionamentos com as classes <code>Content</code> e <code>User</code>. A <code>Playlist</code> representará uma coleção de conteúdos (áudios ou vídeos) que pertence a um usuário específico.</p>
 <p>Abaixo está o código para definir o modelo <code>Playlist</code> no Django, assumindo que você já possui as classes <code>Content</code> e <code>User</code> configuradas.</p>
 <h3 id="modelo-playlist">Modelo <code>Playlist</code></h3>
