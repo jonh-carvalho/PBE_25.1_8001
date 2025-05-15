@@ -16,10 +16,10 @@
 | __12__ - 07/05/25     | :material-check: App |
 | __13__ - 14/05/25     | :material-check: App |
 | __14__ - 21/05/25     | :material-check: App |
-| __15__ - 08/06/25     | :material-check: App |
-| __16__ - 15/06/25     | :material-check: AP2 - Apresentação Projeto |
-| __17__ - 22/06/25     | ----- |
-| __18__ - 29/06/25     | :material-check: AS |
+| __15__ - 28/05/25     | :material-check: App |
+| __16__ - 04/06/25     | :material-check: Entrega do App |
+| __17__ - 11/06/25     | :material-check: AP2 - Apresentação Projeto |
+| __18__ - 18/06/25     | :material-check: AS |
 
 <!--    
 <div class="grid cards" markdown>
