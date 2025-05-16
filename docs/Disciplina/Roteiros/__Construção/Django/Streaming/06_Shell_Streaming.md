@@ -1,4 +1,4 @@
-# 04 - **Django Shell**
+# 06 - **Django Shell**
 
 ## Introdução
 
