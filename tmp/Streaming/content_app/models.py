@@ -24,7 +24,7 @@ class Content(models.Model):
         return self.title
     
 
-""" 
+ 
 # criar um relacionamento manytomany
 class Playlist(models.Model):
     title = models.CharField(max_length=255)
@@ -33,6 +33,9 @@ class Playlist(models.Model):
 
     def __str__(self):
         return self.title
+
+"""
+# criar um relacionamento onetomany
 #criar um relacionamento onetoone
 class Comment(models.Model):
     content = models.ForeignKey(Content, on_delete=models.CASCADE)

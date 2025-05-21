@@ -10,22 +10,22 @@ Através do `ModelAdmin`, você pode controlar a forma como cada modelo é exibi
 
 - **`list_display`**: Define os campos que serão exibidos na lista de registros do modelo. Por exemplo:
 
-  ```python
-  class ContentAdmin(admin.ModelAdmin):
-      list_display = ('title', 'content_type', 'is_public', 'created_at')
-  ```
+```python
+class ContentAdmin(admin.ModelAdmin):
+    list_display = ('title', 'content_type', 'is_public', 'created_at')
+```
 
 - **`list_filter`**: Adiciona filtros laterais para facilitar a segmentação dos registros. Exemplo:
 
-  ```python
-  list_filter = ('content_type', 'is_public', 'created_at')
-  ```
+```python
+list_filter = ('content_type', 'is_public', 'created_at')
+```
 
 - **`search_fields`**: Permite adicionar um campo de busca para procurar registros específicos. Exemplo:
 
-  ```python
-  search_fields = ('title', 'description')
-  ```
+```python
+search_fields = ('title', 'description')
+```
 
 ### 2. **Campos de Ordenação**
 
@@ -54,18 +54,18 @@ Você pode definir quais campos serão exibidos na página de edição, bem como
 
 - **`fields`**: Define os campos que estarão disponíveis no formulário.
   
-  ```python
-  fields = ('title', 'description', 'file_url', 'thumbnail_url')
-  ```
+```python
+fields = ('title', 'description', 'file_url', 'thumbnail_url')
+```
 
 - **`fieldsets`**: Agrupa os campos em seções, permitindo adicionar cabeçalhos de seção:
 
-  ```python
-  fieldsets = (
-      ('Informações Básicas', {'fields': ('title', 'description')}),
-      ('Detalhes do Arquivo', {'fields': ('file_url', 'thumbnail_url')}),
+```python
+fieldsets = (
+    ('Informações Básicas', {'fields': ('title', 'description')}),
+    ('Detalhes do Arquivo', {'fields': ('file_url', 'thumbnail_url')}),
   )
-  ```
+```
 
 ### 5. **Ações Personalizadas**
 
@@ -74,7 +74,7 @@ Com o Django Admin, você pode definir ações customizadas para executar opera�
 ```python
 def make_public(modeladmin, request, queryset):
     queryset.update(is_public=True)
-make_public.short_description = "Marcar conteúdos como públicos"
+    make_public.short_description = "Marcar conteúdos como públicos"
 
 class ContentAdmin(admin.ModelAdmin):
     actions = [make_public]
@@ -86,38 +86,31 @@ Além dos filtros de lista, você pode criar filtros personalizados para necessi
 
 - **Filtros Personalizados**: Use o `SimpleListFilter` para definir filtros avançados.
   
-  ```python
-  from django.contrib.admin import SimpleListFilter
+```python
+from django.contrib.admin import SimpleListFilter
 
-  class PublicContentFilter(SimpleListFilter):
-      title = 'public'
-      parameter_name = 'is_public'
+class PublicContentFilter(SimpleListFilter):
+    title = 'public'
+    parameter_name = 'is_public'
 
-      def lookups(self, request, model_admin):
-          return [('yes', 'Public'), ('no', 'Private')]
+    def lookups(self, request, model_admin):
+        return [('yes', 'Public'), ('no', 'Private')]
 
-      def queryset(self, request, queryset):
-          if self.value() == 'yes':
-              return queryset.filter(is_public=True)
-          if self.value() == 'no':
-              return queryset.filter(is_public=False)
+    def queryset(self, request, queryset):
+        if self.value() == 'yes':
+            return queryset.filter(is_public=True)
+        if self.value() == 'no':
+            return queryset.filter(is_public=False)
 
-  class ContentAdmin(admin.ModelAdmin):
-      list_filter = (PublicContentFilter,)
-  ```
+class ContentAdmin(admin.ModelAdmin):
+    list_filter = (PublicContentFilter,)
+```
 
-### 7. **Permissões e Controle de Acesso**
-
-O Django Admin permite definir permissões específicas por modelo e campo, como:
-
-- **Permissões por modelo**: No `ModelAdmin`, você pode restringir quem pode visualizar, adicionar, editar ou excluir registros.
-- **Controle de campos específicos**: Restringe quem pode ver ou editar campos específicos. Isso é feito criando métodos como `has_change_permission`.
-
-### 8. **Edição em Lote**
+### 7. **Edição em Lote**
 
 A edição em lote facilita a atualização rápida de registros selecionados ao permitir que se aplique ações de uma só vez.
 
-### 9. **Customização de Templates e CSS**
+### 8. **Customização de Templates e CSS**
 
 O Django permite que você substitua os templates do admin ou altere o CSS para refletir um estilo específico, modificando o visual da interface administrativa.
 
@@ -147,3 +140,10 @@ admin.site.register(Content, ContentAdmin)
 ```
 
 Com essas configurações, o Django Admin se torna uma interface poderosa para a administração do seu app de streaming, com filtros, personalizações e uma aparência adaptada ao fluxo de trabalho. Isso otimiza o gerenciamento de conteúdo, facilitando a navegação e a organização dos registros.
+
+### 9. **Permissões e Controle de Acesso**
+
+O Django Admin permite definir permissões específicas por modelo e campo, como:
+
+- **Permissões por modelo**: No `ModelAdmin`, você pode restringir quem pode visualizar, adicionar, editar ou excluir registros.
+- **Controle de campos específicos**: Restringe quem pode ver ou editar campos específicos. Isso é feito criando métodos como `has_change_permission`.
