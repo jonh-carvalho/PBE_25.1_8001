@@ -13,13 +13,14 @@
 | __09__ - 16/04/25     | :material-check: Feriado  |
 | __10__ - 23/04/25     | :material-check: Introdução SQL - Sqlite  |
 | __11__ - 30/04/25     | :material-check: Feriado |
-| __12__ - 07/05/25     | :material-check: App |
-| __13__ - 14/05/25     | :material-check: App |
-| __14__ - 21/05/25     | :material-check: App |
+| __12__ - 07/05/25     | :material-check: App Streaming - Roteiro Model Content - Postman|
+| __13__ - 14/05/25     | :material-check: App Streaming - Roteiro Model Playlist - Shell |
+| __14__ - 21/05/25     | :material-check: App Streaming - Roteiro Model associações - Admin - Cors |
 | __15__ - 28/05/25     | :material-check: App |
 | __16__ - 04/06/25     | :material-check: Entrega do App |
 | __17__ - 11/06/25     | :material-check: AP2 - Apresentação Projeto |
-| __18__ - 18/06/25     | :material-check: AS |
+| __18__ - 18/06/25     | :material-check: -- |
+| __19__ - 25/06/25     | :material-check: AS |
 
 <!--    
 <div class="grid cards" markdown>
