@@ -65,4 +65,6 @@ class ViewHistory(models.Model):
 # 7. ASSOCIAÇÃO BIDIRECIONAL (Bidirectional Association)
 
     def __str__(self):
-        return self.text """
+        return self.text 
+        
+"""
