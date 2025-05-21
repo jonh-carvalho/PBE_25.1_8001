@@ -1,6 +1,5 @@
-Ótimo! Vamos adaptar a solução de **comando customizado (management command)** para que leia dados de um arquivo **JSON** ao invés de CSV.
+# 07 - **Cargas de Dados**
 
----
 
 ## ✅ 1. Estrutura do JSON (`contents.json`)
 
