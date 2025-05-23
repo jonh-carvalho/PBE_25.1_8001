@@ -12,13 +12,13 @@ Através do `ModelAdmin`, você pode controlar a forma como cada modelo é exibi
 
 ```python
 class ContentAdmin(admin.ModelAdmin):
-    list_display = ('title', 'content_type', 'is_public', 'created_at')
+    list_display = ('title', 'content_type', 'is_public')
 ```
 
 - **`list_filter`**: Adiciona filtros laterais para facilitar a segmentação dos registros. Exemplo:
 
 ```python
-list_filter = ('content_type', 'is_public', 'created_at')
+list_filter = ('content_type', 'is_public')
 ```
 
 - **`search_fields`**: Permite adicionar um campo de busca para procurar registros específicos. Exemplo:
@@ -32,7 +32,7 @@ search_fields = ('title', 'description')
 Com a opção `ordering`, você pode definir a ordem padrão em que os registros serão exibidos.
 
 ```python
-ordering = ['-created_at']
+ordering = ['-updated_at']
 ```
 
 ### 3. **Campos de Edição Inline**
@@ -125,10 +125,10 @@ class CommentInline(admin.TabularInline):
     extra = 1
 
 class ContentAdmin(admin.ModelAdmin):
-    list_display = ('title', 'content_type', 'is_public', 'created_at')
-    list_filter = ('content_type', 'is_public', 'created_at')
+    list_display = ('title', 'content_type', 'is_public')
+    list_filter = ('content_type', 'is_public')
     search_fields = ('title', 'description')
-    ordering = ['-created_at']
+    ordering = ['-updated_at']
     inlines = [CommentInline]
     actions = [make_public]
     fieldsets = (
@@ -147,3 +147,91 @@ O Django Admin permite definir permissões específicas por modelo e campo, como
 
 - **Permissões por modelo**: No `ModelAdmin`, você pode restringir quem pode visualizar, adicionar, editar ou excluir registros.
 - **Controle de campos específicos**: Restringe quem pode ver ou editar campos específicos. Isso é feito criando métodos como `has_change_permission`.
+
+
+---
+
+## 🧩 **Modelo Content (exemplo base)**
+
+```python
+# models.py
+from django.db import models
+from django.contrib.auth.models import User
+
+class Content(models.Model):
+    CONTENT_TYPE_CHOICES = (
+        ('audio', 'Áudio'),
+        ('video', 'Vídeo'),
+    )
+
+    title = models.CharField(max_length=255)
+    description = models.TextField()
+    file_url = models.URLField()
+    thumbnail_url = models.URLField()
+    content_type = models.CharField(max_length=10, choices=CONTENT_TYPE_CHOICES)
+    created_at = models.DateTimeField(auto_now_add=True)
+    owner = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.title
+```
+
+---
+
+## 🛠️ **Admin personalizado**
+
+```python
+# admin.py
+from django.contrib import admin
+from .models import Content
+
+@admin.register(Content)
+class ContentAdmin(admin.ModelAdmin):
+    list_display = ('title', 'owner', 'content_type', 'created_at')
+    list_filter = ('content_type', 'created_at')
+    search_fields = ('title', 'description')
+
+    def has_view_permission(self, request, obj=None):
+        return request.user.has_perm("app.view_content") or request.user.is_superuser
+
+    def has_add_permission(self, request):
+        return request.user.groups.filter(name='Criadores').exists()
+
+    def has_change_permission(self, request, obj=None):
+        if obj and obj.owner != request.user and not request.user.is_superuser:
+            return False
+        return True
+
+    def has_delete_permission(self, request, obj=None):
+        return request.user.is_superuser
+
+    def get_fields(self, request, obj=None):
+        fields = ['title', 'description', 'file_url', 'thumbnail_url', 'content_type']
+        if request.user.is_superuser:
+            fields.append('owner')
+        return fields
+
+    def get_readonly_fields(self, request, obj=None):
+        readonly = ['created_at']
+        if not request.user.is_superuser:
+            readonly.extend(['owner'])
+        return readonly
+
+    def save_model(self, request, obj, form, change):
+        if not obj.pk:  # Se for criação
+            obj.owner = request.user
+        super().save_model(request, obj, form, change)
+```
+
+---
+
+## ✅ Regras aplicadas:
+
+* Apenas usuários do grupo "Criadores" podem adicionar.
+* Somente o **criador do conteúdo** ou um **superusuário** pode editar.
+* Apenas **superusuários** podem excluir conteúdos.
+* Campos como `owner` e `created_at` são apenas leitura.
+* Filtros e buscas estão ativados por `content_type`, `created_at`, `title`, `description`.
+
+---
+
