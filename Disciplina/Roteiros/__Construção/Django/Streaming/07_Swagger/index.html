@@ -2781,35 +2781,36 @@
 <li><strong>Configurar o <code>drf-yasg</code> no Projeto</strong></li>
 </ol>
 <p>Abra o arquivo <code>urls.py</code> do seu projeto Django (geralmente o <code>urls.py</code> no diretório principal do projeto) e adicione as seguintes configurações para incluir a documentação Swagger.</p>
-<p>```python
-   #streaming_platform/urls.py
+<pre><code class="language-python">   #streaming_platform/urls.py
    from django.urls import path, re_path
    from rest_framework import permissions
    from drf_yasg.views import get_schema_view
-   from drf_yasg import openapi</p>
-<p># Configuração do Swagger
+   from drf_yasg import openapi
+
+   # Configuração do Swagger
    schema_view = get_schema_view(
        openapi.Info(
-           title="API de Conteúdos",
+           title=&quot;API de Conteúdos&quot;,
            default_version='v1',
-           description="Documentação da API para o app de streaming de áudio e vídeo",
-           terms_of_service="https://www.google.com/policies/terms/",
-           contact=openapi.Contact(email="suporte@exemplo.com"),
-           license=openapi.License(name="Licença BSD"),
+           description=&quot;Documentação da API para o app de streaming de áudio e vídeo&quot;,
+           terms_of_service=&quot;https://www.google.com/policies/terms/&quot;,
+           contact=openapi.Contact(email=&quot;suporte@exemplo.com&quot;),
+           license=openapi.License(name=&quot;Licença BSD&quot;),
        ),
        public=True,
        permission_classes=(permissions.AllowAny,),
-   )</p>
-<p>urlpatterns = [
+   )
+
+   urlpatterns = [
        # Suas outras URLs
        path('admin/', admin.site.urls),
-       path('api/', include('app.urls')),  # Inclua as URLs do seu app</p>
-<div class="language-text highlight"><pre><span></span><code>   # URLs do Swagger
-   re_path(r&#39;^swagger/$&#39;, schema_view.with_ui(&#39;swagger&#39;, cache_timeout=0), name=&#39;schema-swagger-ui&#39;),
-   re_path(r&#39;^redoc/$&#39;, schema_view.with_ui(&#39;redoc&#39;, cache_timeout=0), name=&#39;schema-redoc&#39;),
-</code></pre></div>
-<p>]
-   ```</p>
+       path('api/', include('app.urls')),  # Inclua as URLs do seu app
+
+       # URLs do Swagger
+       re_path(r'^swagger/$', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+       re_path(r'^redoc/$', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
+   ]
+</code></pre>
 <ol>
 <li><strong>Acessar a Documentação Swagger e ReDoc</strong></li>
 </ol>
