@@ -32,7 +32,7 @@ Abaixo, vamos ver como configurar a **Autenticação via Token** no Django e com
    INSTALLED_APPS = [
        # Outros apps
        'rest_framework',
-       'rest_authtoken',
+       'rest_framework.authtoken',
    ]
 ```
 

@@ -18,7 +18,7 @@ Para adicionar o Swagger ao seu projeto Django com Django REST Framework, você 
 
    Abra o arquivo `urls.py` do seu projeto Django (geralmente o `urls.py` no diretório principal do projeto) e adicione as seguintes configurações para incluir a documentação Swagger.
 
-   ```python
+```python
    #streaming_platform/urls.py
    from django.urls import path, re_path
    from rest_framework import permissions
@@ -48,7 +48,7 @@ Para adicionar o Swagger ao seu projeto Django com Django REST Framework, você 
        re_path(r'^swagger/$', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
        re_path(r'^redoc/$', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
    ]
-   ```
+```
 
 3. **Acessar a Documentação Swagger e ReDoc**
 
