@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../10_Admin_Streaming/">
+        <link rel="prev" href="../14_Regras%20de%20Neg%C3%B3cio/">
       
       
-        <link rel="next" href="../12_Filtros/">
+        <link rel="next" href="../../../Poo/Poo/">
       
       
       <link rel="icon" href="../../../../../../images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>011 - Autenticação - Projeto Back-End</title>
+        <title>15 - Deploy - Projeto Back-End</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#011-autenticacao" class="md-skip">
+        <a href="#15-deploy" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              011 - Autenticação
+              15 - Deploy
             
           </span>
         </div>
@@ -1140,6 +1140,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../07_Swagger/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    07 - Swagger
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../08_CorsOrigin/" class="md-nav__link">
         
   
@@ -1200,6 +1221,90 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../11_Associa%C3%A7%C3%B5es/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11 - Associações
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12_Autentica%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12 - Autenticação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13_Filtros/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    13 - Filtros
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14_Regras%20de%20Neg%C3%B3cio/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14 - Regras de negócio
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1216,7 +1321,7 @@
           
   
   <span class="md-ellipsis">
-    011 - Autenticação
+    15 - Deploy
   </span>
   
 
@@ -1227,7 +1332,7 @@
         
   
   <span class="md-ellipsis">
-    011 - Autenticação
+    15 - Deploy
   </span>
   
 
@@ -1249,65 +1354,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introducao" class="md-nav__link">
+  <a href="#1-pre-requisitos" class="md-nav__link">
     <span class="md-ellipsis">
-      Introdução
+      ✅ 1. Pré-requisitos
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#autenticacao-via-token" class="md-nav__link">
+  <a href="#2-prepare-o-projeto-django" class="md-nav__link">
     <span class="md-ellipsis">
-      Autenticação via Token
+      ✅ 2. Prepare o projeto Django
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Autenticação via Token">
+    <nav class="md-nav" aria-label="✅ 2. Prepare o projeto Django">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#passo-1-configurar-autenticacao-por-token-no-django-rest-framework" class="md-nav__link">
+  <a href="#21-instale-pacotes-necessarios" class="md-nav__link">
     <span class="md-ellipsis">
-      Passo 1: Configurar Autenticação por Token no Django REST Framework
+      2.1. Instale pacotes necessários:
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#passo-2-gerar-tokens-de-autenticacao" class="md-nav__link">
+  <a href="#22-adicione-ao-requirementstxt" class="md-nav__link">
     <span class="md-ellipsis">
-      Passo 2: Gerar Tokens de Autenticação
+      2.2. Adicione ao requirements.txt:
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#passo-3-obter-o-token-de-autenticacao" class="md-nav__link">
+  <a href="#23-crie-o-arquivo-procfile-sem-extensao" class="md-nav__link">
     <span class="md-ellipsis">
-      Passo 3: Obter o Token de Autenticação
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#passo-4-usar-o-token-para-consumir-a-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      Passo 4: Usar o Token para Consumir a API
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Passo 4: Usar o Token para Consumir a API">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#exemplo-de-consumo-no-postman" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exemplo de Consumo no Postman
+      2.3. Crie o arquivo Procfile (sem extensão):
     </span>
   </a>
   
@@ -1317,20 +1403,30 @@
     </nav>
   
 </li>
+      
+        <li class="md-nav__item">
+  <a href="#3-configuracoes-no-settingspy" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ 3. Configurações no settings.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ 3. Configurações no settings.py">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#alternativa-uso-no-frontend-com-javascript-fetch-api" class="md-nav__link">
+  <a href="#31-altere-allowed_hosts" class="md-nav__link">
     <span class="md-ellipsis">
-      Alternativa: Uso no Frontend com JavaScript (Fetch API)
+      3.1. Altere ALLOWED_HOSTS:
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#consideracoes-finais" class="md-nav__link">
+  <a href="#32-use-o-sqlite-apenas-se-quiser-simplicidade-render-permite-isso-para-uso-mais-serio-use-postgresql" class="md-nav__link">
     <span class="md-ellipsis">
-      Considerações Finais
+      3.2. Use o SQLite apenas se quiser simplicidade (Render permite isso). Para uso mais sério, use PostgreSQL.
     </span>
   </a>
   
@@ -1338,6 +1434,60 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-configurar-arquivos-estaticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ 4. Configurar arquivos estáticos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-comitar-no-git-e-subir-no-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ 5. Comitar no Git e subir no GitHub
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-criar-app-no-render" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ 6. Criar app no Render
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-coletar-arquivos-estaticos-e-migrar-banco" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ 7. Coletar arquivos estáticos e migrar banco
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-acessar-o-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ 8. Acessar o site
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Observações
+    </span>
+  </a>
   
 </li>
       
@@ -1345,27 +1495,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../12_Filtros/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    012 - Filtros
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -2501,65 +2630,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introducao" class="md-nav__link">
+  <a href="#1-pre-requisitos" class="md-nav__link">
     <span class="md-ellipsis">
-      Introdução
+      ✅ 1. Pré-requisitos
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#autenticacao-via-token" class="md-nav__link">
+  <a href="#2-prepare-o-projeto-django" class="md-nav__link">
     <span class="md-ellipsis">
-      Autenticação via Token
+      ✅ 2. Prepare o projeto Django
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Autenticação via Token">
+    <nav class="md-nav" aria-label="✅ 2. Prepare o projeto Django">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#passo-1-configurar-autenticacao-por-token-no-django-rest-framework" class="md-nav__link">
+  <a href="#21-instale-pacotes-necessarios" class="md-nav__link">
     <span class="md-ellipsis">
-      Passo 1: Configurar Autenticação por Token no Django REST Framework
+      2.1. Instale pacotes necessários:
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#passo-2-gerar-tokens-de-autenticacao" class="md-nav__link">
+  <a href="#22-adicione-ao-requirementstxt" class="md-nav__link">
     <span class="md-ellipsis">
-      Passo 2: Gerar Tokens de Autenticação
+      2.2. Adicione ao requirements.txt:
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#passo-3-obter-o-token-de-autenticacao" class="md-nav__link">
+  <a href="#23-crie-o-arquivo-procfile-sem-extensao" class="md-nav__link">
     <span class="md-ellipsis">
-      Passo 3: Obter o Token de Autenticação
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#passo-4-usar-o-token-para-consumir-a-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      Passo 4: Usar o Token para Consumir a API
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Passo 4: Usar o Token para Consumir a API">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#exemplo-de-consumo-no-postman" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exemplo de Consumo no Postman
+      2.3. Crie o arquivo Procfile (sem extensão):
     </span>
   </a>
   
@@ -2569,20 +2679,30 @@
     </nav>
   
 </li>
+      
+        <li class="md-nav__item">
+  <a href="#3-configuracoes-no-settingspy" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ 3. Configurações no settings.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ 3. Configurações no settings.py">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#alternativa-uso-no-frontend-com-javascript-fetch-api" class="md-nav__link">
+  <a href="#31-altere-allowed_hosts" class="md-nav__link">
     <span class="md-ellipsis">
-      Alternativa: Uso no Frontend com JavaScript (Fetch API)
+      3.1. Altere ALLOWED_HOSTS:
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#consideracoes-finais" class="md-nav__link">
+  <a href="#32-use-o-sqlite-apenas-se-quiser-simplicidade-render-permite-isso-para-uso-mais-serio-use-postgresql" class="md-nav__link">
     <span class="md-ellipsis">
-      Considerações Finais
+      3.2. Use o SQLite apenas se quiser simplicidade (Render permite isso). Para uso mais sério, use PostgreSQL.
     </span>
   </a>
   
@@ -2590,6 +2710,60 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-configurar-arquivos-estaticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ 4. Configurar arquivos estáticos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-comitar-no-git-e-subir-no-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ 5. Comitar no Git e subir no GitHub
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-criar-app-no-render" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ 6. Criar app no Render
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-coletar-arquivos-estaticos-e-migrar-banco" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ 7. Coletar arquivos estáticos e migrar banco
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-acessar-o-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ 8. Acessar o site
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Observações
+    </span>
+  </a>
   
 </li>
       
@@ -2611,109 +2785,98 @@
   
 
 
-<h1 id="011-autenticacao">011 - <strong>Autenticação</strong></h1>
-<h2 id="introducao">Introdução</h2>
-<p>Para autenticar no Django REST Framework (DRF) e consumir a API como um usuário logado, você pode usar várias abordagens de autenticação, como:</p>
-<ol>
-<li><strong>Autenticação via Token</strong>.</li>
-<li><strong>Autenticação via Sessão/Cookie (principalmente para navegadores)</strong>.</li>
-<li><strong>Autenticação JWT</strong> (JSON Web Token).</li>
-</ol>
-<h2 id="autenticacao-via-token">Autenticação via Token</h2>
-<p>Abaixo, vamos ver como configurar a <strong>Autenticação via Token</strong> no Django e como consumir a API com um token de autenticação.</p>
-<h3 id="passo-1-configurar-autenticacao-por-token-no-django-rest-framework">Passo 1: Configurar Autenticação por Token no Django REST Framework</h3>
-<p>1. Instale o pacote <code>djangorestframework</code> (caso ainda não tenha):</p>
-<pre><code class="language-bash">    pip install djangorestframework
-</code></pre>
-<p>2. Instale o pacote <code>django-rest-authtoken</code>, necessário para gerar e gerenciar tokens de autenticação:</p>
-<pre><code class="language-bash">   pip install django-rest-authtoken
-</code></pre>
-<p>3. Adicione <code>rest_framework</code> e <code>rest_framework.authtoken</code> ao <code>INSTALLED_APPS</code> no seu <code>settings.py</code>:</p>
-<pre><code class="language-python">   INSTALLED_APPS = [
-       # Outros apps
-       'rest_framework',
-       'rest_authtoken',
-   ]
-</code></pre>
-<p>4. Configure o Django REST Framework para usar a autenticação por token:</p>
-<pre><code class="language-python">   # settings.py
-
-   REST_FRAMEWORK = {
-       'DEFAULT_AUTHENTICATION_CLASSES': [
-           'rest_framework.authentication.TokenAuthentication',
-       ],
-       'DEFAULT_PERMISSION_CLASSES': [
-           'rest_framework.permissions.IsAuthenticated',
-       ],
-   }
-</code></pre>
-<p>5. Execute a migração para criar as tabelas necessárias:</p>
-<pre><code class="language-bash">   python manage.py migrate
-</code></pre>
-<h3 id="passo-2-gerar-tokens-de-autenticacao">Passo 2: Gerar Tokens de Autenticação</h3>
-<p>Crie uma URL para o endpoint de obtenção de tokens de autenticação. No seu <code>urls.py</code>, adicione:</p>
-<pre><code class="language-python">from django.urls import path
-from rest_framework.authtoken.views import obtain_auth_token
-
-urlpatterns = [
-    # Outras rotas
-    path('api/token/', obtain_auth_token, name='api_token_auth'),
-]
-</code></pre>
-<p>Com isso, os usuários poderão obter tokens enviando uma requisição <code>POST</code> com suas credenciais (usuário e senha) para <code>api/token/</code>.</p>
-<h3 id="passo-3-obter-o-token-de-autenticacao">Passo 3: Obter o Token de Autenticação</h3>
-<p>Para obter o token, você pode usar o <code>curl</code>, Postman, ou qualquer cliente HTTP. No Postman, por exemplo:</p>
+<h1 id="15-deploy">15 - Deploy</h1>
+<p>O <strong>deploy mais simples</strong> de um projeto <strong>Django REST com SQLite</strong> é usando o <strong><a href="https://render.com/">Render.com</a></strong> — ideal para testes, MVPs ou protótipos.</p>
+<hr />
+<h2 id="1-pre-requisitos">✅ 1. <strong>Pré-requisitos</strong></h2>
 <ul>
-<li>Envie uma requisição <code>POST</code> para <code>http://localhost:8000/api/token/</code>.</li>
-<li>No corpo da requisição (<code>body</code>), envie as credenciais como <code>x-www-form-urlencoded</code>:</li>
+<li>Conta no <a href="https://github.com/">GitHub</a></li>
+<li>Conta no <a href="https://render.com/">Render</a></li>
+<li>Projeto Django REST funcional (com <code>requirements.txt</code>, <code>manage.py</code>, etc.)</li>
 </ul>
-<pre><code class="language-plaintext">   username: seu_usuario
-   password: sua_senha
+<hr />
+<h2 id="2-prepare-o-projeto-django">✅ 2. <strong>Prepare o projeto Django</strong></h2>
+<h3 id="21-instale-pacotes-necessarios">2.1. Instale pacotes necessários:</h3>
+<pre><code class="language-bash">pip install gunicorn dj-database-url python-dotenv
 </code></pre>
-<p>ou no body -&gt; raw -&gt; json</p>
-<pre><code class="language-json">{
-        &quot;username&quot;: &quot;admin&quot;,
-        &quot;password&quot;: &quot;123456&quot;
-
-    }
-
-A resposta será o token de autenticação do usuário, por exemplo:
-
-```json
-{
-    &quot;token&quot;: &quot;c1c82e123abc123abcde4567def01234abcd5678&quot;
-}
+<h3 id="22-adicione-ao-requirementstxt">2.2. Adicione ao <code>requirements.txt</code>:</h3>
+<pre><code class="language-bash">pip freeze &gt; requirements.txt
 </code></pre>
-<h3 id="passo-4-usar-o-token-para-consumir-a-api">Passo 4: Usar o Token para Consumir a API</h3>
-<p>Agora, ao consumir a API, adicione o token ao cabeçalho de autenticação (<code>Authorization</code>) usando o formato <code>Token &lt;token&gt;</code>.</p>
-<h4 id="exemplo-de-consumo-no-postman">Exemplo de Consumo no Postman</h4>
+<h3 id="23-crie-o-arquivo-procfile-sem-extensao">2.3. Crie o arquivo <code>Procfile</code> (sem extensão):</h3>
+<pre><code class="language-procfile">web: gunicorn nome_do_projeto.wsgi
+</code></pre>
+<p>Substitua <code>nome_do_projeto</code> pelo nome da pasta principal do seu Django (onde está o <code>settings.py</code>).</p>
+<hr />
+<h2 id="3-configuracoes-no-settingspy">✅ 3. <strong>Configurações no <code>settings.py</code></strong></h2>
+<h3 id="31-altere-allowed_hosts">3.1. Altere <code>ALLOWED_HOSTS</code>:</h3>
+<pre><code class="language-python">import os
+ALLOWED_HOSTS = ['*']  # Em produção, use o domínio real
+</code></pre>
+<h3 id="32-use-o-sqlite-apenas-se-quiser-simplicidade-render-permite-isso-para-uso-mais-serio-use-postgresql">3.2. Use o SQLite apenas se quiser simplicidade (Render permite isso). Para uso mais sério, use PostgreSQL.</h3>
+<hr />
+<h2 id="4-configurar-arquivos-estaticos">✅ 4. <strong>Configurar arquivos estáticos</strong></h2>
+<p>No final do <code>settings.py</code>:</p>
+<pre><code class="language-python">STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+</code></pre>
+<hr />
+<h2 id="5-comitar-no-git-e-subir-no-github">✅ 5. <strong>Comitar no Git e subir no GitHub</strong></h2>
+<pre><code class="language-bash">git init
+git add .
+git commit -m &quot;first commit&quot;
+git remote add origin https://github.com/seuusuario/seurepo.git
+git push -u origin main
+</code></pre>
+<hr />
+<h2 id="6-criar-app-no-render">✅ 6. <strong>Criar app no Render</strong></h2>
 <ol>
-<li>Acesse qualquer endpoint da API protegido, como <code>http://localhost:8000/api/contents/</code>.</li>
-<li>No cabeçalho (<code>Headers</code>), adicione:</li>
-</ol>
-<pre><code class="language-plaintext">  Key: Authorization 
-  value: token c1c82e123abc123abcde4567def01234abcd5678
-</code></pre>
-<p>Com esse cabeçalho, o Django REST Framework identificará o usuário autenticado e permitirá o acesso aos recursos da API, desde que o usuário tenha as permissões necessárias.</p>
-<h3 id="alternativa-uso-no-frontend-com-javascript-fetch-api">Alternativa: Uso no Frontend com JavaScript (Fetch API)</h3>
-<p>Se estiver consumindo a API com JavaScript no frontend, o código para usar o token ficaria assim:</p>
-<pre><code class="language-javascript">fetch('http://localhost:8000/api/contents/', {
-    method: 'GET',
-    headers: {
-        'Authorization': 'Token c1c82e123abc123abcde4567def01234abcd5678',
-        'Content-Type': 'application/json'
-    }
-})
-.then(response =&gt; response.json())
-.then(data =&gt; console.log(data))
-.catch(error =&gt; console.error('Error:', error));
-</code></pre>
-<h3 id="consideracoes-finais">Considerações Finais</h3>
+<li>
+<p>Vá para <a href="https://dashboard.render.com/">Render Dashboard</a></p>
+</li>
+<li>
+<p>Clique em <strong>"New Web Service"</strong></p>
+</li>
+<li>
+<p>Conecte-se ao GitHub e selecione o repositório</p>
+</li>
+<li>
+<p>Configure:</p>
+</li>
+<li>
+<p><strong>Name</strong>: nome do app</p>
+</li>
+<li><strong>Runtime</strong>: Python</li>
+<li><strong>Build Command</strong>: <code>pip install -r requirements.txt</code></li>
+<li><strong>Start Command</strong>: <code>gunicorn nome_do_projeto.wsgi</code></li>
+<li><strong>Environment</strong>: <code>Python 3</code></li>
+<li>
+<p><strong>Environment Variables</strong>:</p>
 <ul>
-<li><strong>Manter o Token Seguro</strong>: Evite expor o token em locais de fácil acesso ou em JavaScript sem proteção.</li>
-<li><strong>Token Expirável (opcional)</strong>: O pacote <code>django-rest-framework-simplejwt</code> oferece tokens JWT com tempo de expiração configurável, se precisar de tokens mais seguros.</li>
+<li><code>DJANGO_SECRET_KEY</code> = sua chave secreta</li>
+<li><code>DEBUG</code> = False</li>
+<li><code>PYTHON_VERSION</code> = 3.10 (ou similar)</li>
 </ul>
-<p>Esse fluxo permite que seu app Django autentique usuários e proteja rotas da API, limitando o acesso a quem possui um token válido.</p>
+</li>
+<li>
+<p>Clique em <strong>Create Web Service</strong></p>
+</li>
+</ol>
+<hr />
+<h2 id="7-coletar-arquivos-estaticos-e-migrar-banco">✅ 7. <strong>Coletar arquivos estáticos e migrar banco</strong></h2>
+<p>Após o deploy, vá no painel do serviço → aba <strong>Shell</strong>:</p>
+<pre><code class="language-bash">python manage.py collectstatic --noinput
+python manage.py migrate
+</code></pre>
+<hr />
+<h2 id="8-acessar-o-site">✅ 8. <strong>Acessar o site</strong></h2>
+<p>Seu app Django REST estará publicado no domínio <code>.onrender.com</code>.</p>
+<hr />
+<h2 id="observacoes">📝 Observações</h2>
+<ul>
+<li>O SQLite funciona, mas é <strong>volátil</strong>: ao reiniciar o container, os dados são perdidos.</li>
+<li>Para persistência real, use PostgreSQL (Render oferece serviço de banco gratuito).</li>
+</ul>
+<hr />
 
 
 
@@ -2749,7 +2912,7 @@ A resposta será o token de autenticação do usuário, por exemplo:
       <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
         
           
-          <a href="../10_Admin_Streaming/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 10 - Django Admin">
+          <a href="../14_Regras%20de%20Neg%C3%B3cio/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 14 - Regras de negócio">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -2759,20 +2922,20 @@ A resposta será o token de autenticação do usuário, por exemplo:
                 Anterior
               </span>
               <div class="md-ellipsis">
-                10 - Django Admin
+                14 - Regras de negócio
               </div>
             </div>
           </a>
         
         
           
-          <a href="../12_Filtros/" class="md-footer__link md-footer__link--next" aria-label="Próximo: 012 - Filtros">
+          <a href="../../../Poo/Poo/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Orientação a Objetos">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Próximo
               </span>
               <div class="md-ellipsis">
-                012 - Filtros
+                Orientação a Objetos
               </div>
             </div>
             <div class="md-footer__button md-icon">
