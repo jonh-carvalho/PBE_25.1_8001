@@ -1,1 +1,18 @@
-<h1>Bem-vindo ao meu site template!</h1>
+
+    <h1>Galeria de Fotos</h1>
+    <div class="gallery" id="gallery"></div>
+    
+    <script>
+        // Usando a API pública https://picsum.photos
+        fetch('https://picsum.photos/v2/list?page=1&limit=12')
+            .then(response => response.json())
+            .then(photos => {
+                const gallery = document.getElementById('gallery');
+                photos.forEach(photo => {
+                    const img = document.createElement('img');
+                    img.src = `https://picsum.photos/id/${photo.id}/400/400`;
+                    img.alt = photo.author;
+                    gallery.appendChild(img);
+                });
+            });
+    </script>
