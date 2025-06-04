@@ -220,7 +220,7 @@ ou
       </body></html>
 ```
 
-3. Crie um arquivo `home.html` na pasta `myapp/templates/myapp`:  
+3. Crie um arquivo `home.html` na pasta `myapp/templates`:  
 
 ```html
    <h1>Bem-vindo ao meu site!</h1>
@@ -234,21 +234,7 @@ ou
    {% block content %}{% include "home.html" %}{% endblock %}
 ```
 
-5. Certifique-se de incluir as URLs da aplicação no projeto principal (`myproject/urls.py`):
-
-```python
-   from django.contrib import admin
-   from django.urls import path, include
-
-   urlpatterns = [
-       path('admin/', admin.site.urls),
-       path('', include('myapp.urls')),
-       path('api/', include('myapp.api_urls')),
-
-   ]
-```
-
-## Passo 11: Adicionar urls para o template acima
+5. Adicionar urls para o template acima
 
 ```python
    from django.urls import path  
@@ -258,7 +244,7 @@ ou
    ]
 ```
 
-## Passo 12: Adicionar Views para template acima
+6. Adicionar Views para template acima
 
 ```python   
    from django.shortcuts import render 
@@ -269,28 +255,152 @@ ou
 ```
 
 
-11. Crie um arquivo `forms.py` na pasta `myapp`:
+## Criar o template e os arquivos necessários para CRUD de Produto
 
-```python   
-   from django import forms
-   from .models import Produto   
+### 1. Criar o formulário para Produto
 
-   class ProdutoForm(forms.ModelForm):   
-       class Meta:       
-           model = Produto           
-           fields = ['nome', 'preco', 'descricao', 'disponivel']   
-```
-
-12. Crie um arquivo `admin.py` na pasta `myapp`:
+No arquivo `forms.py` da pasta `myapp`:
 
 ```python
-   from django.contrib import admin    
-   from .models import Produto       
+from django import forms
+from .models import Produto
 
-   admin.site.register(Produto)   
-```   
+class ProdutoForm(forms.ModelForm):
+   class Meta:
+      model = Produto
+      fields = ['nome', 'preco', 'descricao', 'disponivel']
+```
 
-13. Crie um arquivo `tests.py` na pasta `myapp`:   
+### 2. Criar as views para CRUD
+
+No arquivo `views.py` da pasta `myapp`:
+
+```python
+from django.shortcuts import render, get_object_or_404, redirect
+from .models import Produto
+from .forms import ProdutoForm
+
+def produto_list(request):
+   produtos = Produto.objects.all()
+   return render(request, 'myapp/produto_list.html', {'produtos': produtos})
+
+def produto_create(request):
+   if request.method == 'POST':
+      form = ProdutoForm(request.POST)
+      if form.is_valid():
+         form.save()
+         return redirect('produto_list')
+   else:
+      form = ProdutoForm()
+   return render(request, 'myapp/produto_form.html', {'form': form})
+
+def produto_update(request, pk):
+   produto = get_object_or_404(Produto, pk=pk)
+   if request.method == 'POST':
+      form = ProdutoForm(request.POST, instance=produto)
+      if form.is_valid():
+         form.save()
+         return redirect('produto_list')
+   else:
+      form = ProdutoForm(instance=produto)
+   return render(request, 'myapp/produto_form.html', {'form': form})
+
+def produto_delete(request, pk):
+   produto = get_object_or_404(Produto, pk=pk)
+   if request.method == 'POST':
+      produto.delete()
+      return redirect('produto_list')
+   return render(request, 'myapp/produto_confirm_delete.html', {'produto': produto})
+```
+
+### 3. Criar os templates
+
+Crie os seguintes arquivos na pasta `myapp/templates/myapp/`:
+
+#### `produto_list.html`
+
+```html
+{% extends "base.html" %}
+{% block title %}Produtos{% endblock %}
+{% block content %}
+<h1>Lista de Produtos</h1>
+<a href="{% url 'produto_create' %}">Adicionar Produto</a>
+<ul>
+  {% for produto in produtos %}
+   <li>
+     {{ produto.nome }} - R$ {{ produto.preco }}
+     <a href="{% url 'produto_update' produto.pk %}">Editar</a>
+     <a href="{% url 'produto_delete' produto.pk %}">Excluir</a>
+   </li>
+  {% empty %}
+   <li>Nenhum produto cadastrado.</li>
+  {% endfor %}
+</ul>
+{% endblock %}
+```
+
+#### `produto_form.html`
+
+```html
+{% extends "base.html" %}
+{% block title %}Produto{% endblock %}
+{% block content %}
+<h1>{{ form.instance.pk|yesno:"Editar Produto,Adicionar Produto" }}</h1>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Salvar</button>
+  <a href="{% url 'produto_list' %}">Cancelar</a>
+</form>
+{% endblock %}
+```
+
+#### `produto_confirm_delete.html`
+
+```html
+{% extends "base.html" %}
+{% block title %}Excluir Produto{% endblock %}
+{% block content %}
+<h1>Excluir Produto</h1>
+<p>Tem certeza que deseja excluir "{{ produto.nome }}"?</p>
+<form method="post">
+  {% csrf_token %}
+  <button type="submit">Confirmar</button>
+  <a href="{% url 'produto_list' %}">Cancelar</a>
+</form>
+{% endblock %}
+```
+
+### 4. Configurar as URLs
+
+No arquivo `myapp/urls.py`:
+
+```python
+from django.urls import path
+from . import views
+
+urlpatterns = [
+   path('produtos/', views.produto_list, name='produto_list'),
+   path('produtos/novo/', views.produto_create, name='produto_create'),
+   path('produtos/<int:pk>/editar/', views.produto_update, name='produto_update'),
+   path('produtos/<int:pk>/excluir/', views.produto_delete, name='produto_delete'),
+]
+```
+
+E inclua essas URLs no arquivo `myproject/urls.py`:
+
+```python
+from django.urls import path, include
+
+urlpatterns = [
+   # ... outras rotas ...
+   path('', include('myapp.urls')),
+]
+```
+
+Pronto! Agora você tem um CRUD completo para o modelo Produto.
+
+## Crie um arquivo `tests.py` na pasta `myapp`:   
 
 ```python
    from django.test import TestCase
