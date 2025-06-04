@@ -199,3 +199,159 @@ ou
 
 - http://localhost:8000/ (página inicial)
 - http://localhost:8000/admin/ (painel admin)
+
+## Passo 10: Adicionar Templates
+
+1. Crie uma pasta `templates` dentro da pasta `myapp` e, dentro dela, outra pasta chamada `myapp` (ou seja, `myapp/templates/myapp`):
+
+```bash
+   mkdir templates
+```
+
+2. Crie um arquivo `base.html` na pasta `templates`:
+
+```html
+   <html>
+      <head>
+         <title>{% block title %}{% endblock %}</title>
+      </head>
+      <  body>
+         {% block content %}{% endblock %}      
+      </body></html>
+```
+
+3. Crie um arquivo `home.html` na pasta `myapp/templates/myapp`:  
+
+```html
+   <h1>Bem-vindo ao meu site!</h1>
+```
+
+4. Crie um arquivo `index.html` na pasta `templates`:
+
+```html
+   {% extends "base.html" %}
+   {% block title %}Home{% endblock %}
+   {% block content %}{% include "home.html" %}{% endblock %}
+```
+
+5. Certifique-se de incluir as URLs da aplicação no projeto principal (`myproject/urls.py`):
+
+```python
+   from django.contrib import admin
+   from django.urls import path, include
+
+   urlpatterns = [
+       path('admin/', admin.site.urls),
+       path('', include('myapp.urls')),
+       path('api/', include('myapp.api_urls')),
+
+   ]
+```
+
+## Passo 11: Adicionar urls para o template acima
+
+```python
+   from django.urls import path  
+
+   urlpatterns = [
+       path('', views.home, name='home'), 
+   ]
+```
+
+## Passo 12: Adicionar Views para template acima
+
+```python   
+   from django.shortcuts import render 
+   from django.http import HttpResponse   
+
+   def home(request):   
+       return render(request, 'index.html')  
+```
+
+
+11. Crie um arquivo `forms.py` na pasta `myapp`:
+
+```python   
+   from django import forms
+   from .models import Produto   
+
+   class ProdutoForm(forms.ModelForm):   
+       class Meta:       
+           model = Produto           
+           fields = ['nome', 'preco', 'descricao', 'disponivel']   
+```
+
+12. Crie um arquivo `admin.py` na pasta `myapp`:
+
+```python
+   from django.contrib import admin    
+   from .models import Produto       
+
+   admin.site.register(Produto)   
+```   
+
+13. Crie um arquivo `tests.py` na pasta `myapp`:   
+
+```python
+   from django.test import TestCase
+from .models import Produto
+
+class ProdutoModelTest(TestCase):
+    def setUp(self):
+        Produto.objects.create(
+            nome="Camiseta",
+            preco=49.90,
+            descricao="Camiseta 100% algodão",
+            disponivel=True
+        )
+
+    def test_criacao_produto(self):
+        produto = Produto.objects.get(nome="Camiseta")
+        self.assertEqual(produto.preco, 49.90)
+        self.assertTrue(produto.disponivel)
+        self.assertEqual(str(produto), "Camiseta")
+```   
+
+14. Execute as migrações iniciais:
+
+```bash
+   python manage.py migrate
+```   
+
+15. Execute os testes:
+
+```bash   
+   python manage.py test
+```      
+
+16. Crie um arquivo `wsgi.py` na pasta `myproject`:
+
+```python       
+   from django.core.wsgi import get_wsgi_application   
+   os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myproject.settings')   
+   application = get_wsgi_application()
+```   
+
+17. Crie um arquivo `settings.py` na pasta `myproject`:  
+18. Crie um arquivo `urls.py` na pasta `myproject`:
+19. Crie um arquivo `asgi.py` na pasta `myproject`:
+
+```python   
+   from django.core.asgi import get_asgi_application
+
+   os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myproject.settings')
+
+   application = get_asgi_application()
+```
+
+20. Execute as migrações iniciais:
+
+```bash
+   python manage.py migrate
+```
+
+21. Execute os testes:
+
+```bash   
+   python manage.py test
+```         
