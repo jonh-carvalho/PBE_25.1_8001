@@ -3,57 +3,63 @@ hide:
   - navigation
   - toc
 ---  
-Censo Demográfico Ilha Primeira (AMIP - Associação de Moradores da Ilha Primeira), desenvolvido em conjunto com a disciplina de Projeto Mobile - Professor Thiago Souza 
+
+### **Ilha Delivery - Aplicativo de Entregas da Ilha Primeira** 
 
 <div class="grid cards" markdown>
 
--   :material-github:{ .lg .right } __PBE_25.1_8001_I__
+
+-   :simple-python:{ .lg .middle } 
+<span style="font-size: 1.10em; font-weight: 500; color: #526cfe;">  **PBE_25.1_8001_I** </span>
 
     ---
 
-    Daniel de Jesus Teixeira, Diego Gode Bonani, Gabriel Couto Barros, Tiago Oliveira Macedo, Viktor Mayer Berruezo
+    <span style="font-size: 0.85em; font-weight: 500; color: #526cfe;">Daniel Teixeira, Diego Bonani, Gabriel  Barros, Tiago Macedo, Viktor Berruezo</span>    
 
-    [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PBE_25.1_8001_I)
 
--   :material-github:{ .lg .middle } __PBE_25.1_8001_II__
+    [:material-github:{ .lg .middle }](https://github.com/Projetos-de-Extensao/PBE_25.1_8001_I){ .md-button .md-button--primary }
 
-    ---
-
-    Bernardo Lobo Marques, Bernardo Moreira Guimarães Gonçalves, Guilherme Dias Batista, Michel de Melo Guimarães, Julia Dominguez Curto
-
-    [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PBE_25.1_8001_II_Simblissima)
-
--   :material-github:{ .lg .middle } __PBE_25.1_8001_III__
+-    :simple-python:{ .lg .middle } 
+     <span style="font-size: 1.10em; font-weight: 500; color: #526cfe;">  **PBE_25.1_8001_II** </span>
 
     ---
 
-    Breno Chaves da Cunha, Gustavo Leonel Salvador, Guilherme Resende da Rocha, João Gabriel Guedes, Bryan Amorim dos Santos
+    <span style="font-size: 0.85em; font-weight: 500; color: #526cfe;">
+    Bernardo Marques, Bernardo Gonçalves, Guilherme Batista, Michel Guimarães, Julia Curto</span>
 
-    [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PBE_25.1_8001_III)
+    [:material-github:{ .lg .middle }](https://github.com/Projetos-de-Extensao/PBE_25.1_8001_II_Simblissima){ .md-button .md-button--primary }
 
--   :material-github:{ .lg .middle } __PBE_25.1_8001_IV__
-
-    ---
-
-    Alex Euzébio Pereira Dias de Oliveira, Gabriel Maia Sampaio, Gabriel Mendonça de Medeiros, Nicholas Borges de Vasconcelos, Pedro Henrique Abdalla Ramos
-
-    [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PBE_25.1_8001_IV)
-
--   :material-github:{ .lg .middle } __PBE_25.1_8001_V__
+-    :simple-python:{ .lg .middle } <span style="font-size: 1.10em; font-weight: 500; color: #526cfe;">  **PBE_25.1_8001_III** </span>
 
     ---
+    <span style="font-size: 0.85em; font-weight: 500; color: #526cfe;">
+    Breno Cunha, Gustavo Salvador, Guilherme Rocha, João Guedes, Bryan Santos</span>
 
-    Arthur Peixoto Schiller, Guilherme Pardelhas de Araújo, João Gabriel Miguel, Luã Japiassu Macedo Maia, Lucca Barcelos Cravo, Maria Claudia Freitas
+    [:material-github:{ .lg .middle }](https://github.com/Projetos-de-Extensao/PBE_25.1_8001_III){ .md-button .md-button--primary }
 
-    [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PBE_25.1_8001_V)
-
--   :material-github:{ .lg .middle } __PBE_25.1_8001_VI__
+-    :simple-python:{ .lg .middle } <span style="font-size: 1.10em; font-weight: 500; color: #526cfe;">  **PBE_25.1_8001_IV** </span>
 
     ---
+    <span style="font-size: 0.85em; font-weight: 500; color: #526cfe;">
+    Alex Oliveira, Gabriel Sampaio, Gabriel Medeiros, Nicholas Vasconcelos, Pedro Ramos</span>
 
-    Pedro Henrique Silvestre de Mello Moreira, Rodrigo de Sousa Ferrett, João Pedro Borges Souza Santana, Lucas Alves Castela Pereira, Rafael Viana Domingues
+    [:material-github:{ .lg .middle }](https://github.com/Projetos-de-Extensao/PBE_25.1_8001_IV){ .md-button .md-button--primary }
 
-    [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PBE_25.1_8001_VI)
+-    :simple-python:{ .lg .middle } <span style="font-size: 1.10em; font-weight: 500; color: #526cfe;">  **PBE_25.1_8001_V** </span>
+
+    ---
+    <span style="font-size: 0.85em; font-weight: 500; color: #526cfe;">
+    Arthur Schiller, Guilherme Araújo, João Miguel, Luã Maia, Lucca Cravo, Maria Freitas</span>
+
+    [:material-github:{ .lg .middle }](https://github.com/Projetos-de-Extensao/PBE_25.1_8001_V){ .md-button .md-button--primary }
+
+-    :simple-python:{ .lg .middle } <span style="font-size: 1.10em; font-weight: 500; color: #526cfe;">  **PBE_25.1_8001_VI** </span>
+
+    ---
+    <span style="font-size: 0.85em; font-weight: 500; color: #526cfe;">
+    Pedro Moreira, Rodrigo Ferrett, João Santana, Lucas Pereira, Rafael Domingues</span>
+
+    [:material-github:{ .lg .middle }](https://github.com/Projetos-de-Extensao/PBE_25.1_8001_VI){ .md-button .md-button--primary }
 
 
 </div>
