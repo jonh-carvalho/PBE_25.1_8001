@@ -9,7 +9,7 @@ hide:
 <div class="grid cards" markdown>
 
 
--   :simple-python:{ .lg .middle } 
+- :simple-python:{ .lg .middle } 
 <span style="font-size: 1.10em; font-weight: 500; color: #526cfe;">  **PBE_25.1_8001_I** </span>
 
     ---
@@ -19,7 +19,7 @@ hide:
 
     [:material-github:{ .lg .middle }](https://github.com/Projetos-de-Extensao/PBE_25.1_8001_I){ .md-button .md-button--primary }
 
--    :simple-python:{ .lg .middle } 
+- :simple-python:{ .lg .middle } 
      <span style="font-size: 1.10em; font-weight: 500; color: #526cfe;">  **PBE_25.1_8001_II_Simblissima** </span>
 
     ---
@@ -29,7 +29,7 @@ hide:
 
     [:material-github:{ .lg .middle }](https://github.com/Projetos-de-Extensao/PBE_25.1_8001_II_Simblissima){ .md-button .md-button--primary }
 
--    :simple-python:{ .lg .middle } <span style="font-size: 1.10em; font-weight: 500; color: #526cfe;">  **PBE_25.1_8001_III** </span>
+- :simple-python:{ .lg .middle } <span style="font-size: 1.10em; font-weight: 500; color: #526cfe;">  **PBE_25.1_8001_III** </span>
 
     ---
     <span style="font-size: 0.85em; font-weight: 500; color: #526cfe;">
@@ -37,7 +37,7 @@ hide:
 
     [:material-github:{ .lg .middle }](https://github.com/Projetos-de-Extensao/PBE_25.1_8001_III){ .md-button .md-button--primary }
 
--    :simple-python:{ .lg .middle } <span style="font-size: 1.10em; font-weight: 500; color: #526cfe;">  **PBE_25.1_8001_IV** </span>
+- :simple-python:{ .lg .middle } <span style="font-size: 1.10em; font-weight: 500; color: #526cfe;">  **PBE_25.1_8001_IV** </span>
 
     ---
     <span style="font-size: 0.85em; font-weight: 500; color: #526cfe;">
@@ -45,7 +45,7 @@ hide:
 
     [:material-github:{ .lg .middle }](https://github.com/Projetos-de-Extensao/PBE_25.1_8001_IV){ .md-button .md-button--primary }
 
--    :simple-python:{ .lg .middle } <span style="font-size: 1.10em; font-weight: 500; color: #526cfe;">  **PBE_25.1_8001_V_Mbappython** </span>
+- :simple-python:{ .lg .middle } <span style="font-size: 1.10em; font-weight: 500; color: #526cfe;">  **PBE_25.1_8001_V_Mbappython** </span>
 
     ---
     <span style="font-size: 0.85em; font-weight: 500; color: #526cfe;">
@@ -53,7 +53,7 @@ hide:
 
     [:material-github:{ .lg .middle }](https://github.com/Projetos-de-Extensao/PBE_25.1_8001_V){ .md-button .md-button--primary }
 
--    :simple-python:{ .lg .middle } <span style="font-size: 1.10em; font-weight: 500; color: #526cfe;">  **PBE_25.1_8001_VI** </span>
+- :simple-python:{ .lg .middle } <span style="font-size: 1.10em; font-weight: 500; color: #526cfe;">  **PBE_25.1_8001_VI** </span>
 
     ---
     <span style="font-size: 0.85em; font-weight: 500; color: #526cfe;">
